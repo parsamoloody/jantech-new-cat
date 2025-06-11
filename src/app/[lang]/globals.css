@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply scroll-smooth;
+    }
+
+    .editor-container ul {
+        @apply list-disc list-inside;
+    }
+
+    .editor-container ol {
+        @apply list-decimal list-inside;
+    }
+
+    .editor-container ul p,
+    .editor-container ol p {
+        @apply inline-block;
+    }
+
+    .editor-container a {
+        @apply text-blue-500 font-semibold underline underline-offset-4;
+    }
+
+    .editor-container h1 {
+        @apply text-2xl font-bold;
+    }
+
+    .editor-container h2 {
+        @apply text-xl font-semibold;
+    }
+
+    .editor-container h3 {
+        @apply text-lg font-semibold;
+    }
+
+    .editor-container h4 {
+        @apply text-base font-semibold;
+    }
+
+    .editor-container h5 {
+        @apply text-sm font-semibold;
+    }
+
+    .editor-container h6 {
+        @apply text-xs font-semibold;
+    }
+
+    body::-webkit-scrollbar {
+        @apply w-3 h-4;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        @apply bg-red-primary rounded-md border-2 border-white;
+    }
+
+    .wrapper {
+        @apply max-w-[1600px] mx-auto px-4 pt-[90px] xl:pt-28 pb-12;
+    }
+
+    input {
+        outline: none;
+    }
+
+    input[type="range"] {
+        @apply accent-red-primary w-full h-1 bg-gray-300 rounded-lg cursor-pointer;
+    }
+
+    input[type="checkbox"] {
+        @apply appearance-none h-4 w-8 bg-gray-300 checked:bg-red-primary relative border border-gray-300 rounded-full cursor-pointer after:content-[''] after:w-1/2 after:h-full after:bg-white after:rounded-full after:border after:border-gray-300 checked:border-red-primary after:absolute checked:after:end-0;
+    }
+}
+
+@utility writing-rl {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+@utility writing-lr {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+:root {
+    --swiper-pagination-color: black;
+    --swiper-pagination-bullet-size: 10px;
+}
+
+.swiper-pagination {
+    @apply border-1 border-gray-400 rounded-full !w-fit px-1.5 py-1 flex items-center absolute !bottom-0 !left-1/2 !-translate-x-1/2 lg:hidden;
+}
+
+.swiper-pagination-bullet-active {
+    @apply !w-5 !rounded-lg;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+@theme {
+    --breakpoint-xs: 575px;
+    --color-red-primary: #B61817;
+    --font-dana: "dana";
+    --font-lexend: "lexend";
+}

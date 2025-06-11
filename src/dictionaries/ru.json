@@ -1,0 +1,349 @@
+{
+    "homePage": {
+        "products": [
+            {
+                "title": "Швейная машина",
+                "image": "/images/sewingMachine.webp",
+                "href": "sewing-machine"
+            },
+            {
+                "title": "Утюг с прессом",
+                "image": "/images/pressureIron.webp",
+                "href": "pressure-iron"
+            },
+            {
+                "title": "Паровой утюг",
+                "image": "/images/steamIron.webp",
+                "href": "steam-iron"
+            },
+            {
+                "title": "Пылесос",
+                "image": "/images/vacuumCleaner.webp",
+                "href": "vacuum-cleaner"
+            }
+        ],
+        "sewingMachine": {
+            "description": "Швейная машина Janome VERSACE GOLD с непревзойденными характеристиками и исключительным разнообразием строчек является одним из лучших вариантов как для профессиональных, так и для начинающих швей. Этот продукт поставляется с 60-месячной гарантией и 2 месяцами безусловной гарантии на замену, что гарантирует надежное послепродажное обслуживание. Эта модель имеет 32 типа строчек и обметки, что позволяет легко создавать различные дизайны и узоры. Автоматическая нитевдеватель и 10 различных лапок для различных строчек — это одни из выдающихся особенностей этой швейной машины. Доступные лапки включают лапку для обметки, для петель, для сборки, для пришивания пуговиц, для штопки, для оверлока, для канта, для эластичных тканей, для слепой подшивки и модельную лапку, что покрывает все ваши швейные потребности. С регулируемой шириной строчки до 5 мм и длиной строчки до 4 мм вы можете делать точные и красивые строчки. Швейная машина VERSACE GOLD с скоростью шитья 860 стежков в минуту обладает высокой производительностью. Эта модель также поддерживает оверлок, вышивку и заплатки. Система давления лапки позволяет легко шить через ткани различной толщины. Кроме того, эта машина справляется с оверлоком, шитьем джерси, шитьем петель, шитьем молний и подшивкой краев. Благодаря возможности делать круговые строчки (свободный рукав) легко выполняется подшивка рукавов и штанин. Она может работать с иглами от размера 9 до 18, что добавляет универсальности этой модели."
+        }
+    },
+    "productPage": {
+        "reviews": "Отзывы",
+        "features": "Особенности",
+        "addToCart": "Добавить в корзину",
+        "wishlist": "Список желаемого",
+        "share": "Поделиться",
+        "productDetail": "Детали продукта"
+    },
+    "components": {
+        "navbar": {
+            "items": [
+                {
+                    "title": "Главная",
+                    "href": "/"
+                },
+                {
+                    "title": "Сеть продаж",
+                    "href": "#"
+                },
+                {
+                    "title": "Продукты",
+                    "children": [
+                        {
+                            "title": "Швейная машина",
+                            "href": "/products/sewing-machine"
+                        },
+                        {
+                            "title": "Паровой пресс",
+                            "href": "/products/pressure-iron"
+                        },
+                        {
+                            "title": "Пылесос",
+                            "href": "/products/vacuum-cleaner"
+                        },
+                        {
+                            "title": "Паровой утюг",
+                            "href": "/products/steam-iron"
+                        }
+                    ]
+                },
+                {
+                    "title": "Запрос на сотрудничество",
+                    "href": "#"
+                },
+                {
+                    "title": "Продажа в рассрочку",
+                    "href": "#"
+                }
+            ]
+        },
+        "languageSwitcher": {
+            "items": [
+                {
+                    "title": "Английский",
+                    "src": "/icons/unitedKingdom.svg",
+                    "language": "en"
+                },
+                {
+                    "title": "Персидский",
+                    "src": "/icons/iran.svg",
+                    "language": "fa"
+                },
+                {
+                    "title": "Турецкий",
+                    "src": "/icons/turkey.svg",
+                    "language": "tr"
+                },
+                {
+                    "title": "Русский",
+                    "src": "/icons/russia.svg",
+                    "language": "ru"
+                },
+                {
+                    "title": "Арабский",
+                    "src": "/icons/arabia.svg",
+                    "language": "ar"
+                }
+            ]
+        },
+        "hero": {
+            "title": "ДжанТек",
+            "description": "Звук, который дает ощущение жизни."
+        },
+        "productCard": {
+            "button": "добавить в корзину",
+            "currency": "Риал"
+        },
+        "adminForm": {
+            "name": "Имя",
+            "description": "Описание",
+            "category": "категория",
+            "price": "Цена",
+            "score": "счет",
+            "image": "Изображение",
+            "featureTitle": "Название функции",
+            "featureValue": "Значение функции",
+            "details": "Описание продукта...",
+            "submit": "Oтправлять"
+        },
+        "filterForm": {
+            "filter": "Фильтр",
+            "sewing-machine": {
+                "fields": [
+                    {
+                        "name": "Цена",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Использование швейной машины",
+                        "items": [
+                            {
+                                "name": "Швейная машина 14 функций",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Швейная машина 32 функции",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Особенности швейной машины",
+                        "items": [
+                            {
+                                "name": "Регулировка длины стежка",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Регулировка ширины стежка",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Нитевдеватель",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Крышка",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pressure-iron": {
+                "fields": [
+                    {
+                        "name": "Цена",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Размер пресс-утюга",
+                        "items": [
+                            {
+                                "name": "26 дюймов",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 дюйма",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Механизм пара",
+                        "items": [
+                            {
+                                "name": "Пар сверху",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Пар с обеих сторон (сверху и снизу)",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Пар из подошвы",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Мощность пара (Вт)",
+                        "items": [
+                            {
+                                "name": "1600",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "1880",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "2200",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ёмкость водяного бака",
+                        "items": [
+                            {
+                                "name": "300 мл",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "800 мл",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Особенности пресс-утюга",
+                        "items": [
+                            {
+                                "name": "Автоматический пар",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Голосовая функция",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Анти-кальциевый фильтр",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vacuum-cleaner": {
+                "fields": [
+                    {
+                        "name": "Цена",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Bluetooth ручка",
+                        "items": [
+                            {
+                                "name": "Да",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Нет",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Функции очистки",
+                        "items": [
+                            {
+                                "name": "5 функций",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "6 функций",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "newsletter": {
+            "title": "Подписаться на нашу рассылку",
+            "subTitle": "Получайте обновления о наших новых блогах",
+            "button": "Подписаться"
+        },
+        "footer": {
+            "title": "Компания Негин Джан и Мех",
+            "description": "Тегеран - Улица Джомхури - Угол 12 Фарвардина, дом 1047",
+            "postalcode": "1314954832",
+            "telephone": "021-66974235",
+            "items": [
+                {
+                    "title": "Услуги",
+                    "value": "Внутренний 1400"
+                },
+                {
+                    "title": "Продажа",
+                    "value": "Внутренний 1301"
+                },
+                {
+                    "title": "Управление взаимоотношениями с клиентами",
+                    "value": "Внутренний 1300"
+                },
+                {
+                    "title": "Бухгалтерия",
+                    "value": "Внутренний 1200"
+                }
+            ],
+            "copyright": "Все права защищены компанией Негин Джан и Мех."
+        }
+    }
+}

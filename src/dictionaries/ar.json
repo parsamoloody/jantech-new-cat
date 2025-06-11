@@ -1,0 +1,349 @@
+{
+    "homePage": {
+        "products": [
+            {
+                "title": "ماكينة الخياطة",
+                "image": "/images/sewingMachine.webp",
+                "href": "sewing-machine"
+            },
+            {
+                "title": "مكواة الضغط",
+                "image": "/images/pressureIron.webp",
+                "href": "pressure-iron"
+            },
+            {
+                "title": "مكواة البخار",
+                "image": "/images/steamIron.webp",
+                "href": "steam-iron"
+            },
+            {
+                "title": "مكنسة كهربائية",
+                "image": "/images/vacuumCleaner.webp",
+                "href": "vacuum-cleaner"
+            }
+        ],
+        "sewingMachine": {
+            "description": "ماكينة الخياطة جانتك موديل VERSACE GOLD بمميزات فريدة وتنوع خياطة رائع، تعد واحدة من أفضل الخيارات للخياطين المحترفين والمبتدئين. يأتي هذا المنتج مع ضمان لمدة 60 شهرًا وضمان استبدال غير مشروط لمدة شهرين، مما يجعله مضمونًا من حيث خدمات ما بعد البيع. يتميز هذا الموديل بـ 32 نوعًا من الغرز والتطريز، مما يتيح لك إنشاء أنماط وتصاميم متنوعة بسهولة. من أبرز ميزات هذه الماكينة وجود ملقم إبرة أوتوماتيكي و10 قواعد مختلفة لأنواع الخياطة المختلفة. تشمل القواعد المتوفرة قاعدة الخياطة العكسية، خياطة الأزرار، خياطة الكشكشة، خياطة الترميم، السرفلة، خياطة الحبال، خياطة الأشرطة المرنة، خياطة الحواف، وغيرها، مما يغطي جميع احتياجات الخياطة لديك. بفضل إمكانية ضبط عرض الغرزة حتى 5 ملم وطولها حتى 4 ملم، يمكنك تنفيذ غرز دقيقة وجميلة. ماكينة الخياطة VERSACE GOLD تتميز بسرعة خياطة تصل إلى 860 غرزة في الدقيقة، مما يجعلها عالية الكفاءة. هذا الموديل يدعم أيضًا الخياطة المزخرفة، والتطريز، وخياطة الرقع. يسمح لك نظام ضغط القدم بالتحكم في الأقمشة ذات السماكات المختلفة بسهولة. كما تتيح هذه الماكينة إمكانية الخياطة العكسية، خياطة الجيرسيه، خياطة الأزرار، تركيب السوستة، وخياطة الحواف. وبفضل خاصية الخياطة الحلقية (الذراع الحرة)، يمكنك بسهولة خياطة أكمام القمصان وحواف السراويل. كما تدعم تركيب أنواع مختلفة من الإبر بأحجام تتراوح بين 9 و18."
+        }
+    },
+    "productPage": {
+        "reviews": "التعليقات",
+        "features": "الميزات",
+        "addToCart": "أضف إلى السلة",
+        "wishlist": "قائمة الرغبات",
+        "share": "مشاركة",
+        "productDetail": "تفاصيل المنتج"
+    },
+    "components": {
+        "navbar": {
+            "items": [
+                {
+                    "title": "الرئيسية",
+                    "href": "/"
+                },
+                {
+                    "title": "شبكة المبيعات",
+                    "href": "#"
+                },
+                {
+                    "title": "المنتجات",
+                    "children": [
+                        {
+                            "title": "ماكينة خياطة",
+                            "href": "/products/sewing-machine"
+                        },
+                        {
+                            "title": "مكواة الضغط",
+                            "href": "/products/pressure-iron"
+                        },
+                        {
+                            "title": "مكنسة كهربائية",
+                            "href": "/products/vacuum-cleaner"
+                        },
+                        {
+                            "title": "مكواة البخار",
+                            "href": "/products/steam-iron"
+                        }
+                    ]
+                },
+                {
+                    "title": "طلب التعاون",
+                    "href": "#"
+                },
+                {
+                    "title": "البيع بالتقسيط",
+                    "href": "#"
+                }
+            ]
+        },
+        "languageSwitcher": {
+            "items": [
+                {
+                    "title": "الإنجليزية",
+                    "src": "/icons/unitedKingdom.svg",
+                    "language": "en"
+                },
+                {
+                    "title": "الفارسية",
+                    "src": "/icons/iran.svg",
+                    "language": "fa"
+                },
+                {
+                    "title": "التركية",
+                    "src": "/icons/turkey.svg",
+                    "language": "tr"
+                },
+                {
+                    "title": "الروسية",
+                    "src": "/icons/russia.svg",
+                    "language": "ru"
+                },
+                {
+                    "title": "عربي",
+                    "src": "/icons/arabia.svg",
+                    "language": "ar"
+                }
+            ]
+        },
+        "hero": {
+            "title": "جان تك",
+            "description": "الصوت الذي يعطي إحساس الحياة."
+        },
+        "productCard": {
+            "button": "أضف إلى السلة",
+            "currency": "ريال"
+        },
+        "adminForm": {
+            "name": "الاسم",
+            "description": "الوصف",
+            "category": "فئة",
+            "price": "السعر",
+            "score": "نتيجة",
+            "image": "الصورة",
+            "featureTitle": "عنوان الميزة",
+            "featureValue": "قيمة الميزة",
+            "details": "وصف المنتج...",
+            "submit": "يرسل"
+        },
+        "filterForm": {
+            "filter": "فلتر",
+            "sewing-machine": {
+                "fields": [
+                    {
+                        "name": "السعر",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "استخدام ماكينة الخياطة",
+                        "items": [
+                            {
+                                "name": "ماكينة خياطة 14 وظيفة",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "ماكينة خياطة 32 وظيفة",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ميزات ماكينة الخياطة",
+                        "items": [
+                            {
+                                "name": "تعديل طول الغرز",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "تعديل عرض الغرز",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "آداة إدخال الإبرة",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "غطاء",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pressure-iron": {
+                "fields": [
+                    {
+                        "name": "السعر",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "حجم مكواة البخار",
+                        "items": [
+                            {
+                                "name": "26 بوصة",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 بوصة",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "آلية البخار",
+                        "items": [
+                            {
+                                "name": "بخار من الأعلى",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "بخار من الجانبين (الأعلى والأسفل)",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "بخار من اللوحة السفلية",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "قوة البخار (وات)",
+                        "items": [
+                            {
+                                "name": "1600",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "1880",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "2200",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "سعة خزان المياه",
+                        "items": [
+                            {
+                                "name": "300 مل",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "800 مل",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ميزات مكواة البخار",
+                        "items": [
+                            {
+                                "name": "بخار تلقائي",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "وظيفة صوتية",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "فلتر مضاد للتكلس",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vacuum-cleaner": {
+                "fields": [
+                    {
+                        "name": "السعر",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "مقبض بلوتوث",
+                        "items": [
+                            {
+                                "name": "نعم",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "لا",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "وظائف التنظيف",
+                        "items": [
+                            {
+                                "name": "5 وظائف",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "6 وظائف",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "newsletter": {
+            "title": "اشترك في نشرتنا الإخبارية",
+            "subTitle": "احصل على تحديثات حول مدوناتنا الجديدة",
+            "button": "اشترك"
+        },
+        "footer": {
+            "title": "شركة نغين جان ومه",
+            "description": "طهران - شارع جمهورية - تقاطع 12 فروردين رقم 1047",
+            "postalcode": "1314954832",
+            "telephone": "021-66974235",
+            "items": [
+                {
+                    "title": "خدمات",
+                    "value": "داخلي 1400"
+                },
+                {
+                    "title": "مبيعات",
+                    "value": "داخلي 1301"
+                },
+                {
+                    "title": "إدارة علاقات العملاء",
+                    "value": "داخلي 1300"
+                },
+                {
+                    "title": "محاسبة",
+                    "value": "داخلي 1200"
+                }
+            ],
+            "copyright": "جميع حقوق هذا الموقع محفوظة لشركة نغين جان ومه."
+        }
+    }
+}

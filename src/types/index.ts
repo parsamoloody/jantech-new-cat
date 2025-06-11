@@ -1,0 +1,1 @@
+export type Category = "sewing-machine" | "vacuum-cleaner" | "pressure-iron";

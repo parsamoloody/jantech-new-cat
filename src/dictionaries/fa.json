@@ -1,0 +1,349 @@
+{
+    "homePage": {
+        "products": [
+            {
+                "title": "چرخ خیاطی",
+                "image": "/images/sewingMachine.webp",
+                "href": "sewing-machine"
+            },
+            {
+                "title": "اتو پرس",
+                "image": "/images/pressureIron.webp",
+                "href": "pressure-iron"
+            },
+            {
+                "title": "اتو بخار",
+                "image": "/images/steamIron.webp",
+                "href": "steam-iron"
+            },
+            {
+                "title": "جارو برقی",
+                "image": "/images/vacuumCleaner.webp",
+                "href": "vacuum-cleaner"
+            }
+        ],
+        "sewingMachine": {
+            "description": "چرخ خیاطی جانتک مدل VERSACE GOLD با امکاناتی بی‌نظیر و تنوع دوخت فوق‌العاده، یکی از بهترین گزینه‌ها برای خیاطان حرفه‌ای و مبتدی است. این محصول با گارانتی 60 ماهه و 2 ماه گارانتی تعویض بی‌قید و شرط، از لحاظ خدمات پس از فروش نیز تضمین شده است.این مدل دارای 32 نوع دوخت و حاشیه دوزی است که به شما امکان می‌دهد تا انواع مختلفی از طرح‌ها و الگوها را به راحتی ایجاد کنید. سوزن نخ کن اتوماتیک و 10 عدد پایه برای انواع دوخت از ویژگی‌های برجسته این چرخ خیاطی است. پایه‌های موجود شامل پایه پس دوزی، جا دکمه، چین دوزی، دکمه دوزی، رفو، سردوزی، قیطان، کش دوزی، لول و مدل است که تمامی نیازهای خیاطی شما را پوشش می‌دهند. با قابلیت تنظیم عرض دوخت تا 5 میلیمتر و طول دوخت تا 4 میلیمتر، شما می‌توانید دوخت‌های دقیق و زیبایی را انجام دهید.چرخ خیاطی VERSACE GOLD با سرعت دور دوزی 860 دوخت در دقیقه، کارایی بالایی دارد. این مدل قابلیت دوخت توپر، گلدوزی و تکه دوزی را نیز داراست. سیستم فشار پایه این چرخ خیاطی به شما امکان می‌دهد تا پارچه‌های با ضخامت‌های مختلف را به راحتی بدوزید. همچنین، این دستگاه توانایی پس دوزی، ژرسه دوزی، دکمه دوزی، زیپ دوزی و لبه دوزی را نیز دارد. با قابلیت دوخت‌های حلقوی (بازو آزاد)، دوخت دور آستین و دمپای شلوار به سادگی انجام می‌شود. نصب انواع سوزن‌ها از سایز 9 تا 18 نیز از دیگر ویژگی‌های کاربردی این مدل است."
+        }
+    },
+    "productPage": {
+        "reviews": "نظرات",
+        "features": "ویژگی‌ها",
+        "addToCart": "افزودن به سبد خرید",
+        "wishlist": "لیست علاقه‌مندی‌ها",
+        "share": "اشتراک‌گذاری",
+        "productDetail": "جزئیات محصول"
+    },
+    "components": {
+        "navbar": {
+            "items": [
+                {
+                    "title": "خانه",
+                    "href": "/"
+                },
+                {
+                    "title": "شبکه فروش",
+                    "href": "#"
+                },
+                {
+                    "title": "محصولات",
+                    "children": [
+                        {
+                            "title": "چرخ خیاطی",
+                            "href": "/products/sewing-machine"
+                        },
+                        {
+                            "title": "اتو پرس",
+                            "href": "/products/pressure-iron"
+                        },
+                        {
+                            "title": "جاروبرقی",
+                            "href": "/products/vacuum-cleaner"
+                        },
+                        {
+                            "title": "اتو بخار",
+                            "href": "/products/steam-iron"
+                        }
+                    ]
+                },
+                {
+                    "title": "درخواست همکاری",
+                    "href": "#"
+                },
+                {
+                    "title": "فروش اقساطی",
+                    "href": "#"
+                }
+            ]
+        },
+        "languageSwitcher": {
+            "items": [
+                {
+                    "title": "انگلیسی",
+                    "src": "/icons/unitedKingdom.svg",
+                    "language": "en"
+                },
+                {
+                    "title": "فارسی",
+                    "src": "/icons/iran.svg",
+                    "language": "fa"
+                },
+                {
+                    "title": "ترکی",
+                    "src": "/icons/turkey.svg",
+                    "language": "tr"
+                },
+                {
+                    "title": "روسی",
+                    "src": "/icons/russia.svg",
+                    "language": "ru"
+                },
+                {
+                    "title": "عربی",
+                    "src": "/icons/arabia.svg",
+                    "language": "ar"
+                }
+            ]
+        },
+        "hero": {
+            "title": "جانتک",
+            "description": "صدایی که حس زندگی می دهد."
+        },
+        "productCard": {
+            "button": "افزودن به سبد خرید",
+            "currency": "ریال"
+        },
+        "adminForm": {
+            "name": "نام",
+            "description": "توضیحات",
+            "category": "دسته بندی",
+            "price": "قیمت",
+            "score": "امتیاز",
+            "image": "تصویر",
+            "featureTitle": "عنوان ویژگی",
+            "featureValue": "مقدار ویژگی",
+            "details": "توضیحات محصول...",
+            "submit": "ارسال"
+        },
+        "filterForm": {
+            "filter": "فیلتر",
+            "sewing-machine": {
+                "fields": [
+                    {
+                        "name": "قیمت",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "کارکرد چرخ خیاطی",
+                        "items": [
+                            {
+                                "name": "چرخ خیاطی 14 کاره",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "چرخ خیاطی 32 کاره",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "قابلیت های چرخ خیاطی",
+                        "items": [
+                            {
+                                "name": "قابلیت تنظیم طول دوخت",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "قابلیت تنظیم عرض دوخت",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "سوزن‌نخ‌کن",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "درب",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pressure-iron": {
+                "fields": [
+                    {
+                        "name": "قیمت",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "سایز اتوپرس",
+                        "items": [
+                            {
+                                "name": "26 اینچ",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 اینچ",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "مکانیزم بخار",
+                        "items": [
+                            {
+                                "name": "بخار از بالا",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "بخار از دو طرف (بالا و پائین)",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "بخار از کف",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "قدرت بخار (وات)",
+                        "items": [
+                            {
+                                "name": "1600",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "1880",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "2200",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "حجم مخزن",
+                        "items": [
+                            {
+                                "name": "300 میلی‌لیتر",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "800 میلی‌لیتر",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "قابلیت‌های اتو پرس",
+                        "items": [
+                            {
+                                "name": "بخار اتوماتیک",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "سخنگو",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "فیلتر ضد رسوب",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vacuum-cleaner": {
+                "fields": [
+                    {
+                        "name": "قیمت",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "دسته بلوتوثی",
+                        "items": [
+                            {
+                                "name": "دارد",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "ندارد",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "عملکردهای نظافت",
+                        "items": [
+                            {
+                                "name": "5 عملکرد",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "6 عملکرد",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "newsletter": {
+            "title": "در خبرنامه ما عضو شوید",
+            "subTitle": "بروزرسانی‌ها را در مورد وبلاگ‌های جدید ما دریافت کنید",
+            "button": "عضویت"
+        },
+        "footer": {
+            "title": "شرکت نگین جان و مه",
+            "description": "تهران - خیابان جمهوری - نبش ۱۲ فروردین پلاک ۱۰۴۷",
+            "postalcode": "1314954832",
+            "telephone": "021-66974235",
+            "items": [
+                {
+                    "title": "خدمات",
+                    "value": "داخلی 1400"
+                },
+                {
+                    "title": "فروش",
+                    "value": "داخلی 1301"
+                },
+                {
+                    "title": "مدیریت ارتباط با مشتریان",
+                    "value": "داخلی 1300"
+                },
+                {
+                    "title": "حسابداری",
+                    "value": "داخلی 1200"
+                }
+            ],
+            "copyright": "تمامی حقوق این وب سایت برای شرکت نگین جان و مه محفوظ است."
+        }
+    }
+}

@@ -1,0 +1,349 @@
+{
+    "homePage": {
+        "products": [
+            {
+                "title": "Sewing Machine",
+                "image": "/images/sewingMachine.webp",
+                "href": "sewing-machine"
+            },
+            {
+                "title": "Pressure Iron",
+                "image": "/images/pressureIron.webp",
+                "href": "pressure-iron"
+            },
+            {
+                "title": "Steam Iron",
+                "image": "/images/steamIron.webp",
+                "href": "steam-iron"
+            },
+            {
+                "title": "Vacuum Cleaner",
+                "image": "/images/vacuumCleaner.webp",
+                "href": "vacuum-cleaner"
+            }
+        ],
+        "sewingMachine": {
+            "description": "The Janome VERSACE GOLD sewing machine, with its unparalleled features and exceptional stitch variety, is one of the best options for both professional and beginner seamstresses. This product comes with a 60-month warranty and 2 months of unconditional replacement warranty, ensuring reliable after-sales service. This model has 32 types of stitches and hemming, allowing you to easily create a variety of designs and patterns. The automatic needle threader and 10 different presser feet for various stitches are some of the standout features of this sewing machine. The available presser feet include overcasting, buttonhole, pleating, button sewing, darning, serging, piping, elastic, blind hem, and model feet, covering all your sewing needs. With adjustable stitch width up to 5mm and stitch length up to 4mm, you can make precise and beautiful stitches. The VERSACE GOLD sewing machine, with a sewing speed of 860 stitches per minute, offers high efficiency. This model also supports overlocking, embroidery, and patchwork stitching. The foot pressure system allows you to easily sew through fabrics of different thicknesses. Additionally, this machine can handle overlocking, jersey stitching, buttonhole stitching, zipper stitching, and edge stitching. With the capability to make circular stitches (free arm), sleeve and pant hem stitching is easily done. It can accommodate needles ranging from size 9 to 18, adding to the versatility of this model."
+        }
+    },
+    "productPage": {
+        "reviews": "Reviews",
+        "features": "Features",
+        "addToCart": "Add to cart",
+        "wishlist": "Wishlist",
+        "share": "Share",
+        "productDetail": "Product detail"
+    },
+    "components": {
+        "navbar": {
+            "items": [
+                {
+                    "title": "Home",
+                    "href": "/"
+                },
+                {
+                    "title": "Sales Network",
+                    "href": "#"
+                },
+                {
+                    "title": "Products",
+                    "children": [
+                        {
+                            "title": "Sewing Machine",
+                            "href": "/products/sewing-machine"
+                        },
+                        {
+                            "title": "Pressure Iron",
+                            "href": "/products/pressure-iron"
+                        },
+                        {
+                            "title": "Vacuum Cleaner",
+                            "href": "/products/vacuum-cleaner"
+                        },
+                        {
+                            "title": "Steam Iron",
+                            "href": "/products/steam-iron"
+                        }
+                    ]
+                },
+                {
+                    "title": "Collaboration Request",
+                    "href": "#"
+                },
+                {
+                    "title": "Installment Sales",
+                    "href": "#"
+                }
+            ]
+        },
+        "languageSwitcher": {
+            "items": [
+                {
+                    "title": "English",
+                    "src": "/icons/unitedKingdom.svg",
+                    "language": "en"
+                },
+                {
+                    "title": "Persian",
+                    "src": "/icons/iran.svg",
+                    "language": "fa"
+                },
+                {
+                    "title": "Turkish",
+                    "src": "/icons/turkey.svg",
+                    "language": "tr"
+                },
+                {
+                    "title": "Russian",
+                    "src": "/icons/russia.svg",
+                    "language": "ru"
+                },
+                {
+                    "title": "Arabic",
+                    "src": "/icons/arabia.svg",
+                    "language": "ar"
+                }
+            ]
+        },
+        "hero": {
+            "title": "Jantech",
+            "description": "The sound that gives the feeling of life."
+        },
+        "productCard": {
+            "button": "Add to cart",
+            "currency": "Rial"
+        },
+        "adminForm": {
+            "name": "Name",
+            "description": "Description",
+            "category": "Category",
+            "price": "Price",
+            "score": "Score",
+            "image": "Image",
+            "featureTitle": "Feature title",
+            "featureValue": "Feature value",
+            "details": "Product description...",
+            "submit": "Submit"
+        },
+        "filterForm": {
+            "filter": "Filter",
+            "sewing-machine": {
+                "fields": [
+                    {
+                        "name": "Price",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Sewing Machine Usage",
+                        "items": [
+                            {
+                                "name": "14-Function Sewing Machine",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32-Function Sewing Machine",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sewing Machine Features",
+                        "items": [
+                            {
+                                "name": "Stitch Length Adjustment",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Stitch Width Adjustment",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Needle Threader",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Cover",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pressure-iron": {
+                "fields": [
+                    {
+                        "name": "Price",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Iron Press Size",
+                        "items": [
+                            {
+                                "name": "26 inch",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 inch",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Steam Mechanism",
+                        "items": [
+                            {
+                                "name": "Steam from top",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Steam from both sides (top and bottom)",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Steam from soleplate",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Steam Power (Watts)",
+                        "items": [
+                            {
+                                "name": "1600",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "1880",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "2200",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Water Tank Capacity",
+                        "items": [
+                            {
+                                "name": "300 ml",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "800 ml",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Iron Press Features",
+                        "items": [
+                            {
+                                "name": "Automatic Steam",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Voice Function",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Anti-Scale Filter",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vacuum-cleaner": {
+                "fields": [
+                    {
+                        "name": "Price",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Bluetooth Handle",
+                        "items": [
+                            {
+                                "name": "Yes",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "No",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cleaning Functions",
+                        "items": [
+                            {
+                                "name": "5 Functions",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "6 Functions",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "newsletter": {
+            "title": "Subscribe to our newsletter",
+            "subTitle": "Get updates on our new blogs",
+            "button": "Subscribe"
+        },
+        "footer": {
+            "title": "Negin Jan & Meh Company",
+            "description": "Tehran - Jomhouri Street - Corner of 12 Farvardin, Block 1047",
+            "postalcode": "1314954832",
+            "telephone": "021-66974235",
+            "items": [
+                {
+                    "title": "Services",
+                    "value": "Internal 1400"
+                },
+                {
+                    "title": "Sales",
+                    "value": "Internal 1301"
+                },
+                {
+                    "title": "Customer Relationship Management",
+                    "value": "Internal 1300"
+                },
+                {
+                    "title": "Accounting",
+                    "value": "Internal 1200"
+                }
+            ],
+            "copyright": "All rights reserved for Negin Jan & Meh Company."
+        }
+    }
+}

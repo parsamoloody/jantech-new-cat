@@ -1,0 +1,349 @@
+{
+    "homePage": {
+        "products": [
+            {
+                "title": "Dikiş Makinesi",
+                "image": "/images/sewingMachine.webp",
+                "href": "sewing-machine"
+            },
+            {
+                "title": "Baskı Ütüsü",
+                "image": "/images/pressureIron.webp",
+                "href": "pressure-iron"
+            },
+            {
+                "title": "Buhar Ütüsü",
+                "image": "/images/steamIron.webp",
+                "href": "steam-iron"
+            },
+            {
+                "title": "Vakum Temizleyici",
+                "image": "/images/vacuumCleaner.webp",
+                "href": "vacuum-cleaner"
+            }
+        ],
+        "sewingMachine": {
+            "description": "Janome VERSACE GOLD dikiş makinesi, benzersiz özellikleri ve olağanüstü dikiş çeşitliliği ile profesyonel ve acemi terziler için en iyi seçeneklerden biridir. Bu ürün, 60 aylık garanti ve 2 ay koşulsuz değiştirme garantisi ile birlikte gelir, bu da güvenilir bir satış sonrası hizmeti garanti eder. Bu model, kolayca çeşitli tasarımlar ve desenler oluşturmanıza olanak tanıyan 32 farklı dikiş ve kenar dikişi sunar. Otomatik iğne iplik geçirme aparatı ve çeşitli dikişler için 10 farklı presleme ayağı, bu dikiş makinesinin öne çıkan özelliklerindendir. Mevcut presleme ayakları, overlok, düğme deliği, pile yapma, düğme dikişi, onarım, overlock, boru, elastik, kör etek dikişi ve model ayakları dahil olmak üzere tüm dikiş ihtiyaçlarınızı karşılar. Ayarlanabilir dikiş genişliği 5 mm'ye kadar ve dikiş uzunluğu 4 mm'ye kadar olup, hassas ve güzel dikişler yapmanıza olanak tanır. 860 dikiş/dakika hızında çalışan VERSACE GOLD dikiş makinesi yüksek verimlilik sunar. Bu model ayrıca overlok, nakış ve yama dikişini de destekler. Ayak baskı sistemi, farklı kalınlıklardaki kumaşlarda rahatça dikiş yapmanızı sağlar. Ayrıca, bu makine overlok, jarse dikişi, düğme deliği dikişi, fermuar dikişi ve kenar dikişi yapabilir. Dairesel dikiş yapma yeteneği (serbest kol) sayesinde, kol ve pantolon paçası dikişleri kolayca yapılabilir. 9'dan 18'e kadar olan iğneleri takabilir, bu da bu modelin çok yönlülüğünü artırır."
+        }
+    },
+    "productPage": {
+        "reviews": "Yorumlar",
+        "features": "Özellikler",
+        "addToCart": "Sepete Ekle",
+        "wishlist": "İstek Listesi",
+        "share": "Paylaş",
+        "productDetail": "Ürün Detayı"
+    },
+    "components": {
+        "navbar": {
+            "items": [
+                {
+                    "title": "Ana Sayfa",
+                    "href": "/"
+                },
+                {
+                    "title": "Satış Ağı",
+                    "href": "#"
+                },
+                {
+                    "title": "Ürünler",
+                    "children": [
+                        {
+                            "title": "Dikiş Makinesi",
+                            "href": "/products/sewing-machine"
+                        },
+                        {
+                            "title": "Buharlı Pres",
+                            "href": "/products/pressure-iron"
+                        },
+                        {
+                            "title": "Elektrikli Süpürge",
+                            "href": "/products/vacuum-cleaner"
+                        },
+                        {
+                            "title": "Buhar Ütüsü",
+                            "href": "/products/steam-iron"
+                        }
+                    ]
+                },
+                {
+                    "title": "İş Birliği Talebi",
+                    "href": "#"
+                },
+                {
+                    "title": "Taksitli Satış",
+                    "href": "#"
+                }
+            ]
+        },
+        "languageSwitcher": {
+            "items": [
+                {
+                    "title": "İngilizce",
+                    "src": "/icons/unitedKingdom.svg",
+                    "language": "en"
+                },
+                {
+                    "title": "Farsça",
+                    "src": "/icons/iran.svg",
+                    "language": "fa"
+                },
+                {
+                    "title": "Türkçe",
+                    "src": "/icons/turkey.svg",
+                    "language": "tr"
+                },
+                {
+                    "title": "Rusça",
+                    "src": "/icons/russia.svg",
+                    "language": "ru"
+                },
+                {
+                    "title": "Arapça",
+                    "src": "/icons/arabia.svg",
+                    "language": "ar"
+                }
+            ]
+        },
+        "hero": {
+            "title": "Jantek",
+            "description": "Hayatın hissini veren ses."
+        },
+        "productCard": {
+            "button": "Sepete ekle",
+            "currency": "Rial"
+        },
+        "adminForm": {
+            "name": "İsim",
+            "description": "Açıklama",
+            "category": "Kategori",
+            "price": "Fiyat",
+            "score": "Gol",
+            "image": "Resim",
+            "featureTitle": "Özellik Başlığı",
+            "featureValue": "Özellik Değeri",
+            "details": "Ürün Açıklaması...",
+            "submit": "Göndermek"
+        },
+        "filterForm": {
+            "filter": "Filtrele",
+            "sewing-machine": {
+                "fields": [
+                    {
+                        "name": "Fiyat",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Dikiş Makinesi Kullanımı",
+                        "items": [
+                            {
+                                "name": "14 Fonksiyonlu Dikiş Makinesi",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 Fonksiyonlu Dikiş Makinesi",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dikiş Makinesi Özellikleri",
+                        "items": [
+                            {
+                                "name": "Dikiş Uzunluğu Ayarı",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Dikiş Genişliği Ayarı",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "İğne İplik Geçirici",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Kapağı",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pressure-iron": {
+                "fields": [
+                    {
+                        "name": "Fiyat",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Ütü Basınç Boyutu",
+                        "items": [
+                            {
+                                "name": "26 inç",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "32 inç",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Buhar Mekanizması",
+                        "items": [
+                            {
+                                "name": "Üstten buhar",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Her iki taraftan (üst ve alt) buhar",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Tabandan buhar",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Buhar Gücü (Watt)",
+                        "items": [
+                            {
+                                "name": "1600",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "1880",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "2200",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Su Tankı Kapasitesi",
+                        "items": [
+                            {
+                                "name": "300 ml",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "800 ml",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ütü Basınç Özellikleri",
+                        "items": [
+                            {
+                                "name": "Otomatik Buhar",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Sesli Fonksiyon",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Kireç Filtre",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vacuum-cleaner": {
+                "fields": [
+                    {
+                        "name": "Fiyat",
+                        "type": "range",
+                        "required": false
+                    },
+                    {
+                        "name": "Bluetooth Kulpa",
+                        "items": [
+                            {
+                                "name": "Evet",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "Hayır",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Temizlik Fonksiyonları",
+                        "items": [
+                            {
+                                "name": "5 Fonksiyon",
+                                "type": "checkbox",
+                                "required": false
+                            },
+                            {
+                                "name": "6 Fonksiyon",
+                                "type": "checkbox",
+                                "required": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "newsletter": {
+            "title": "Bültenimize Abone Olun",
+            "subTitle": "Yeni bloglarımız hakkında güncellemeler alın",
+            "button": "Abone Ol"
+        },
+        "footer": {
+            "title": "Negin Jan & Meh Şirketi",
+            "description": "Tahran - Cumhuriyet Caddesi - 12 Farvardin Köşesi, Blok 1047",
+            "postalcode": "1314954832",
+            "telephone": "021-66974235",
+            "items": [
+                {
+                    "title": "Hizmetler",
+                    "value": "Dahili 1400"
+                },
+                {
+                    "title": "Satış",
+                    "value": "Dahili 1301"
+                },
+                {
+                    "title": "Müşteri İlişkileri Yönetimi",
+                    "value": "Dahili 1300"
+                },
+                {
+                    "title": "Muhasebe",
+                    "value": "Dahili 1200"
+                }
+            ],
+            "copyright": "Tüm haklar Negin Jan & Meh Şirketi'ne aittir."
+        }
+    }
+}
