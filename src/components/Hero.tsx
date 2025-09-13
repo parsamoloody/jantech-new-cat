@@ -2,7 +2,7 @@
 
 import { Center, Environment, Html, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import Loading from "./Loading";
 import SewingMachineModel from "./SewingMachineModel";
 import Button from "./Button";
@@ -51,7 +51,7 @@ export default function Hero() {
     ];
   };
 
-  const adjustModelForScreenSizes = () => {
+  const adjustModelForScreenSizes = useCallback(() => {
     const width = window.innerWidth;
 
     if (width > 1300) setScale(14);
@@ -62,13 +62,13 @@ export default function Hero() {
     else setScale(7);
 
     setAngles(getAngles());
-  };
+  }, []);
 
   useEffect(() => {
     adjustModelForScreenSizes();
     window.addEventListener("resize", adjustModelForScreenSizes);
     return () => window.removeEventListener("resize", adjustModelForScreenSizes);
-  }, []);
+  }, [adjustModelForScreenSizes]);
 
   const handleNextAngle = () => {
     setNumAngles((prev) => (prev + 1) % angles.length);

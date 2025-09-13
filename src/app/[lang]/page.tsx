@@ -149,7 +149,7 @@ export default async function HomePage({ params }: Props) {
 
             <HomeSlider lang={lang} />
 
-            <VideoSlider />
+            <VideoSlider lang={lang} />
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">

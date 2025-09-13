@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import {  useState, useMemo } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import { Locale } from "@/lib/i18n.config";

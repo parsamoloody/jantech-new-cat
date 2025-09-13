@@ -387,6 +387,21 @@
             "description": "Elektrik süpürgelerimiz maksimum emiş gücü ve verimlilik için tasarlanmıştır."
         }
     ]
+},
+"videoSlides": {
+    "title": "Ürünlerimizi eylem halinde keşfedin",
+    "items": [
+        {
+            "title": "Dikiş Makinesi",
+            "description": "Dikiş makinemizi iş başında izleyin, güzel kıyafetleri kolayca yaratıyor.",
+            "video": "/videos/jantechVideo.mp4"
+        },
+        {
+            "title": "Müşteri Desteği",
+            "description": "Müşteri destek ekibimizin, kullanıcıların dikiş makineleriyle nasıl yardımcı olduğunu görün.",
+            "video": "/videos/steamPressureVideo.mp4"
+        }
+    ]
 }
 
 }

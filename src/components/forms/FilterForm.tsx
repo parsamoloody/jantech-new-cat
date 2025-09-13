@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
-import { BiFilter } from "react-icons/bi";
 import { useAppSelector } from '@/lib/states/hooks';
 import { FaFilterCircleXmark } from 'react-icons/fa6';
 import Button from '../Button';
@@ -19,7 +18,7 @@ export default function FilterForm({
 }: Props) {
     const [isOpen, setIsOpen] = useState(false);
     const t = useAppSelector(state => state.dictionary.content?.components.filterForm);
-    const { register, handleSubmit, setValue, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, setValue, reset } = useForm();
     const [rangeValue, setRangeValue] = useState(0);
 
     const formatValue = (value: number) => value.toLocaleString();

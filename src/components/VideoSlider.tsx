@@ -1,36 +1,58 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {SwiperSlide, Swiper } from 'swiper/react';
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import 'swiper/css';
+import { Locale } from '@/lib/i18n.config';
+import { getDictionary } from '@/lib/dictionaries';
 
-const slides = [
-    {
-        title: 'Sewing machine',
-        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum',
-        video: '/videos/jantechVideo.mp4',
-    },
-    {
-        title: 'Steam pressure',
-        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum',
-        video: '/videos/steamPressureVideo.mp4',
-    },
-];
+const mock = {
+    "title": "Explore our products in action",
+    "items": [
+        {
+            "title": "Sewing Machine",
+            "description": "Watch our sewing machine in action, creating beautiful garments with ease.",
+                "video": "/videos/sewingMachine.mp4"
+            },
+            {
+                "title": "Customer Support",
+                "description": "See how our customer support team assists users with their sewing machines.",
+                "video": "/videos/supportVideo.mp4"
+            }
+        ]
+    };
 
-export default function VideoSlider() {
+export default function VideoSlider({lang}: {lang: Locale}) {
     const swiperRef = useRef<any>(null);
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const [isPlaying, setIsPlaying] = useState(true);
     const [progress, setProgress] = useState(0);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [slides, setSlides] = useState<{ items: { description: string, title: string, video: string }[], title: string }>(mock);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setIsLoading(true);
+                const services = (await getDictionary(lang)).videoSlides;
+                setSlides(services);
+            } catch (error) {
+                console.error('Error fetching slides:', error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        fetchData();
+    }, [lang]);
 
     const handleEnded = () => {
         const swiper = swiperRef.current?.swiper;
         if (!swiper) return;
     
-        if (swiper.activeIndex === slides.length - 1) {
+        if (swiper.activeIndex === slides.items.length - 1) {
             swiper.slideTo(0);
         } else {
             swiper.slideNext();
@@ -67,7 +89,7 @@ export default function VideoSlider() {
         if (!swiper) return;
     
         if (swiper.activeIndex === 0) {
-            swiper.slideTo(slides.length - 1);
+            swiper.slideTo(slides.items.length - 1);
         } else {
             swiper.slidePrev();
         }
@@ -76,8 +98,8 @@ export default function VideoSlider() {
     const handleNext = () => {
         const swiper = swiperRef.current?.swiper;
         if (!swiper) return;
-    
-        if (swiper.activeIndex === slides.length - 1) {
+
+        if (swiper.activeIndex === slides.items.length - 1) {
             swiper.slideTo(0);
         } else {
             swiper.slideNext();
@@ -92,6 +114,9 @@ export default function VideoSlider() {
         }
     }, [activeIndex]);
 
+    if (isLoading || !slides?.items) {
+        return <div>Loading...</div>;
+    }
     return (
         <div className="relative w-full">
             <Swiper
@@ -106,7 +131,7 @@ export default function VideoSlider() {
                     });
                 }}
             >
-                {slides.map((slide, index) => (
+                {slides.items.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div className="relative w-full h-[500px]">
                             <video
@@ -134,7 +159,7 @@ export default function VideoSlider() {
 
             <div className="absolute bottom-4 left-1/2 z-40 -translate-x-1/2 w-full px-4">
                 <div className="flex flex-wrap justify-center items-center gap-4">
-                    {slides.map((_, index) => (
+                    {slides.items.map((_, index) => (
                         <div
                             key={index}
                             onClick={() => handleProgressClick(index)}

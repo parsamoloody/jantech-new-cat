@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { useAppSelector } from "@/lib/states/hooks";
 import { useParams } from "next/navigation";
-import { FaStar } from "react-icons/fa6";
-import Link, { LinkProps } from "next/link";
+import Link  from "next/link";
 import { Locale } from "@/lib/i18n.config";
 import { Category } from "@/types";
 import { useRouter } from "next/navigation";
@@ -17,7 +16,7 @@ interface Props {
   score: string;
 }
 
-export default function ProductCard({ _id, name, price, image, score }: Props) {
+export default function ProductCard({ _id, name, price, image }: Props) {
   const t = useAppSelector((state) => state.dictionary.content?.components.productCard);
   const lang = useParams().lang as Locale;
   const category = useParams().category as Category;

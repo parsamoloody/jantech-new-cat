@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { FaStar } from "react-icons/fa";
 import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/i18n.config';
 import ShareButton from '@/components/ShareButton';
@@ -65,7 +64,7 @@ export default async function ProductPage({
                     <div className="mt-8">
                         <h3 className="text-lg font-medium text-gray-900">{t.features}</h3>
                         <div className="mt-4 space-y-4">
-                            {data.features.map((feature: any) => (
+                            {data.features.map((feature: { id: string; key: string; value: string; }) => (
                                 <div key={feature.id} className="flex items-center">
                                     <div className="text-sm font-medium text-gray-500">
                                         {feature.key}:

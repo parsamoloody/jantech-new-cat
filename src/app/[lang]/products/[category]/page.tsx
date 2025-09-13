@@ -40,7 +40,7 @@ export default function ProductsPage() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const swiperRef = useRef<SwiperType | null>(null);
-  const [mainImage, setMainImage] = useState("");
+  // const [mainImage, setMainImage] = useState("");
 
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
@@ -50,7 +50,7 @@ export default function ProductsPage() {
       const response = await axios.get(
         `http://localhost:8000/api/products/${category}?lang=${lang}&page=${pageNumber}&limit=${limit}`
       );
-      const data = response.data;
+      const data = response.data; 
 
       setProducts(data);
 
@@ -83,7 +83,7 @@ export default function ProductsPage() {
     if (swiperRef.current) {
       swiperRef.current.slideTo(0);
     }
-  }, [mainImage]);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);

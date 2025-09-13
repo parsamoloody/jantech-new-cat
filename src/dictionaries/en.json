@@ -387,5 +387,20 @@
                 "description": "Our vacuum cleaners are designed for maximum suction and efficiency."
             }
         ]
+    },
+    "videoSlides": {
+        "title": "Explore our products in action",
+        "items":[
+            {
+                "title": "Sewing Machine",
+                "description": "Watch our sewing machine in action, creating beautiful garments with ease.",
+                "video": "/videos/jantechVideo.mp4"
+            },
+            {
+                "title": "Customer Support",
+                "description": "See how our customer support team assists users with their sewing machines.",
+                "video": "/videos/steamPressureVideo.mp4"
+            }
+        ]
     }
 }
