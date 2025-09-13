@@ -345,5 +345,47 @@
             ],
             "copyright": "All rights reserved for Negin Jan & Meh Company."
         }
+    },
+    "services": {
+        "title": "Why Choose Us?",
+        "items": [
+            {
+                "title": "High Quality",
+                "description": "We offer only top-tier, carefully selected products built to last."
+            },
+            {
+                "title": "Fast Shipping",
+                "description": "Quick, reliable delivery straight to your door, wherever you are."
+            },
+            {
+                "title": "Customer Support",
+                "description": "We are here to help with any questions you have, any time."
+            }
+        ]
+    },
+    "someProducts": {
+        "title": "Featured Products",
+        "items": [
+            {
+                "image": "sewingMachine.webp",
+                "title": "Sewing Machine",
+                "description": "Our sewing machines are designed for home use. Our sewing machines are beautiful and efficient."
+            },
+            {
+                "image": "pressureIron.webp",
+                "title": "Pressure Iron",
+                "description": "Our pressure irons are lightweight and easy to use, making ironing a breeze."
+            },
+            {
+                "image": "steamIron.webp",
+                "title": "Steam Iron",
+                "description": "Our steam irons provide powerful steam output for the best ironing results."
+            },
+            {
+                "image": "vacuumCleaner.webp",
+                "title": "Vacuum Cleaner",
+                "description": "Our vacuum cleaners are designed for maximum suction and efficiency."
+            }
+        ]
     }
 }

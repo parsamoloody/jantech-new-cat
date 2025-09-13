@@ -345,5 +345,48 @@
             ],
             "copyright": "Tüm haklar Negin Jan & Meh Şirketi'ne aittir."
         }
-    }
+    },
+     "services": {
+        "title": "Neden Bizi Seçmelisiniz?",
+        "items": [
+            {
+                "title": "Yüksek Kalite",
+                "description": "Sadece uzun ömürlü, titizlikle seçilmiş üst düzey ürünler sunuyoruz."
+            },
+            {
+                "title": "Hızlı Teslimat",
+                "description": "Nerede olursanız olun, kapınıza kadar hızlı ve güvenilir teslimat."
+            },
+            {
+                "title": "Müşteri Desteği",
+                "description": "Herhangi bir sorunuz olduğunda size yardımcı olmak için buradayız."
+            }
+        ]
+    },
+    "someProducts": {
+        "title": "Öne Çıkan Ürünler",
+    "items": [
+        {
+            "image": "sewingMachine.webp",
+            "title": "Dikiş Makinesi",
+            "description": "Dikiş makinelerimiz ev kullanımı için tasarlanmıştır. Makinelerimiz güzel ve verimlidir."
+        },
+        {
+            "image": "pressureIron.webp",
+            "title": "Basınçlı Ütü",
+            "description": "Basınçlı ütülerimiz hafif ve kullanımı kolaydır, ütülemeyi kolaylaştırır."
+        },
+        {
+            "image": "steamIron.webp",
+            "title": "Buharlı Ütü",
+            "description": "Buharlı ütülerimiz güçlü buhar çıkışı sağlayarak en iyi ütüleme sonuçlarını sunar."
+        },
+        {
+            "image": "vacuumCleaner.webp",
+            "title": "Elektrik Süpürgesi",
+            "description": "Elektrik süpürgelerimiz maksimum emiş gücü ve verimlilik için tasarlanmıştır."
+        }
+    ]
+}
+
 }

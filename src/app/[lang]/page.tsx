@@ -5,8 +5,8 @@ import { Locale } from "@/lib/i18n.config";
 import Link from "next/link";
 import { FaStar, FaRocket, FaCogs, FaGlobe } from "react-icons/fa";
 import { FaGem, FaShippingFast, FaHeadset } from "react-icons/fa";
-import Dropdown from "@/components/Dropdown";
-import { getLangDir } from "@/utils";
+// import Dropdown from "@/components/Dropdown";
+// import { getLangDir } from "@/utils";
 
 import HomeSlider from "@/components/HomeSlider";
 import VideoSlider from "@/components/VideoSlider";
@@ -18,7 +18,8 @@ interface Props {
 export default async function HomePage({ params }: Props) {
     const { lang } = await params;
     const t = (await getDictionary(lang)).homePage;
-    const dir = getLangDir(lang);
+    const services = (await getDictionary(lang)).services;
+    // const dir = getLangDir(lang);
     if (!t) return null;
 
 
@@ -50,70 +51,70 @@ export default async function HomePage({ params }: Props) {
     ];
 
 
-    const dropdown = [
-        {
-            q: "How can I track my order?",
-            a: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-        },
-        {
-            q: "Is it possible to return a product?",
-            a: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
-        },
-        {
-            q: "Do you deliver to other cities?",
-            a: "Yes, we deliver to all cities across Iran."
-        },
-    ];
+    // const dropdown = [
+    //     {
+    //         q: "How can I track my order?",
+    //         a: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
+    //     },
+    //     {
+    //         q: "Is it possible to return a product?",
+    //         a: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
+    //     },
+    //     {
+    //         q: "Do you deliver to other cities?",
+    //         a: "Yes, we deliver to all cities across Iran."
+    //     },
+    // ];
 
-    const slides = [
-        {
-            image: "/images/sewingMachine.webp",
-            description: "Our sewing machines are designed for both home and professional use."
-        },
-        {
-            image: "/images/pressureIron.webp",
-            description: "Our sewing machines are designed for both home and professional use."
-        },
-        {
-            image: "/images/steamIron.webp",
-            description: "Our sewing machines are designed for both home and professional use."
-        },
-        {
-            image: "/images/vacuumCleaner.webp",
-            description: "Our sewing machines are designed for both home and professional use."
-        }
-    ];
+    // const slides = [
+    //     {
+    //         image: "/images/sewingMachine.webp",
+    //         description: "Our sewing machines are designed for both home and professional use."
+    //     },
+    //     {
+    //         image: "/images/pressureIron.webp",
+    //         description: "Our sewing machines are designed for both home and professional use."
+    //     },
+    //     {
+    //         image: "/images/steamIron.webp",
+    //         description: "Our sewing machines are designed for both home and professional use."
+    //     },
+    //     {
+    //         image: "/images/vacuumCleaner.webp",
+    //         description: "Our sewing machines are designed for both home and professional use."
+    //     }
+    // ];
 
-    const questions = [
-        {
-            title: "What is the return policy?",
-            content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
-        },
-        {
-            title: "How can I track my order?",
-            content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-        },
-        {
-            title: "Is it possible to return a product?",
-            content: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
-        },
-        {
-            title: "Do you deliver to other cities?",
-            content: "Yes, we deliver to all cities across Iran."
-        },
-        {
-            title: "What is the return policy?",
-            content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
-        },
-        {
-            title: "How can I track my order?",
-            content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-        }
-    ];
+    // const questions = [
+    //     {
+    //         title: "What is the return policy?",
+    //         content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
+    //     },
+    //     {
+    //         title: "How can I track my order?",
+    //         content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
+    //     },
+    //     {
+    //         title: "Is it possible to return a product?",
+    //         content: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
+    //     },
+    //     {
+    //         title: "Do you deliver to other cities?",
+    //         content: "Yes, we deliver to all cities across Iran."
+    //     },
+    //     {
+    //         title: "What is the return policy?",
+    //         content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
+    //     },
+    //     {
+    //         title: "How can I track my order?",
+    //         content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
+    //     }
+    // ];
 
-    const handleSelect = (answer: string) => {
-        console.log("جواب انتخابی:", answer);
-    };
+    // const handleSelect = (answer: string) => {
+    //     console.log("جواب انتخابی:", answer);
+    // };
 
     return (
         <div className="overflow-x-hidden">
@@ -146,39 +147,28 @@ export default async function HomePage({ params }: Props) {
                 ))}
             </div>
 
-            <HomeSlider />
+            <HomeSlider lang={lang} />
 
             <VideoSlider />
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-6">{t.featuresTitle || "Why Choose Us?"}</h2>
+                    <h2 className="text-3xl font-bold mb-6">{services.title}</h2>
                     <div className="grid gap-8 md:grid-cols-3">
-
-                        <div className="p-6 grid gap-4 bg-white shadow hover:shadow-lg transition duration-300">
-                            <div className="text-gray-600 text-4xl mb-4 flex justify-center">
-                                <FaGem />
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">High Quality</h3>
-                            <p>We offer only top-tier, carefully selected products built to last.</p>
-                        </div>
-
-                        <div className="p-6 grid gap-4 bg-white shadow hover:shadow-lg transition duration-300">
-                            <div className="text-gray-600 text-4xl mb-4 flex justify-center">
-                                <FaShippingFast />
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">Fast Shipping</h3>
-                            <p>Quick, reliable delivery straight to your door, wherever you are.</p>
-                        </div>
-
-                        <div className="p-6 grid gap-4 bg-white shadow hover:shadow-lg transition duration-300">
-                            <div className="text-gray-600 text-4xl mb-4 flex justify-center">
-                                <FaHeadset />
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">Customer Support</h3>
-                            <p>We are here to help with any questions you have, any time.</p>
-                        </div>
-
+                        {services.items.map((item, index) => {
+                            const icons = [FaGem, FaShippingFast, FaHeadset];
+                            const Icon = icons[index];
+                            
+                            return (
+                                <div key={item.title} className="p-6 grid gap-4 bg-white shadow hover:shadow-lg transition duration-300">
+                                    <div className="text-gray-600 text-4xl mb-4 flex justify-center">
+                                        <Icon />
+                                    </div>
+                                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
