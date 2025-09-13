@@ -12,14 +12,22 @@ import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/i18n.config';
 
-// Memoize individual slide component
-const SlideItem = memo(({ slide, index, isActive }: {
-    slide: { image: string; description: string; title: string };
+interface SlideItemProps {
+    slide: { 
+        image: string; 
+        description: string; 
+        title: string; 
+    };
     index: number;
     isActive: boolean;
-}) => (
+    onMouseEnter: () => void;  // Add this prop definition
+}
+
+// Memoize individual slide component
+const SlideItem = memo(({ slide, index, isActive, onMouseEnter }: SlideItemProps) => (
     <div
         className={`flex items-start pt-6 font-bold border-t-2 ${isActive ? "border-black" : "border-white"}`}
+        onMouseEnter={onMouseEnter}
     >
         <span className='text-lg px-6'>{(index + 1).toString().padStart(2, "0")}</span>
         <div className='space-y-3'>
