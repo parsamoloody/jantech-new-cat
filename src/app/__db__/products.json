@@ -1,32 +1,32 @@
 [
   {
-    "_id": "68c5831345227aba56c91277",
+    "_id": "68c5837045227aba56c912ee1",
     "ar": {
       "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
       "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
       "category": "sewing-machine",
       "price": "522.99",
       "score": "33",
-      "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-clean-master-3000-600x600.webp",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-VERSACE-GOLD-300x300.webp",
       "features": [
         {
-          "id": "51532563-402f-4d0d-91d1-ee4c41014758",
-          "key": "",
-          "value": ""
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "تعداد دوخت",
+          "value": "32 مدل"
         }
       ],
       "detailContent": ""
     },
     "en": {
-      "name": "Jantech Vacuum Cleaner Series CLEAN MASTER 3000",
-      "description": "The Jantech Vacuum Cleaner Series 3000 with a powerful 2600 watt motor and Cyclone tank offers exceptional cleaning performance. This device comes with 6 types of diverse accessories including two nozzles (standard and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, enabling efficient and easy cleaning. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Series 3000 is a reliable and practical choice for modern homes.",
+      "name": "Jantech Vacuum Cleaner Model CLEAN MASTER 3000",
+      "description": "The Jantech Vacuum Cleaner Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional cleaning performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy cleaning possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Model 3000 is a reliable and practical choice for modern homes.",
       "category": "sewing-machine",
       "price": "522.99",
       "score": "33",
-      "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-clean-master-3000-600x600.webp",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-VERSACE-GOLD-300x300.webp",
       "features": [
         {
-          "id": "51532563-402f-4d0d-91d1-ee4c41014758",
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
           "key": "",
           "value": ""
         }
@@ -35,14 +35,14 @@
     },
     "ru": {
       "name": "Пылесос Jantech серии CLEAN MASTER 3000",
-      "description": "Пылесос Jantech серии 3000 с мощностью 2600 Вт и циклонным контейнером обеспечивает непревзойденную эффективность уборки. Это устройство с 6 разнообразными аксессуарами, включая две насадки (обычную и специальную для домашних животных), щетку для мебели, щетку для углов, два постоянных мешка и пять одноразовых мешков, обеспечивает эффективную и простую уборку. С 2-месячной гарантией на замену и 60-месячной гарантией послепродажного обслуживания, пылесос Jantech серии 3000 является надежным и практичным выбором для современных домов.",
-      "category": "швейная-машина",
+      "description": "Пылесос Jantech серии 3000 с мощностью 2600 Вт и циклонным контейнером предоставляет отличную производительность при уборке. Это устройство с 6 различными аксессуарами, включая две насадки (обычную и для животных), щетку для мебели, щетку для углов, два постоянных мешка и пять одноразовых мешков, обеспечивает эффективную и простую уборку. С 2-месячной гарантией замены и 60-месячной гарантией послепродажного обслуживания, пылесос Jantech серии 3000 является надежным и практичным выбором для современных домов.",
+      "category": "sewing-machine",
       "price": "522.99",
       "score": "33",
-      "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-clean-master-3000-600x600.webp",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-VERSACE-GOLD-300x300.webp",
       "features": [
         {
-          "id": "51532563-402f-4d0d-91d1-ee4c41014758",
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
           "key": "",
           "value": ""
         }
@@ -50,15 +50,15 @@
       "detailContent": ""
     },
     "tr": {
-      "name": "Jantech Temizlik Master 3000 Süpürgesi",
-      "description": "Jantech Temizlik Master 3000 süpürgesi, 2600 Watt güçlü motoru ve Cyclone haznesi ile temizlikte eşsiz bir performans sunmaktadır. Bu cihaz, 2 adet başlık (normal ve evcil hayvanlara özel), koltuk fırçası, köşe fırçası, 2 adet kalıcı torba ve 5 adet tek kullanımlık torba dahil olmak üzere 6 çeşit çeşitli aksesuar ile verimli ve kolay temizlik imkanı sağlamaktadır. 2 aylık değiştirme garantisi ve 60 aylık satış sonrası hizmet garantisi ile Jantech Temizlik Master 3000, modern evler için güvenilir ve pratik bir seçimdir.",
+      "name": "Jantech Temizlik Ustası 3000 Serisi Elektrik Süpürgesi",
+      "description": "Jantech 3000 Serisi elektrik süpürgesi, 2600 watt'lık güçlü motoru ve Cyclone haznesi ile temizlikte olağanüstü bir performans sunmaktadır. Bu cihaz, iki tür başlık (normal ve evcil hayvanlar için özel), koltuk fırçası, duvar köşeleri için özel fırça, iki adet kalıcı torba ve beş adet tek kullanımlık torba dahil olmak üzere 6 çeşit aksesuar ile etkili ve kolay temizlik sağlanmaktadır. 2 ay değiştirme garantisi ve 60 ay satış sonrası hizmet garantisi ile Jantech 3000 Serisi elektrik süpürgesi, modern evler için güvenilir ve pratik bir seçimdir.",
       "category": "dikiş-makinesi",
       "price": "522.99",
       "score": "33",
-      "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-clean-master-3000-600x600.webp",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-VERSACE-GOLD-300x300.webp",
       "features": [
         {
-          "id": "51532563-402f-4d0d-91d1-ee4c41014758",
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
           "key": "",
           "value": ""
         }
@@ -67,14 +67,14 @@
     },
     "fa": {
       "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
-      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cycling، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
       "category": "sewing-machine",
       "price": "522.99",
       "score": "33",
-      "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-clean-master-3000-600x600.webp",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-VERSACE-GOLD-300x300.webp",
       "features": [
         {
-          "id": "51532563-402f-4d0d-91d1-ee4c41014758",
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
           "key": "",
           "value": ""
         }
@@ -83,7 +83,256 @@
     }
   },
   {
-    "_id": "68c5837045227aba56c912ee",
+    "_id": "68c5837045227aba56c912ee2",
+    "ar": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-HERMES-SILVER-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "en": {
+      "name": "Jantech Vacuum Cleaner Model CLEAN MASTER 3000",
+      "description": "The Jantech Vacuum Cleaner Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional cleaning performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy cleaning possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Model 3000 is a reliable and practical choice for modern homes.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-HERMES-SILVER-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "ru": {
+      "name": "Пылесос Jantech серии CLEAN MASTER 3000",
+      "description": "Пылесос Jantech серии 3000 с мощностью 2600 Вт и циклонным контейнером предоставляет отличную производительность при уборке. Это устройство с 6 различными аксессуарами, включая две насадки (обычную и для животных), щетку для мебели, щетку для углов, два постоянных мешка и пять одноразовых мешков, обеспечивает эффективную и простую уборку. С 2-месячной гарантией замены и 60-месячной гарантией послепродажного обслуживания, пылесос Jantech серии 3000 является надежным и практичным выбором для современных домов.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-HERMES-SILVER-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "tr": {
+      "name": "Jantech Temizlik Ustası 3000 Serisi Elektrik Süpürgesi",
+      "description": "Jantech 3000 Serisi elektrik süpürgesi, 2600 watt'lık güçlü motoru ve Cyclone haznesi ile temizlikte olağanüstü bir performans sunmaktadır. Bu cihaz, iki tür başlık (normal ve evcil hayvanlar için özel), koltuk fırçası, duvar köşeleri için özel fırça, iki adet kalıcı torba ve beş adet tek kullanımlık torba dahil olmak üzere 6 çeşit aksesuar ile etkili ve kolay temizlik sağlanmaktadır. 2 ay değiştirme garantisi ve 60 ay satış sonrası hizmet garantisi ile Jantech 3000 Serisi elektrik süpürgesi, modern evler için güvenilir ve pratik bir seçimdir.",
+      "category": "dikiş-makinesi",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-HERMES-SILVER-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "fa": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cycling، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/11/jantech-website-template-HERMES-SILVER-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    }
+  },
+  {
+    "_id": "68c5837045227aba56c912ee3",
+    "ar": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/08/jantech-sewing-machine-ssp1050-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "en": {
+      "name": "Jantech Vacuum Cleaner Model CLEAN MASTER 3000",
+      "description": "The Jantech Vacuum Cleaner Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional cleaning performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy cleaning possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Model 3000 is a reliable and practical choice for modern homes.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/08/jantech-sewing-machine-ssp1050-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "ru": {
+      "name": "Пылесос Jantech серии CLEAN MASTER 3000",
+      "description": "Пылесос Jantech серии 3000 с мощностью 2600 Вт и циклонным контейнером предоставляет отличную производительность при уборке. Это устройство с 6 различными аксессуарами, включая две насадки (обычную и для животных), щетку для мебели, щетку для углов, два постоянных мешка и пять одноразовых мешков, обеспечивает эффективную и простую уборку. С 2-месячной гарантией замены и 60-месячной гарантией послепродажного обслуживания, пылесос Jantech серии 3000 является надежным и практичным выбором для современных домов.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/08/jantech-sewing-machine-ssp1050-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "tr": {
+      "name": "Jantech Temizlik Ustası 3000 Serisi Elektrik Süpürgesi",
+      "description": "Jantech 3000 Serisi elektrik süpürgesi, 2600 watt'lık güçlü motoru ve Cyclone haznesi ile temizlikte olağanüstü bir performans sunmaktadır. Bu cihaz, iki tür başlık (normal ve evcil hayvanlar için özel), koltuk fırçası, duvar köşeleri için özel fırça, iki adet kalıcı torba ve beş adet tek kullanımlık torba dahil olmak üzere 6 çeşit aksesuar ile etkili ve kolay temizlik sağlanmaktadır. 2 ay değiştirme garantisi ve 60 ay satış sonrası hizmet garantisi ile Jantech 3000 Serisi elektrik süpürgesi, modern evler için güvenilir ve pratik bir seçimdir.",
+      "category": "dikiş-makinesi",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/08/jantech-sewing-machine-ssp1050-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "fa": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cycling، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2024/08/jantech-sewing-machine-ssp1050-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    }
+  },
+  {
+    "_id": "68c5837045227aba56c912ee4",
+    "ar": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2023/02/jantech-sewing-machine-ssp808-2-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "en": {
+      "name": "Jantech Vacuum Cleaner Model CLEAN MASTER 3000",
+      "description": "The Jantech Vacuum Cleaner Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional cleaning performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy cleaning possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Model 3000 is a reliable and practical choice for modern homes.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2023/02/jantech-sewing-machine-ssp808-2-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "ru": {
+      "name": "Пылесос Jantech серии CLEAN MASTER 3000",
+      "description": "Пылесос Jantech серии 3000 с мощностью 2600 Вт и циклонным контейнером предоставляет отличную производительность при уборке. Это устройство с 6 различными аксессуарами, включая две насадки (обычную и для животных), щетку для мебели, щетку для углов, два постоянных мешка и пять одноразовых мешков, обеспечивает эффективную и простую уборку. С 2-месячной гарантией замены и 60-месячной гарантией послепродажного обслуживания, пылесос Jantech серии 3000 является надежным и практичным выбором для современных домов.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2023/02/jantech-sewing-machine-ssp808-2-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "tr": {
+      "name": "Jantech Temizlik Ustası 3000 Serisi Elektrik Süpürgesi",
+      "description": "Jantech 3000 Serisi elektrik süpürgesi, 2600 watt'lık güçlü motoru ve Cyclone haznesi ile temizlikte olağanüstü bir performans sunmaktadır. Bu cihaz, iki tür başlık (normal ve evcil hayvanlar için özel), koltuk fırçası, duvar köşeleri için özel fırça, iki adet kalıcı torba ve beş adet tek kullanımlık torba dahil olmak üzere 6 çeşit aksesuar ile etkili ve kolay temizlik sağlanmaktadır. 2 ay değiştirme garantisi ve 60 ay satış sonrası hizmet garantisi ile Jantech 3000 Serisi elektrik süpürgesi, modern evler için güvenilir ve pratik bir seçimdir.",
+      "category": "dikiş-makinesi",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2023/02/jantech-sewing-machine-ssp808-2-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    },
+    "fa": {
+      "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+      "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cycling، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+      "category": "sewing-machine",
+      "price": "522.99",
+      "score": "33",
+      "image": "https://jantech.ir/wp-content/uploads/2023/02/jantech-sewing-machine-ssp808-2-600x600.webp",
+      "features": [
+        {
+          "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+          "key": "",
+          "value": ""
+        }
+      ],
+      "detailContent": ""
+    }
+  },
+  {
+    "_id": "68c5837045227aba56c912ee5",
     "ar": {
       "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
       "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
