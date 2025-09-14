@@ -52,7 +52,7 @@ export default function ProductsPage() {
       // );
       // let data = response.data;
       // if (!data) {
-        const {data} = await axios.get(`/api/products?lang=en&category=${category}`);
+        const {data} = await axios.get(`https://smartcd-asj2a0p1o-parsamoloodys-projects.vercel.app/api/products?lang=${lang}&category=${category}`);
       // }
 
       setProducts(data);
