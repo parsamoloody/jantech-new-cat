@@ -15,7 +15,7 @@ export default async function ProductPage({
     const { lang, category, id } = await params;
     const t = (await getDictionary(lang)).productPage;
 
-    const { data } = await axios.get(`https://smartcd-asj2a0p1o-parsamoloodys-projects.vercel.app/api/products?lang=${lang}&category=${category}&id=${id}`);
+    const  data = await fetch(`https://smartcd-asj2a0p1o-parsamoloodys-projects.vercel.app/api/products?lang=${lang}&category=${category}&id=${id}`).then(res => res.json());
     console.log("image:", data[0].image);
     if (!t || !data[0]) return null;
 
