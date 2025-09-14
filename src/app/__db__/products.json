@@ -513,5 +513,505 @@
             ],
             "detailContent": ""
         }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee7",
+        "ar": {
+            "name": "مكواة بخار جانتك موديل 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7800-600x600.webp",
+            "description": "مكواة بخار جانتك موديل 7800 بقوة بخار 2200 واط وإخراج بخار 120 غرامًا في الدقيقة، مزودة بغلاية بخار ونظام بخار من الأسفل، وهي واحدة من أقوى وأكثر مكواة البخار شهرة في السوق. تصبح جاهزة للبخار في 3 دقائق، ويوفر نظام البخار من الأسفل أداءً سريعًا وفعالًا. سعة الخزان 800 مل، وقوة الضغط 50 كجم، مما يتيح الكي لفترات طويلة. الفلتر الداخلي ومستشعر EMC يزيدان من متانة الجهاز. يتميز هذا الموديل باللون الأبيض مع مقبض وقاعدة بيضاء، ويعتبر من أفضل وأعلى جودة مكواة بخار جانتك.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "الحجم",
+                    "value": "26 بوصة"
+                },
+                {
+                    "key": "مستوى البخار",
+                    "value": "بخار من الأسفل"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech 7800 Model Steam Iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7800-600x600.webp",
+            "description": "The Jantech 7800 model steam iron, with 2200 watts of steam power and an output of 120 grams per minute, equipped with a steam boiler and bottom steam system, is one of the most powerful and popular steam irons on the market. It is ready to steam in 3 minutes, and the bottom steam system provides fast and effective performance. With an 800 cc tank capacity and 50 kg pressing power, it enables long-term ironing. The internal filter and EMC sensor increase the device's durability. This model, with a white color, white handle, and base, is introduced as one of Jantech's best and highest-quality steam irons.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Size",
+                    "value": "26 inches"
+                },
+                {
+                    "key": "Steam Level",
+                    "value": "Bottom Steam"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Паровой утюг Jantech модель 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7800-600x600.webp",
+            "description": "Паровой утюг Jantech модель 7800 с мощностью пара 2200 Вт и выходом пара 120 граммов в минуту, оснащённый паровым котлом и системой подачи пара снизу, является одним из самых мощных и популярных паровых утюгов на рынке. Готов к подаче пара за 3 минуты, а система подачи пара снизу обеспечивает быструю и эффективную работу. Объём резервуара 800 мл и сила прессования 50 кг позволяют гладить в течение длительного времени. Внутренний фильтр и датчик EMC повышают долговечность устройства. Эта модель, выполненная в белом цвете с белой ручкой и основанием, представлена как один из лучших и наиболее качественных паровых утюгов Jantech.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Размер",
+                    "value": "26 дюймов"
+                },
+                {
+                    "key": "Уровень пара",
+                    "value": "Пар снизу"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech 7800 Model Buharlı Ütü",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7800-600x600.webp",
+            "description": "2200 watt buhar gücü ve dakikada 120 gram buhar çıkışı ile Jantech 7800 model buharlı ütü, buhar kazanı ve tabandan buhar sistemi ile donatılmış, piyasadaki en güçlü ve popüler buharlı ütülerden biridir. 3 dakikada buhara hazır hale gelir ve tabandan buhar sistemi hızlı ve etkili bir performans sunar. 800 cc'lik hazne kapasitesi ve 50 kg'lık pres gücü, uzun süreli ütülemeyi mümkün kılar. Dahili filtre ve EMC sensörü cihazın dayanıklılığını artırır. Beyaz renk, beyaz sap ve taban ile bu model, Jantech'in en iyi ve en yüksek kaliteli buharlı ütülerinden biri olarak tanıtılmaktadır.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Boyut",
+                    "value": "26 inç"
+                },
+                {
+                    "key": "Buhar Seviyesi",
+                    "value": "Tabandan Buhar"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "اتو پرس جانتک مدل 7800",
+            "description": "اتو پرس جانتک مدل 7800 با قدرت بخار 2200 وات و خروجی 120 گرم در دقیقه مجهز به دیگ بخار و سیستم بخار از کف، یکی از قویترین و محبوب‌ترین اتو پرس‌های بازار است. آمادگی بخار در 3 دقیقه و سیستم بخار از کف، عملکرد سریع و موثری را ارائه می‌دهد. حجم مخزن 800 سی‌سی و قدرت پرس 50 کیلوگرم، اتوکشی طولانی‌مدت را ممکن می‌سازد. فیلتر داخلی و سنسور EMC، دوام دستگاه را افزایش می‌دهد. این مدل با رنگ سفید و دسته و پایه سفید، به عنوان یکی از برترین و با کیفیت‌ترین اتو پرس‌های جانتک معرفی شده است.",
+            "category": "pressure-iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7800-600x600.webp",
+            "features": [
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سایز",
+                    "value": "26 اینچ"
+                },
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سطح بخار",
+                    "value": "بخار از کف"
+                }
+            ],
+            "detailContent": ""
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee8",
+        "ar": {
+            "name": "مكواة بخار جانتك موديل 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7600-600x600.webp",
+            "description": "مكواة بخار جانتك موديل 7800 بقوة بخار 2200 واط وإخراج بخار 120 غرامًا في الدقيقة، مزودة بغلاية بخار ونظام بخار من الأسفل، وهي واحدة من أقوى وأكثر مكواة البخار شهرة في السوق. تصبح جاهزة للبخار في 3 دقائق، ويوفر نظام البخار من الأسفل أداءً سريعًا وفعالًا. سعة الخزان 800 مل، وقوة الضغط 50 كجم، مما يتيح الكي لفترات طويلة. الفلتر الداخلي ومستشعر EMC يزيدان من متانة الجهاز. يتميز هذا الموديل باللون الأبيض مع مقبض وقاعدة بيضاء، ويعتبر من أفضل وأعلى جودة مكواة بخار جانتك.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "الحجم",
+                    "value": "26 بوصة"
+                },
+                {
+                    "key": "مستوى البخار",
+                    "value": "بخار من الأسفل"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech 7800 Model Steam Iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7600-600x600.webp",
+            "description": "The Jantech 7800 model steam iron, with 2200 watts of steam power and an output of 120 grams per minute, equipped with a steam boiler and bottom steam system, is one of the most powerful and popular steam irons on the market. It is ready to steam in 3 minutes, and the bottom steam system provides fast and effective performance. With an 800 cc tank capacity and 50 kg pressing power, it enables long-term ironing. The internal filter and EMC sensor increase the device's durability. This model, with a white color, white handle, and base, is introduced as one of Jantech's best and highest-quality steam irons.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Size",
+                    "value": "26 inches"
+                },
+                {
+                    "key": "Steam Level",
+                    "value": "Bottom Steam"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Паровой утюг Jantech модель 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7600-600x600.webp",
+            "description": "Паровой утюг Jantech модель 7800 с мощностью пара 2200 Вт и выходом пара 120 граммов в минуту, оснащённый паровым котлом и системой подачи пара снизу, является одним из самых мощных и популярных паровых утюгов на рынке. Готов к подаче пара за 3 минуты, а система подачи пара снизу обеспечивает быструю и эффективную работу. Объём резервуара 800 мл и сила прессования 50 кг позволяют гладить в течение длительного времени. Внутренний фильтр и датчик EMC повышают долговечность устройства. Эта модель, выполненная в белом цвете с белой ручкой и основанием, представлена как один из лучших и наиболее качественных паровых утюгов Jantech.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Размер",
+                    "value": "26 дюймов"
+                },
+                {
+                    "key": "Уровень пара",
+                    "value": "Пар снизу"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech 7800 Model Buharlı Ütü",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7600-600x600.webp",
+            "description": "2200 watt buhar gücü ve dakikada 120 gram buhar çıkışı ile Jantech 7800 model buharlı ütü, buhar kazanı ve tabandan buhar sistemi ile donatılmış, piyasadaki en güçlü ve popüler buharlı ütülerden biridir. 3 dakikada buhara hazır hale gelir ve tabandan buhar sistemi hızlı ve etkili bir performans sunar. 800 cc'lik hazne kapasitesi ve 50 kg'lık pres gücü, uzun süreli ütülemeyi mümkün kılar. Dahili filtre ve EMC sensörü cihazın dayanıklılığını artırır. Beyaz renk, beyaz sap ve taban ile bu model, Jantech'in en iyi ve en yüksek kaliteli buharlı ütülerinden biri olarak tanıtılmaktadır.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Boyut",
+                    "value": "26 inç"
+                },
+                {
+                    "key": "Buhar Seviyesi",
+                    "value": "Tabandan Buhar"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "اتو پرس جانتک مدل 7800",
+            "description": "اتو پرس جانتک مدل 7800 با قدرت بخار 2200 وات و خروجی 120 گرم در دقیقه مجهز به دیگ بخار و سیستم بخار از کف، یکی از قویترین و محبوب‌ترین اتو پرس‌های بازار است. آمادگی بخار در 3 دقیقه و سیستم بخار از کف، عملکرد سریع و موثری را ارائه می‌دهد. حجم مخزن 800 سی‌سی و قدرت پرس 50 کیلوگرم، اتوکشی طولانی‌مدت را ممکن می‌سازد. فیلتر داخلی و سنسور EMC، دوام دستگاه را افزایش می‌دهد. این مدل با رنگ سفید و دسته و پایه سفید، به عنوان یکی از برترین و با کیفیت‌ترین اتو پرس‌های جانتک معرفی شده است.",
+            "category": "pressure-iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/7600-600x600.webp",
+            "features": [
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سایز",
+                    "value": "26 اینچ"
+                },
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سطح بخار",
+                    "value": "بخار از کف"
+                }
+            ],
+            "detailContent": ""
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee9",
+        "ar": {
+            "name": "مكواة بخار جانتك موديل 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "مكواة بخار جانتك موديل 7800 بقوة بخار 2200 واط وإخراج بخار 120 غرامًا في الدقيقة، مزودة بغلاية بخار ونظام بخار من الأسفل، وهي واحدة من أقوى وأكثر مكواة البخار شهرة في السوق. تصبح جاهزة للبخار في 3 دقائق، ويوفر نظام البخار من الأسفل أداءً سريعًا وفعالًا. سعة الخزان 800 مل، وقوة الضغط 50 كجم، مما يتيح الكي لفترات طويلة. الفلتر الداخلي ومستشعر EMC يزيدان من متانة الجهاز. يتميز هذا الموديل باللون الأبيض مع مقبض وقاعدة بيضاء، ويعتبر من أفضل وأعلى جودة مكواة بخار جانتك.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "الحجم",
+                    "value": "26 بوصة"
+                },
+                {
+                    "key": "مستوى البخار",
+                    "value": "بخار من الأسفل"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech 7800 Model Steam Iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "The Jantech 7800 model steam iron, with 2200 watts of steam power and an output of 120 grams per minute, equipped with a steam boiler and bottom steam system, is one of the most powerful and popular steam irons on the market. It is ready to steam in 3 minutes, and the bottom steam system provides fast and effective performance. With an 800 cc tank capacity and 50 kg pressing power, it enables long-term ironing. The internal filter and EMC sensor increase the device's durability. This model, with a white color, white handle, and base, is introduced as one of Jantech's best and highest-quality steam irons.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Size",
+                    "value": "26 inches"
+                },
+                {
+                    "key": "Steam Level",
+                    "value": "Bottom Steam"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Паровой утюг Jantech модель 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "Паровой утюг Jantech модель 7800 с мощностью пара 2200 Вт и выходом пара 120 граммов в минуту, оснащённый паровым котлом и системой подачи пара снизу, является одним из самых мощных и популярных паровых утюгов на рынке. Готов к подаче пара за 3 минуты, а система подачи пара снизу обеспечивает быструю и эффективную работу. Объём резервуара 800 мл и сила прессования 50 кг позволяют гладить в течение длительного времени. Внутренний фильтр и датчик EMC повышают долговечность устройства. Эта модель, выполненная в белом цвете с белой ручкой и основанием, представлена как один из лучших и наиболее качественных паровых утюгов Jantech.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Размер",
+                    "value": "26 дюймов"
+                },
+                {
+                    "key": "Уровень пара",
+                    "value": "Пар снизу"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech 7800 Model Buharlı Ütü",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "2200 watt buhar gücü ve dakikada 120 gram buhar çıkışı ile Jantech 7800 model buharlı ütü, buhar kazanı ve tabandan buhar sistemi ile donatılmış, piyasadaki en güçlü ve popüler buharlı ütülerden biridir. 3 dakikada buhara hazır hale gelir ve tabandan buhar sistemi hızlı ve etkili bir performans sunar. 800 cc'lik hazne kapasitesi ve 50 kg'lık pres gücü, uzun süreli ütülemeyi mümkün kılar. Dahili filtre ve EMC sensörü cihazın dayanıklılığını artırır. Beyaz renk, beyaz sap ve taban ile bu model, Jantech'in en iyi ve en yüksek kaliteli buharlı ütülerinden biri olarak tanıtılmaktadır.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Boyut",
+                    "value": "26 inç"
+                },
+                {
+                    "key": "Buhar Seviyesi",
+                    "value": "Tabandan Buhar"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "اتو پرس جانتک مدل 7800",
+            "description": "اتو پرس جانتک مدل 7800 با قدرت بخار 2200 وات و خروجی 120 گرم در دقیقه مجهز به دیگ بخار و سیستم بخار از کف، یکی از قویترین و محبوب‌ترین اتو پرس‌های بازار است. آمادگی بخار در 3 دقیقه و سیستم بخار از کف، عملکرد سریع و موثری را ارائه می‌دهد. حجم مخزن 800 سی‌سی و قدرت پرس 50 کیلوگرم، اتوکشی طولانی‌مدت را ممکن می‌سازد. فیلتر داخلی و سنسور EMC، دوام دستگاه را افزایش می‌دهد. این مدل با رنگ سفید و دسته و پایه سفید، به عنوان یکی از برترین و با کیفیت‌ترین اتو پرس‌های جانتک معرفی شده است.",
+            "category": "pressure-iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "features": [
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سایز",
+                    "value": "26 اینچ"
+                },
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سطح بخار",
+                    "value": "بخار از کف"
+                }
+            ],
+            "detailContent": ""
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee9",
+        "ar": {
+            "name": "مكواة بخار جانتك موديل 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "مكواة بخار جانتك موديل 7800 بقوة بخار 2200 واط وإخراج بخار 120 غرامًا في الدقيقة، مزودة بغلاية بخار ونظام بخار من الأسفل، وهي واحدة من أقوى وأكثر مكواة البخار شهرة في السوق. تصبح جاهزة للبخار في 3 دقائق، ويوفر نظام البخار من الأسفل أداءً سريعًا وفعالًا. سعة الخزان 800 مل، وقوة الضغط 50 كجم، مما يتيح الكي لفترات طويلة. الفلتر الداخلي ومستشعر EMC يزيدان من متانة الجهاز. يتميز هذا الموديل باللون الأبيض مع مقبض وقاعدة بيضاء، ويعتبر من أفضل وأعلى جودة مكواة بخار جانتك.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "الحجم",
+                    "value": "26 بوصة"
+                },
+                {
+                    "key": "مستوى البخار",
+                    "value": "بخار من الأسفل"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech 7800 Model Steam Iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "The Jantech 7800 model steam iron, with 2200 watts of steam power and an output of 120 grams per minute, equipped with a steam boiler and bottom steam system, is one of the most powerful and popular steam irons on the market. It is ready to steam in 3 minutes, and the bottom steam system provides fast and effective performance. With an 800 cc tank capacity and 50 kg pressing power, it enables long-term ironing. The internal filter and EMC sensor increase the device's durability. This model, with a white color, white handle, and base, is introduced as one of Jantech's best and highest-quality steam irons.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Size",
+                    "value": "26 inches"
+                },
+                {
+                    "key": "Steam Level",
+                    "value": "Bottom Steam"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Паровой утюг Jantech модель 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "Паровой утюг Jantech модель 7800 с мощностью пара 2200 Вт и выходом пара 120 граммов в минуту, оснащённый паровым котлом и системой подачи пара снизу, является одним из самых мощных и популярных паровых утюгов на рынке. Готов к подаче пара за 3 минуты, а система подачи пара снизу обеспечивает быструю и эффективную работу. Объём резервуара 800 мл и сила прессования 50 кг позволяют гладить в течение длительного времени. Внутренний фильтр и датчик EMC повышают долговечность устройства. Эта модель, выполненная в белом цвете с белой ручкой и основанием, представлена как один из лучших и наиболее качественных паровых утюгов Jantech.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Размер",
+                    "value": "26 дюймов"
+                },
+                {
+                    "key": "Уровень пара",
+                    "value": "Пар снизу"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech 7800 Model Buharlı Ütü",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "description": "2200 watt buhar gücü ve dakikada 120 gram buhar çıkışı ile Jantech 7800 model buharlı ütü, buhar kazanı ve tabandan buhar sistemi ile donatılmış, piyasadaki en güçlü ve popüler buharlı ütülerden biridir. 3 dakikada buhara hazır hale gelir ve tabandan buhar sistemi hızlı ve etkili bir performans sunar. 800 cc'lik hazne kapasitesi ve 50 kg'lık pres gücü, uzun süreli ütülemeyi mümkün kılar. Dahili filtre ve EMC sensörü cihazın dayanıklılığını artırır. Beyaz renk, beyaz sap ve taban ile bu model, Jantech'in en iyi ve en yüksek kaliteli buharlı ütülerinden biri olarak tanıtılmaktadır.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Boyut",
+                    "value": "26 inç"
+                },
+                {
+                    "key": "Buhar Seviyesi",
+                    "value": "Tabandan Buhar"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "اتو پرس جانتک مدل 7800",
+            "description": "اتو پرس جانتک مدل 7800 با قدرت بخار 2200 وات و خروجی 120 گرم در دقیقه مجهز به دیگ بخار و سیستم بخار از کف، یکی از قویترین و محبوب‌ترین اتو پرس‌های بازار است. آمادگی بخار در 3 دقیقه و سیستم بخار از کف، عملکرد سریع و موثری را ارائه می‌دهد. حجم مخزن 800 سی‌سی و قدرت پرس 50 کیلوگرم، اتوکشی طولانی‌مدت را ممکن می‌سازد. فیلتر داخلی و سنسور EMC، دوام دستگاه را افزایش می‌دهد. این مدل با رنگ سفید و دسته و پایه سفید، به عنوان یکی از برترین و با کیفیت‌ترین اتو پرس‌های جانتک معرفی شده است.",
+            "category": "pressure-iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/350-600x600.webp",
+            "features": [
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سایز",
+                    "value": "26 اینچ"
+                },
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سطح بخار",
+                    "value": "بخار از کف"
+                }
+            ],
+            "detailContent": ""
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee9",
+        "ar": {
+            "name": "مكواة بخار جانتك موديل 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/LS300-400-500-600_13-600x600.webp",
+            "description": "مكواة بخار جانتك موديل 7800 بقوة بخار 2200 واط وإخراج بخار 120 غرامًا في الدقيقة، مزودة بغلاية بخار ونظام بخار من الأسفل، وهي واحدة من أقوى وأكثر مكواة البخار شهرة في السوق. تصبح جاهزة للبخار في 3 دقائق، ويوفر نظام البخار من الأسفل أداءً سريعًا وفعالًا. سعة الخزان 800 مل، وقوة الضغط 50 كجم، مما يتيح الكي لفترات طويلة. الفلتر الداخلي ومستشعر EMC يزيدان من متانة الجهاز. يتميز هذا الموديل باللون الأبيض مع مقبض وقاعدة بيضاء، ويعتبر من أفضل وأعلى جودة مكواة بخار جانتك.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "الحجم",
+                    "value": "26 بوصة"
+                },
+                {
+                    "key": "مستوى البخار",
+                    "value": "بخار من الأسفل"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech 7800 Model Steam Iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/LS300-400-500-600_13-600x600.webp",
+            "description": "The Jantech 7800 model steam iron, with 2200 watts of steam power and an output of 120 grams per minute, equipped with a steam boiler and bottom steam system, is one of the most powerful and popular steam irons on the market. It is ready to steam in 3 minutes, and the bottom steam system provides fast and effective performance. With an 800 cc tank capacity and 50 kg pressing power, it enables long-term ironing. The internal filter and EMC sensor increase the device's durability. This model, with a white color, white handle, and base, is introduced as one of Jantech's best and highest-quality steam irons.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Size",
+                    "value": "26 inches"
+                },
+                {
+                    "key": "Steam Level",
+                    "value": "Bottom Steam"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Паровой утюг Jantech модель 7800",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/LS300-400-500-600_13-600x600.webp",
+            "description": "Паровой утюг Jantech модель 7800 с мощностью пара 2200 Вт и выходом пара 120 граммов в минуту, оснащённый паровым котлом и системой подачи пара снизу, является одним из самых мощных и популярных паровых утюгов на рынке. Готов к подаче пара за 3 минуты, а система подачи пара снизу обеспечивает быструю и эффективную работу. Объём резервуара 800 мл и сила прессования 50 кг позволяют гладить в течение длительного времени. Внутренний фильтр и датчик EMC повышают долговечность устройства. Эта модель, выполненная в белом цвете с белой ручкой и основанием, представлена как один из лучших и наиболее качественных паровых утюгов Jantech.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Размер",
+                    "value": "26 дюймов"
+                },
+                {
+                    "key": "Уровень пара",
+                    "value": "Пар снизу"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech 7800 Model Buharlı Ütü",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/LS300-400-500-600_13-600x600.webp",
+            "description": "2200 watt buhar gücü ve dakikada 120 gram buhar çıkışı ile Jantech 7800 model buharlı ütü, buhar kazanı ve tabandan buhar sistemi ile donatılmış, piyasadaki en güçlü ve popüler buharlı ütülerden biridir. 3 dakikada buhara hazır hale gelir ve tabandan buhar sistemi hızlı ve etkili bir performans sunar. 800 cc'lik hazne kapasitesi ve 50 kg'lık pres gücü, uzun süreli ütülemeyi mümkün kılar. Dahili filtre ve EMC sensörü cihazın dayanıklılığını artırır. Beyaz renk, beyaz sap ve taban ile bu model, Jantech'in en iyi ve en yüksek kaliteli buharlı ütülerinden biri olarak tanıtılmaktadır.",
+            "category": "pressure-iron",
+            "features": [
+                {
+                    "key": "Boyut",
+                    "value": "26 inç"
+                },
+                {
+                    "key": "Buhar Seviyesi",
+                    "value": "Tabandan Buhar"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "اتو پرس جانتک مدل 7800",
+            "description": "اتو پرس جانتک مدل 7800 با قدرت بخار 2200 وات و خروجی 120 گرم در دقیقه مجهز به دیگ بخار و سیستم بخار از کف، یکی از قویترین و محبوب‌ترین اتو پرس‌های بازار است. آمادگی بخار در 3 دقیقه و سیستم بخار از کف، عملکرد سریع و موثری را ارائه می‌دهد. حجم مخزن 800 سی‌سی و قدرت پرس 50 کیلوگرم، اتوکشی طولانی‌مدت را ممکن می‌سازد. فیلتر داخلی و سنسور EMC، دوام دستگاه را افزایش می‌دهد. این مدل با رنگ سفید و دسته و پایه سفید، به عنوان یکی از برترین و با کیفیت‌ترین اتو پرس‌های جانتک معرفی شده است.",
+            "category": "pressure-iron",
+            "price": "432.99",
+            "score": "33",
+            "image": "https://jantech.ir/wp-content/uploads/2024/07/LS300-400-500-600_13-600x600.webp",
+            "features": [
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سایز",
+                    "value": "26 اینچ"
+                },
+                {
+                    "id": "07d43743-3579-4a9a-a977-eb2fa306d0c9",
+                    "key": "سطح بخار",
+                    "value": "بخار از کف"
+                }
+            ],
+            "detailContent": ""
+        }
     }
 ]
