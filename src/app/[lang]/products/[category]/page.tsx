@@ -52,7 +52,7 @@ export default function ProductsPage() {
       // );
       // let data = response.data;
       // if (!data) {
-        const {data} = await axios.get(`http://localhost:3000/api/products?lang=en&category=${category}`);
+        const {data} = await axios.get(`/api/products?lang=en&category=${category}`);
       // }
 
       setProducts(data);
