@@ -18,7 +18,6 @@ import { Locale } from "@/lib/i18n.config";
 import Button from "@/components/Button";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import axios from "axios";
 
 type Product = {
   _id: string;
