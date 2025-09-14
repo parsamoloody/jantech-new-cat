@@ -1290,5 +1290,103 @@
             ],
             "detailContent": ""
         }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee15",
+        "ar": {
+            "name": "مكنسة كهربائية جانتك موديل CM3000 PRO",
+            "description": "مكنسة كهربائية احترافية مع تقنية سايكلون المتطورة وفلتر HEPA قابل للغسل.",
+            "category": "vacuum-cleaner",
+            "price": "399.99",
+            "score": "32",
+            "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-techpro-master-4000-600x600.webp",
+            "features": [
+                {
+                    "key": "القدرة",
+                    "value": "3000 واط"
+                },
+                {
+                    "key": "نوع الفلتر",
+                    "value": "HEPA"
+                }
+            ],
+            "detailContent": ""
+        },
+        "en": {
+            "name": "Jantech Vacuum Cleaner CM3000 PRO",
+            "description": "Professional vacuum cleaner with advanced cyclone technology and washable HEPA filter.",
+            "category": "vacuum-cleaner",
+            "price": "399.99",
+            "score": "32",
+            "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-techpro-master-4000-600x600.webp",
+            "features": [
+                {
+                    "key": "Power",
+                    "value": "3000W"
+                },
+                {
+                    "key": "Filter Type",
+                    "value": "HEPA"
+                }
+            ],
+            "detailContent": ""
+        },
+        "ru": {
+            "name": "Пылесос Jantech CM3000 PRO",
+            "description": "Профессиональный пылесос с передовой циклонной технологией и моющимся HEPA-фильтром.",
+            "category": "vacuum-cleaner",
+            "price": "399.99",
+            "score": "32",
+            "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-techpro-master-4000-600x600.webp",
+            "features": [
+                {
+                    "key": "Мощность",
+                    "value": "3000 Вт"
+                },
+                {
+                    "key": "Тип фильтра",
+                    "value": "HEPA"
+                }
+            ],
+            "detailContent": ""
+        },
+        "tr": {
+            "name": "Jantech CM3000 PRO Elektrikli Süpürge",
+            "description": "Gelişmiş siklon teknolojisi ve yıkanabilir HEPA filtresi ile profesyonel elektrikli süpürge.",
+            "category": "vacuum-cleaner",
+            "price": "399.99",
+            "score": "32",
+            "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-techpro-master-4000-600x600.webp",
+            "features": [
+                {
+                    "key": "Güç",
+                    "value": "3000W"
+                },
+                {
+                    "key": "Filtre Tipi",
+                    "value": "HEPA"
+                }
+            ],
+            "detailContent": ""
+        },
+        "fa": {
+            "name": "جاروبرقی جانتک مدل CM3000 PRO",
+            "description": "جاروبرقی حرفه‌ای با تکنولوژی سایکلون پیشرفته و فیلتر HEPA قابل شستشو.",
+            "category": "vacuum-cleaner",
+            "price": "399.99",
+            "score": "32",
+            "image": "https://jantech.ir/wp-content/uploads/2024/06/vacuume-cleaner-jantech-techpro-master-4000-600x600.webp",
+            "features": [
+                {
+                    "key": "توان",
+                    "value": "3000 وات"
+                },
+                {
+                    "key": "نوع فیلتر",
+                    "value": "HEPA"
+                }
+            ],
+            "detailContent": ""
+        }
     }
 ]
