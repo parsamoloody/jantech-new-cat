@@ -104,8 +104,8 @@ export default function ProductsPage() {
         <div className="md:basis-[40%]">
           <div className="space-y-4 mx-auto">
             <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
-              <span className="text-7xl">S</span>
-              ewing machine
+              <span className="text-7xl">{category.slice(0, 1).toUpperCase()}</span>
+              {category.slice(1).split("-").join(" ")}
               <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
             </h3>
             <p className="line-clamp-6 md:line-clamp-[14] max-w-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, vel! Sunt quasi deleniti delectus odio sequi voluptatum officiis distinctio deserunt nobis veritatis consequatur facere, alias architecto vero ipsa. In, totam.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus suscipit distinctio quibusdam quis quaerat eum totam, nemo quia cum accusantium et nulla quisquam ipsa at magni voluptatum ullam aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatibus deserunt, aperiam modi cumque similique voluptas rem laboriosam, tempore culpa autem repellat reiciendis aspernatur inventore offic</p>
