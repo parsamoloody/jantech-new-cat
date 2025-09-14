@@ -28,6 +28,15 @@ type Product = {
   score: string;
 };
 
+
+const slogan : Record<Locale, string> = {
+  en: " take your creativity to the next level!",
+  fa: "چرخ خیاطی‌های جانتک، خلاقیتتان را به اوج بسونید!",
+  ar: "ماكينات جانتِك للخياطة، ارتقِ بإبداعك إلى القمة!",
+  ru: "поднимите своё творчество на новый уровень!",
+  tr: "yaratıcılığınızı zirveye taşıyın!"
+} ;
+
 export default function ProductsPage() {
   const category = useParams().category as Category;
   const lang = useParams().lang as Locale;
@@ -59,9 +68,6 @@ export default function ProductsPage() {
   }
   }, [lang, category]); // Added dependencies
 
-  console.log("lang:", lang);
-  console.log("category:", category);
-  console.log("catData:", cat);
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
     setLoading(true);
@@ -118,11 +124,9 @@ export default function ProductsPage() {
     { title: "pressure iron", image: "/images/pressureIron-transparent.png" },
   ];
 
-  console.log("Video URL:", cat?.video);
-
   return (
     <div className="flex flex-col md:gap-12 pt-[90px] xl:pt-20 pb-10 max-w-[1600px] mx-auto">
-      <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-4">
+      <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-8  ml-4">
         <div className="md:basis-[40%]">
           <div className="space-y-4 mx-auto">
             <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
@@ -144,19 +148,17 @@ export default function ProductsPage() {
             {
               catLoading ? (
                 "loading..."
-              ) : cat?.video ? (
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  className="w-full h-full object-cover"
-                  controls // temporarily add controls for debugging
-                >
-                  <source src={cat?.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              ) : cat?.video ?(
+                   <video
+              autoPlay
+              muted
+              loop
+              className="w-full h-full object-cover"
+            >
+              <source src={cat?.video} type="video/mp4" />
+            </video>
               ) : (
-                <p>No video available</p>
+                "loading ..."
               )
             }
             <h2
@@ -171,7 +173,13 @@ export default function ProductsPage() {
 
           <div className="flex flex-col items-center justify-center">
             <p className="writing-lr w-[100px] hidden md:flex md:justify-center md:items-center md:pt-[120px]">
-              Lorem, ipsum dolor sit amet consectetur
+          {
+            lang ?(
+              <>{slogan[lang]}</>
+            ): (
+              <>{slogan.en}</>
+            )
+          }
             </p>
             <div className="w-[150px] md:w-[200px] absolute bottom-0 end-0">
               {isClient && (
