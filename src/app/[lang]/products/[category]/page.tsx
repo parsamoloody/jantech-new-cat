@@ -52,7 +52,7 @@ export default function ProductsPage() {
       // );
       // let data = response.data;
       // if (!data) {
-        const data = await fetch(`https://smartcd-asj2a0p1o-parsamoloodys-projects.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
+        const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
       // }
 
       setProducts(data);
