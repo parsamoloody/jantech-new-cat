@@ -14,7 +14,6 @@ import { Swiper as SwiperType } from "swiper";
 import { getLangDir } from "@/utils";
 import "swiper/css";
 import "swiper/css/pagination";
-import axios from "axios";
 import { Locale } from "@/lib/i18n.config";
 import Button from "@/components/Button";
 import { IoIosArrowBack } from "react-icons/io";
