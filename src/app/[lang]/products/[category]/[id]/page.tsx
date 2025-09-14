@@ -15,7 +15,6 @@ export default async function ProductPage({
     const t = (await getDictionary(lang)).productPage;
 
     const  data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}&id=${id}`).then(res => res.json());
-    console.log("image:", data[0].image);
     if (!t || !data[0]) return null;
 
     return (

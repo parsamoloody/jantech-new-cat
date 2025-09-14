@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-// import LocalFont from "next/font/local";
-// import { Lexend } from "next/font/google";
+import LocalFont from "next/font/local";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { getLangDir } from "@/utils";
@@ -9,36 +9,37 @@ import { getDictionary } from "@/lib/dictionaries";
 import StoreProvider from "@/lib/states/StoreProvider";
 import Footer from "@/components/Footer";
 
-// const dana = LocalFont({
-//   src: [
-//     {
-//       path: "../../../public/fonts/dana-light.ttf",
-//       weight: "300",
-//       style: "normal",
-//     },
-//     {
-//       path: "../../../public/fonts/dana-regular.ttf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../../../public/fonts/dana-medium.ttf",
-//       weight: "500",
-//       style: "normal",
-//     },
-//     {
-//       path: "../../../public/fonts/dana-bold.ttf",
-//       weight: "600",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--dana",
-// });
-// const lexend = Lexend({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700"],
-//   variable: "--lexend",
-// });
+const dana = LocalFont({
+  src: [
+    {
+      path: "../../../public/fonts/dana-light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/dana-regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/dana-medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/dana-bold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--dana",
+});
+const lexend = Lexend({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--lexend",
+});
+console.log(lexend, dana)
 
 export const metadata: Metadata = {
   title: "jantech",
