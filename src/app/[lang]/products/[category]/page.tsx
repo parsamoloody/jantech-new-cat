@@ -18,6 +18,7 @@ import { Locale } from "@/lib/i18n.config";
 import Button from "@/components/Button";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { getDictionary } from "@/lib/dictionaries";
 
 type Product = {
   _id: string;
@@ -39,19 +40,38 @@ export default function ProductsPage() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const swiperRef = useRef<SwiperType | null>(null);
+  const [catLoading, setCatLoading] = useState(false);
+  const [cat, setCat] = useState<{ _id: string; title: string; description: string; image: string, video: string } | null>({ _id: "", title: "", description: "", image: "", video: "" });
   // const [mainImage, setMainImage] = useState("");
 
+  useEffect(() => {
+    if (lang && category) {
+    async function fetchCategory() {
+      const t = (await getDictionary(lang)).categories;
+      console.log("catData:", t);
+      setCatLoading(true);
+      const m = t.find(item => item._id == category) || null;
+      setCat(m);
+      setCatLoading(false);
+      
+    }
+    fetchCategory();
+  }
+  }, [lang, category]); // Added dependencies
+
+  console.log("lang:", lang);
+  console.log("category:", category);
+  console.log("catData:", cat);
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
     setLoading(true);
-
     try {
       // const response = await axios.get(
       //   `http://localhost:8000/api/products/${category}?lang=${lang}&page=${pageNumber}&limit=${limit}`
       // );
       // let data = response.data;
       // if (!data) {
-        const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
+      const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
       // }
 
       setProducts(data);
@@ -98,6 +118,8 @@ export default function ProductsPage() {
     { title: "pressure iron", image: "/images/pressureIron-transparent.png" },
   ];
 
+  console.log("Video URL:", cat?.video);
+
   return (
     <div className="flex flex-col md:gap-12 pt-[90px] xl:pt-20 pb-10 max-w-[1600px] mx-auto">
       <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-4">
@@ -108,19 +130,35 @@ export default function ProductsPage() {
               {category.slice(1).split("-").join(" ")}
               <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
             </h3>
-            <p className="line-clamp-6 md:line-clamp-[14] max-w-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, vel! Sunt quasi deleniti delectus odio sequi voluptatum officiis distinctio deserunt nobis veritatis consequatur facere, alias architecto vero ipsa. In, totam.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt temporibus suscipit distinctio quibusdam quis quaerat eum totam, nemo quia cum accusantium et nulla quisquam ipsa at magni voluptatum ullam aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatibus deserunt, aperiam modi cumque similique voluptas rem laboriosam, tempore culpa autem repellat reiciendis aspernatur inventore offic</p>
+            {
+              catLoading ? (
+                "loading..."
+              ) : (
+                <p className="line-clamp-6 md:line-clamp-[14] max-w-lg text-justify">{cat?.description}</p>
+              )
+            }
           </div>
         </div>
         <div className="relative md:basis-[56.25%] flex flex-col md:flex-row items-center md:h-[550px]">
           <div className="relative ps-8 w-full h-full md:flex-1 aspect-square xs:aspect-auto">
-            <video
-              autoPlay
-              muted
-              loop
-              className="w-full h-full object-cover"
-            >
-              <source src="/videos/steamPressureVideo.mp4" type="video/mp4" />
-            </video>
+            {
+              catLoading ? (
+                "loading..."
+              ) : cat?.video ? (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="w-full h-full object-cover"
+                  controls // temporarily add controls for debugging
+                >
+                  <source src={cat?.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <p>No video available</p>
+              )
+            }
             <h2
               className={`text-4xl md:text-3xl lg:text-5xl xl:text-7xl text-transparent bg-clip-text absolute z-20 bottom-1/2 translate-y-1/2 bg-gradient-to-r ${dir === "rtl"
                 ? "translate-x-1/2 from-black to-red-primary"

@@ -3,13 +3,13 @@ import Hero from "@/components/Hero";
 import { getDictionary } from "@/lib/dictionaries";
 import { Locale } from "@/lib/i18n.config";
 import Link from "next/link";
-import { FaStar, FaRocket, FaCogs, FaGlobe } from "react-icons/fa";
 import { FaGem, FaShippingFast, FaHeadset } from "react-icons/fa";
 // import Dropdown from "@/components/Dropdown";
 // import { getLangDir } from "@/utils";
 
 import HomeSlider from "@/components/HomeSlider";
 import VideoSlider from "@/components/VideoSlider";
+import GrowRoad from "@/components/GrowRoad";
 
 interface Props {
     params: Promise<{ lang: Locale }>;
@@ -21,35 +21,6 @@ export default async function HomePage({ params }: Props) {
     const services = (await getDictionary(lang)).services;
     // const dir = getLangDir(lang);
     if (!t) return null;
-
-
-    const timelineData = [
-        {
-            year: "2010",
-            icon: <FaRocket className="text-white text-xl" />,
-            title: "Start of Operations",
-            description: "Our brand began with limited production and a local market."
-        },
-        {
-            year: "2015",
-            icon: <FaCogs className="text-white text-xl" />,
-            title: "Production Line Expansion",
-            description: "Expanded our product line and entered the online market."
-        },
-        {
-            year: "2020",
-            icon: <FaStar className="text-white text-xl" />,
-            title: "Quality Award Winner",
-            description: "Our products won the national quality award."
-        },
-        {
-            year: "2024",
-            icon: <FaGlobe className="text-white text-xl" />,
-            title: "Global Market Entry",
-            description: "Began exporting products to Europe and Asia."
-        }
-    ];
-
 
     // const dropdown = [
     //     {
@@ -173,35 +144,7 @@ export default async function HomePage({ params }: Props) {
                 </div>
             </section>
 
-            <section className="px-4">
-                <h2 className="text-2xl font-bold text-center mb-16">Our Brand Growth Journey</h2>
-                <div className="relative max-w-5xl mx-auto before:content-[''] before:absolute before:top-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-1 before:h-full before:bg-black">
-                    {timelineData.map((event, index) => {
-                        const isLeft = index % 2 === 0;
-                        return (
-                            <div
-                                key={index}
-                                className="mb-12 flex flex-col md:grid md:grid-cols-9 md:items-center"
-                            >
-                                <div className={`relative z-30 bg-white p-4 md:col-span-4 px-4 shadow hover:shadow-lg transition duration-300 ${isLeft ? 'md:order-1' : 'md:order-3'}`}>
-                                    <div className="text-center">
-                                        <h4 className="sm:text-black text-lg lg:text-[20px] font-bold mb-1">{event.year} - {event.title}</h4>
-                                        <p className="sm:text-gray-600 text-sm">{event.description}</p>
-                                    </div>
-                                </div>
-
-                                <div className="md:col-span-1 flex justify-center relative z-10 order-2 my-4 md:my-0">
-                                    <div className="w-10 h-10 rounded-full bg-red-primary text-white flex items-center justify-center shadow-md">
-                                        {event.icon}
-                                    </div>
-                                </div>
-
-                                <div className={`md:col-span-4 px-4 ${isLeft ? 'md:order-3' : 'md:order-1 hidden md:block'}`} />
-                            </div>
-                        );
-                    })}
-                </div>
-            </section>
+          <GrowRoad lang={lang}/>
 
             {/* {questions.map((question, index) => (
                     <Dropdown key={index} {...question} />

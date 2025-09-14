@@ -390,7 +390,7 @@
     },
     "videoSlides": {
         "title": "Explore our products in action",
-        "items":[
+        "items": [
             {
                 "title": "Sewing Machine",
                 "description": "Watch our sewing machine in action, creating beautiful garments with ease.",
@@ -402,5 +402,35 @@
                 "video": "/videos/steamPressureVideo.mp4"
             }
         ]
-    }
+    },
+     "categories": [
+        {
+            "_id": "sewing-machine",
+            "title": "Sewing Machine",
+            "description": "Our sewing machines are crafted with precision, combining modern technology and reliable performance. Important details include multiple stitch patterns, adjustable speed, and durable construction that adapts to both beginners and professionals. The benefits of owning one are countless—faster completion of projects, neat and professional finishing, and reduced manual effort. Positive points like quiet operation, compact design, and user-friendly controls make them a perfect fit for home or business. Their strength lies in versatility, enabling you to work on a wide range of fabrics with ease. With high efficiency, they save time and maximize productivity, ensuring every garment is crafted beautifully and with lasting durability.",
+            "video": "/videos/sewingMachine.mp4",
+            "image": ""
+        },
+        {
+            "_id": "pressure-iron",
+            "title": "Pressure Iron",
+            "description": "A pressure iron is the ultimate tool for those who demand flawless results in less time. Key details include rapid heat-up technology, continuous steam pressure, and an ergonomic design that reduces strain. The benefits are clear—wrinkle-free clothes, quicker ironing sessions, and outstanding results even on heavy fabrics. Positive points such as safety shut-off, energy-saving features, and long-lasting water tanks give you peace of mind while using. The strength of a pressure iron lies in its ability to deliver professional-grade results consistently. With high efficiency, it cuts down ironing time, making it perfect for households, hotels, or tailoring shops where speed and performance are essential",
+            "video": "/videos/pressureIron.mp4",
+            "image": ""
+        },
+        {
+            "_id": "vacuum-cleaner",
+            "title": "Vacuum Cleaner",
+            "description": "Vacuum cleaners from our collection are built with innovation, durability, and performance in mind. Important details include high suction power, multi-surface cleaning heads, HEPA filtration for dust and allergens, and noise-reduction technology. The benefits go beyond spotless floors—they improve indoor air quality and simplify cleaning tasks. Positive points like lightweight maneuverability, large dust capacity, and durable motors make them stand out in everyday use. Their strength lies in consistent suction performance and the ability to reach every corner with ease. With outstanding efficiency, these vacuum cleaners help save time, energy, and effort, making them a valuable choice for households and businesses looking for powerful cleaning solutions.",
+            "video": "/videos/vacuumCleaner.mp4",
+            "image": ""
+        },
+        {
+            "_id": "steam-iron",
+            "title": "Steam Iron",
+            "description": "Our steam irons are designed to bring convenience and precision to your daily ironing routine. The details include adjustable steam settings, anti-drip features, scratch-resistant soleplates, and quick heating elements. The benefits extend to smoother garments, effortless handling, and reliable long-term performance. Positive points include lightweight construction, durable build, and energy-saving functions. The strength of a steam iron comes from its ability to handle delicate fabrics as well as tougher materials with equal ease. Efficiency is maximized with even heat distribution, reducing ironing time and effort. Whether for daily household use or professional needs, our steam irons provide powerful performance and lasting reliability.",
+            "video": "/videos/steamIron.mp4",
+            "image": ""
+        }
+    ]
 }
