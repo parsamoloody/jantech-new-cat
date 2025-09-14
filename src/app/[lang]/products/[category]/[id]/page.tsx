@@ -3,7 +3,6 @@ import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/i18n.config';
 import ShareButton from '@/components/ShareButton';
 import { Category } from '@/types';
-import axios from 'axios';
 
 interface Props {
     params: Promise<{ lang: Locale; category: Category; id: string; }>;
