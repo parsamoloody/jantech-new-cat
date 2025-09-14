@@ -18,6 +18,7 @@ import { Locale } from "@/lib/i18n.config";
 import Button from "@/components/Button";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import axios from "axios";
 
 type Product = {
   _id: string;
@@ -51,7 +52,7 @@ export default function ProductsPage() {
       // );
       // let data = response.data;
       // if (!data) {
-        const data = await fetch(`http://localhost:3000/api/products?lang=en&category=${category}`).then(res => res.json());
+        const {data} = await axios.get(`http://localhost:3000/api/products?lang=en&category=${category}`);
       // }
 
       setProducts(data);
