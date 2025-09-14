@@ -15,21 +15,17 @@ export default async function ProductPage({
     const { lang, category, id } = await params;
     const t = (await getDictionary(lang)).productPage;
 
-    const { data } = await axios(`http://localhost:8000/api/products/${category}/${id}`, {
-        params: {
-            lang,
-        }
-    });
-
-    if (!t || !data) return null;
+    const { data } = await axios.get(`http://localhost:3000/api/products?lang=en&category=${category}&id=${id}`);
+    console.log("image:", data[0].image);
+    if (!t || !data[0]) return null;
 
     return (
         <div className="wrapper max-w-[1600px] mx-auto">
             <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
                 <div className="relative w-full aspect-square lg:aspect-auto lg:h-full overflow-hidden">
                     <Image
-                        src={data.image}
-                        alt={data.name}
+                        src={data[0].image}
+                        alt={data[0].name}
                         className="h-full w-full object-contain"
                         fill
                         priority
@@ -38,7 +34,7 @@ export default async function ProductPage({
 
                 <div className="mt-8">
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-                        {data.name}
+                        {data[0].name}
                     </h1>
 
                     {/* <div className="mt-3 flex items-center gap-2">
@@ -50,21 +46,21 @@ export default async function ProductPage({
                                 />
                             ))}
                         </div>
-                        <p className="ml-3 text-gray-500 font-sans font-semibold">150 {data.reviews}</p>
+                        <p className="ml-3 text-gray-500 font-sans font-semibold">150 {data[0].reviews}</p>
                     </div> */}
 
                     <div className="mt-4">
-                        <p className="text-3xl tracking-tight text-gray-900">{Number(data.price).toLocaleString(lang)}</p>
+                        <p className="text-3xl tracking-tight text-gray-900">{Number(data[0].price).toLocaleString(lang)}</p>
                     </div>
 
                     <div className="mt-6">
-                        <p className="text-base text-gray-500">{data.description}</p>
+                        <p className="text-base text-gray-500">{data[0].description}</p>
                     </div>
 
                     <div className="mt-8">
-                        <h3 className="text-lg font-medium text-gray-900">{t.features}</h3>
+                        {/* <h3 className="text-lg font-medium text-gray-900">{t.features}</h3> */}
                         <div className="mt-4 space-y-4">
-                            {data.features.map((feature: { id: string; key: string; value: string; }) => (
+                            {data[0].features.map((feature: { id: string; key: string; value: string; }) => (
                                 <div key={feature.id} className="flex items-center">
                                     <div className="text-sm font-medium text-gray-500">
                                         {feature.key}:
@@ -77,7 +73,7 @@ export default async function ProductPage({
 
                     <ShareButton
                         title={t.share}
-                        text={`${data.name} - ${data.description}`}
+                        text={`${data[0].name} - ${data[0].description}`}
                     />
                 </div>
 
@@ -85,7 +81,7 @@ export default async function ProductPage({
                     <h3 className="text-lg font-medium text-gray-900">{t.productDetail}</h3>
                     <div
                         className="mt-4 prose prose-sm text-gray-500"
-                        dangerouslySetInnerHTML={{ __html: data.detailContent }}
+                        dangerouslySetInnerHTML={{ __html: data[0].detailContent }}
                     ></div>
                 </div>
             </div>

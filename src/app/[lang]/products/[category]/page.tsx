@@ -47,10 +47,13 @@ export default function ProductsPage() {
     setLoading(true);
 
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/products/${category}?lang=${lang}&page=${pageNumber}&limit=${limit}`
-      );
-      const data = response.data; 
+      // const response = await axios.get(
+      //   `http://localhost:8000/api/products/${category}?lang=${lang}&page=${pageNumber}&limit=${limit}`
+      // );
+      // let data = response.data;
+      // if (!data) {
+        const data = await fetch(`http://localhost:3000/api/products?lang=en&category=${category}`).then(res => res.json());
+      // }
 
       setProducts(data);
 
