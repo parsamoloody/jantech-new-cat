@@ -12,22 +12,22 @@ import Footer from "@/components/Footer";
 const dana = LocalFont({
   src: [
     {
-      path: "../../../public/fonts/dana-light.ttf",
+      path: "../../../public/fonts/Ravi/Ravi-Light.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/dana-regular.ttf",
+      path: "../../../public/fonts/Ravi/Ravi-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/dana-medium.ttf",
+      path: "../../../public/fonts/Ravi/Ravi-Medium.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/dana-bold.ttf",
+      path: "../../../public/fonts/Ravi/Ravi-Bold.otf",
       weight: "600",
       style: "normal",
     },
