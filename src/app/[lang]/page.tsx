@@ -19,74 +19,7 @@ export default async function HomePage({ params }: Props) {
     const { lang } = await params;
     const t = (await getDictionary(lang)).homePage;
     const services = (await getDictionary(lang)).services;
-    // const dir = getLangDir(lang);
     if (!t) return null;
-
-    // const dropdown = [
-    //     {
-    //         q: "How can I track my order?",
-    //         a: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-    //     },
-    //     {
-    //         q: "Is it possible to return a product?",
-    //         a: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
-    //     },
-    //     {
-    //         q: "Do you deliver to other cities?",
-    //         a: "Yes, we deliver to all cities across Iran."
-    //     },
-    // ];
-
-    // const slides = [
-    //     {
-    //         image: "/images/sewingMachine.webp",
-    //         description: "Our sewing machines are designed for both home and professional use."
-    //     },
-    //     {
-    //         image: "/images/pressureIron.webp",
-    //         description: "Our sewing machines are designed for both home and professional use."
-    //     },
-    //     {
-    //         image: "/images/steamIron.webp",
-    //         description: "Our sewing machines are designed for both home and professional use."
-    //     },
-    //     {
-    //         image: "/images/vacuumCleaner.webp",
-    //         description: "Our sewing machines are designed for both home and professional use."
-    //     }
-    // ];
-
-    // const questions = [
-    //     {
-    //         title: "What is the return policy?",
-    //         content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
-    //     },
-    //     {
-    //         title: "How can I track my order?",
-    //         content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-    //     },
-    //     {
-    //         title: "Is it possible to return a product?",
-    //         content: "Yes, you can return the product within 7 days of delivery if you're not satisfied."
-    //     },
-    //     {
-    //         title: "Do you deliver to other cities?",
-    //         content: "Yes, we deliver to all cities across Iran."
-    //     },
-    //     {
-    //         title: "What is the return policy?",
-    //         content: "We accept returns within 30 days of purchase. Please contact our customer support for further assistance."
-    //     },
-    //     {
-    //         title: "How can I track my order?",
-    //         content: "After placing your order, a tracking number will be sent to you and can also be viewed in your user panel."
-    //     }
-    // ];
-
-    // const handleSelect = (answer: string) => {
-    //     console.log("جواب انتخابی:", answer);
-    // };
-
     return (
         <div className="overflow-x-hidden">
             <div className="min-h-fit h-screen">
@@ -145,47 +78,6 @@ export default async function HomePage({ params }: Props) {
             </section>
 
           <GrowRoad lang={lang}/>
-
-            {/* {questions.map((question, index) => (
-                    <Dropdown key={index} {...question} />
-                ))} */}
-
-
-            {/* <section className="px-6 py-20 bg-white">
-                <h2 className="text-3xl font-bold mb-8 text-center">سوالات متداول</h2>
-                <div className="max-w-3xl mx-auto space-y-6">
-                    {dropdown.map(item => (
-                        <Dropdown
-                            label="سوالات متداول"
-                            items={dropdown}
-                            onSelect={handleSelect}
-                        />
-                        <h1 key={item.a}>
-                            {item.a}
-                        </h1>
-                    ))}
-                </div>
-            </section>
-
-            {t.filters && t.filters.length > 0 && (
-                <section className="px-6 py-10">
-                    <h2 className="text-2xl font-bold mb-4">{t.categoriesTitle || "Categories"}</h2>
-                    <div className="flex flex-wrap gap-4">
-                        {t.filters.map((filter: any) => (
-                            <div key={filter.name}>
-                                <h4 className="font-semibold">{filter.name}</h4>
-                                <ul className="flex gap-2">
-                                    {filter.options.map((option: any) => (
-                                        <li key={option.id} className="bg-gray-200 px-3 py-1 rounded-full text-sm">
-                                            {option.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            )} */}
         </div>
     );
 }

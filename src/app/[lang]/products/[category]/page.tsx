@@ -29,13 +29,13 @@ type Product = {
 };
 
 
-const slogan : Record<Locale, string> = {
+const slogan: Record<Locale, string> = {
   en: " take your creativity to the next level!",
   fa: "چرخ خیاطی‌های جانتک، خلاقیتتان را به اوج بسونید!",
   ar: "ماكينات جانتِك للخياطة، ارتقِ بإبداعك إلى القمة!",
   ru: "поднимите своё творчество на новый уровень!",
   tr: "yaratıcılığınızı zirveye taşıyın!"
-} ;
+};
 
 export default function ProductsPage() {
   const category = useParams().category as Category;
@@ -51,28 +51,39 @@ export default function ProductsPage() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [catLoading, setCatLoading] = useState(false);
   const [cat, setCat] = useState<{ _id: string; title: string; description: string; image: string, video: string } | null>({ _id: "", title: "", description: "", image: "", video: "" });
+  const [isLatin, setIsLatin] = useState(false);
   // const [mainImage, setMainImage] = useState("");
 
   useEffect(() => {
     if (lang && category) {
-    async function fetchCategory() {
-      const t = (await getDictionary(lang)).categories;
-      console.log("catData:", t);
-      setCatLoading(true);
-      const m = t.find(item => item._id == category) || null;
-      setCat(m);
-      setCatLoading(false);
-      
+      async function fetchCategory() {
+        const t = (await getDictionary(lang)).categories;
+        console.log("catData:", t);
+        setCatLoading(true);
+        const m = t.find(item => item._id == category) || null;
+        setCat(m);
+        switch (lang) {
+          case "fa":
+            setIsLatin(false);
+            break;
+          case "ar":
+            setIsLatin(false);
+            break;
+          default:
+            setIsLatin(true);
+        }
+        setCatLoading(false);
+
+      }
+      fetchCategory();
     }
-    fetchCategory();
-  }
   }, [lang, category]); // Added dependencies
 
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
     setLoading(true);
     try {
-      const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
+      const data = await fetch(`/api/products?lang=${lang}&category=${category}`).then(res => res.json());
 
       setProducts(data);
 
@@ -124,8 +135,16 @@ export default function ProductsPage() {
         <div className="md:basis-[40%]">
           <div className="space-y-4 mx-auto">
             <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
-              <span className="text-7xl">{category.slice(0, 1).toUpperCase()}</span>
-              {category.slice(1).split("-").join(" ")}
+              {
+                isLatin
+                  ? (<span className="text-7xl">{cat?.title.slice(0, 1).toUpperCase()}</span>)
+                  : null
+              }
+              {
+                isLatin
+                ? (cat?.title.slice(1).split("-").join(" "))
+                : (cat?.title)
+              }
               <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
             </h3>
             {
@@ -142,15 +161,15 @@ export default function ProductsPage() {
             {
               catLoading ? (
                 "loading..."
-              ) : cat?.video ?(
-                   <video
-              autoPlay
-              muted
-              loop
-              className="w-full h-full object-cover"
-            >
-              <source src={cat?.video} type="video/mp4" />
-            </video>
+              ) : cat?.video ? (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="w-full h-full object-cover"
+                >
+                  <source src={cat?.video} type="video/mp4" />
+                </video>
               ) : (
                 "loading ..."
               )
@@ -167,13 +186,13 @@ export default function ProductsPage() {
 
           <div className="flex flex-col items-center justify-center">
             <p className="writing-lr w-[100px] hidden md:flex md:justify-center md:items-center md:pt-[120px]">
-          {
-            lang ?(
-              <>{slogan[lang]}</>
-            ): (
-              <>{slogan.en}</>
-            )
-          }
+              {
+                lang ? (
+                  <>{slogan[lang]}</>
+                ) : (
+                  <>{slogan.en}</>
+                )
+              }
             </p>
             <div className="w-[150px] md:w-[200px] absolute bottom-0 end-0">
               {isClient && (
@@ -196,7 +215,6 @@ export default function ProductsPage() {
                           alt={slide.title}
                           fill
                           className="object-contain"
-                          placeholder="blur"
                         />
                       </div>
                     </SwiperSlide>
