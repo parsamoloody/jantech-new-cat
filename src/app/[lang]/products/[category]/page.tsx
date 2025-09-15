@@ -72,13 +72,7 @@ export default function ProductsPage() {
     if (loading || !hasMore) return;
     setLoading(true);
     try {
-      // const response = await axios.get(
-      //   `http://localhost:8000/api/products/${category}?lang=${lang}&page=${pageNumber}&limit=${limit}`
-      // );
-      // let data = response.data;
-      // if (!data) {
       const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
-      // }
 
       setProducts(data);
 
@@ -118,10 +112,10 @@ export default function ProductsPage() {
   }, []);
 
   const swiperSlides = [
-    { title: "vacuum cleaner", image: "/images/vacuumCleaner-transparent.png" },
-    { title: "steam iron", image: "/images/steamIron-transparent.png" },
-    { title: "sewing machine", image: "/images/sewingMachine-transparent.png" },
-    { title: "pressure iron", image: "/images/pressureIron-transparent.png" },
+    { title: "vacuum cleaner", image: "/images/vacuumCleaner-transparent.webp" },
+    { title: "steam iron", image: "/images/steamIron-transparent.webp" },
+    { title: "sewing machine", image: "/images/sewingMachine-transparent.webp" },
+    { title: "pressure iron", image: "/images/pressureIron-transparent.webp" },
   ];
 
   return (
@@ -202,6 +196,7 @@ export default function ProductsPage() {
                           alt={slide.title}
                           fill
                           className="object-contain"
+                          placeholder="blur"
                         />
                       </div>
                     </SwiperSlide>
