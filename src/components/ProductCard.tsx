@@ -49,6 +49,7 @@ export default function ProductCard({ _id, name, price, image }: Props) {
           className="text-transparent group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, 33vw"
           src={image}
+          placeholder="blur"
         />
       </div>
 
