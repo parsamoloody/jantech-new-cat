@@ -83,7 +83,7 @@ export default function ProductsPage() {
     if (loading || !hasMore) return;
     setLoading(true);
     try {
-      const data = await fetch(`/api/products?lang=${lang}&category=${category}`).then(res => res.json());
+      const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
 
       setProducts(data);
 
