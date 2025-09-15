@@ -394,12 +394,12 @@
             {
                 "title": "Dikiş Makinesi",
                 "description": "Dikiş makinemizi iş başında izleyin, güzel kıyafetleri kolayca yaratıyor.",
-                "video": "/videos/jantechVideo.mp4"
+                "video": "/videos/sewingMachine.mp4"
             },
             {
                 "title": "Müşteri Desteği",
                 "description": "Müşteri destek ekibimizin, kullanıcıların dikiş makineleriyle nasıl yardımcı olduğunu görün.",
-                "video": "/videos/steamPressureVideo.mp4"
+                "video": "/videos/pressureIron.mp4"
             }
         ]
     },

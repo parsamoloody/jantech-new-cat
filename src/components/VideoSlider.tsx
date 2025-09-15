@@ -19,7 +19,7 @@ const mock = {
             {
                 "title": "Customer Support",
                 "description": "See how our customer support team assists users with their sewing machines.",
-                "video": "/videos/supportVideo.mp4"
+                "video": "/videos/pressureIron.mp4"
             }
         ]
     };

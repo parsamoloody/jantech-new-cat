@@ -394,12 +394,12 @@
             {
                 "title": "Sewing Machine",
                 "description": "Watch our sewing machine in action, creating beautiful garments with ease.",
-                "video": "/videos/jantechVideo.mp4"
+                "video": "/videos/sewingMachine.mp4"
             },
             {
                 "title": "Customer Support",
                 "description": "See how our customer support team assists users with their sewing machines.",
-                "video": "/videos/steamPressureVideo.mp4"
+                "video": "/videos/pressureIron.mp4"
             }
         ]
     },

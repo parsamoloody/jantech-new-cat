@@ -394,12 +394,12 @@
             {
                 "title": "Швейная машина",
                 "description": "Посмотрите, как работает наша швейная машина, легко создавая красивую одежду.",
-                "video": "/videos/jantechVideo.mp4"
+                "video": "/videos/sewingMachine.mp4"
             },
             {
                 "title": "Поддержка клиентов",
                 "description": "Узнайте, как наша служба поддержки клиентов помогает пользователям с их швейными машинами.",
-                "video": "/videos/steamPressureVideo.mp4"
+               "video": "/videos/pressureIron.mp4"
             }
         ]
     },
