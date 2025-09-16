@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <header className={`fixed top-0 start-0 z-50 w-full transition-[background-color] duration-300 ease-linear ${isScrolled || !isHome ? "bg-white shadow-md" : "bg-transparent"}`}>
-      <div className="flex items-center justify-between px-4 md:px-8 py-5.5">
+      <div className="flex max-w-[1655px] mx-auto items-center justify-between px-4 md:px-12 xl:px-16 py-5.5">
         <Image
           src={jantechLogo}
           alt="Logo"

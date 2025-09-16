@@ -42,13 +42,13 @@ export default function ProductCard({ _id, name, price, image }: Props) {
       <div className="relative aspect-square flex items-center justify-center overflow-hidden">
         <Image
           alt="product"
-          loading="lazy"
-          decoding="async"
           width={300}
           height={300}
           className="text-transparent group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, 33vw"
           src={image}
+          loading="lazy"
+          priority={false}
         />
       </div>
 

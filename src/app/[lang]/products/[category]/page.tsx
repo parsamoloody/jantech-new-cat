@@ -42,7 +42,6 @@ export default function ProductsPage() {
   const lang = useParams().lang as Locale;
   const dir = getLangDir(lang);
 
-
   const [products, setProducts] = useState<Product[]>([]);
   const [isClient, setIsClient] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -83,7 +82,7 @@ export default function ProductsPage() {
     if (loading || !hasMore) return;
     setLoading(true);
     try {
-      const data = await fetch(`https://smartcd.vercel.app/api/products?lang=${lang}&category=${category}`).then(res => res.json());
+      const data = await fetch(`/api/products?lang=${lang}&category=${category}`).then(res => res.json());
 
       setProducts(data);
 
