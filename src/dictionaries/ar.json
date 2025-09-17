@@ -445,21 +445,27 @@
         {
             "id": "sewing-machine",
             "images": {
-                "bg": "/../../../../../../public/images/SweingMachine2.webp",
+                "bg": "/images/SweingMachine2.webp",
                 "intro": [
-                    "../../../../../../public/images/vdss.png",
-                    "../../../../../../public/images/detail.jpg",
-                    "../../../../../../public/images/lower quality3.jpg",
-                    "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                    "/images/vdss.png",
+                    "/images/detail.jpg",
+                    "/images/lower quality3.jpg",
+                    "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
                 ]
             },
+            "title": "PRECISION IS A MATTER OF STITCH – AND NOT JUST FOR THE FABRICS",
+            "description": [
+                "Renowned for redefining stitching performance, our sewing machines have consistently empowered professionals and hobbyists alike to bring ideas to life with accuracy and ease. With a tradition built on quality and innovation, they continue to set the benchmark for precision sewing – now more than ever.",
+                "Our sewing machines have achieved countless successes in fashion studios and creative workshops worldwide, proving their place as a trusted symbol of precision and reliability. From intricate details to bold designs, they embody innovation and craftsmanship – and today, this legacy of excellence is stronger than ever."
+            ],
+            "subTitle": "Every stitch counts",
             "intro": [
                 {
                     "title": "Attention to detail",
                     "subTitle": "Every stitch counts",
                     "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
                     "images": [
-                        "../../../../../../public/images/detail.jpg"
+                        "/images/detail.jpg"
                     ]
                 },
                 {
@@ -467,7 +473,7 @@
                     "subTitle": "Every stitch counts",
                     "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
                     "images": [
-                        "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                        "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
                     ]
                 },
                 {
@@ -475,45 +481,7 @@
                     "subTitle": "Every stitch counts",
                     "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
                     "images": [
-                        "../../../../../../public/images/vdss.jpg"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "steam-iron",
-            "images": {
-                "bg": "/../../../../../../public/images/SweingMachine2.webp",
-                "intro": [
-                    "../../../../../../public/images/vdss.png",
-                    "../../../../../../public/images/detail.jpg",
-                    "../../../../../../public/images/lower quality3.jpg",
-                    "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
-                ]
-            },
-            "intro": [
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "../../../../../../public/images/detail.jpg"
-                    ]
-                },
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
-                    ]
-                },
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "../../../../../../public/images/vdss.jpg"
+                        "/images/lq5.jpg"
                     ]
                 }
             ]
