@@ -14,26 +14,28 @@ import { Locale } from '@/lib/i18n.config';
 
 interface SlideItemProps {
     slide: { 
+        id: string;
         image: string; 
         description: string; 
         title: string; 
     };
     index: number;
     isActive: boolean;
+    lang: Locale;
     onMouseEnter: () => void;  // Add this prop definition
 }
 
 // Memoize individual slide component
-const SlideItem = memo(({ slide, index, isActive, onMouseEnter }: SlideItemProps) => (
+const SlideItem = memo(({ slide, index, isActive, lang, onMouseEnter }: SlideItemProps) => (
     <div
-        className={`flex items-start pt-6 font-bold border-t-2 ${isActive ? "border-black" : "border-white"}`}
+        className={`flex items-start pt-6 font-bold border-t-2  ${isActive ? "border-black" : "border-white"}`}
         onMouseEnter={onMouseEnter}
     >
         <span className='text-lg px-6'>{(index + 1).toString().padStart(2, "0")}</span>
         <div className='space-y-3'>
             <p className='text-xl'>{slide.description}</p>
             <Link
-                href="#"
+                href={`${lang}/mutation/${slide.id}`}
                 className={`inline-block overflow-hidden ${isActive ? "max-h-24 border-b-2 pointer-events-auto transition-[max-height] duration-500 ease-out" : "max-h-0 pointer-events-none"}`}
             >
                 Learn more
@@ -49,7 +51,7 @@ const HomeSlider = memo(({ lang }: { lang: Locale }) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const [activeIndex, setActiveIndex] = useState(0);
     const [slides, setSlides] = useState<{ 
-        items: { image: string; description: string; title: string }[];
+        items: { image: string; description: string; title: string, id: string }[];
         title: string;
     }>();
     const [isLoading, setIsLoading] = useState(true);
@@ -151,6 +153,7 @@ const HomeSlider = memo(({ lang }: { lang: Locale }) => {
                             index={index}
                             isActive={index === activeIndex}
                             onMouseEnter={() => handleMouseEnter(index)}
+                            lang={lang}
                         />
                     ))}
                 </div>

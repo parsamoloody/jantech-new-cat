@@ -50,19 +50,43 @@
                     "children": [
                         {
                             "title": "Sewing Machine",
-                            "href": "/products/sewing-machine"
+                            "href": "/products/sewing-machine",
+                            "image": "/images/sewingMachine-transparent.webp"
                         },
                         {
                             "title": "Pressure Iron",
-                            "href": "/products/pressure-iron"
+                            "href": "/products/pressure-iron",
+                            "image": "/images/pressureIron-transparent.webp"
                         },
                         {
                             "title": "Vacuum Cleaner",
-                            "href": "/products/vacuum-cleaner"
+                            "href": "/products/vacuum-cleaner",
+                            "image": "/images/vacuumCleaner-transparent.webp"
                         },
                         {
                             "title": "Steam Iron",
-                            "href": "/products/steam-iron"
+                            "href": "/products/steam-iron",
+                            "image": "/images/steamIron-transparent.webp"
+                        },
+                        {
+                            "title": "Sewing Machine",
+                            "href": "/products/sewing-machine",
+                            "image": "/images/sewingMachine-transparent.webp"
+                        },
+                        {
+                            "title": "Pressure Iron",
+                            "href": "/products/pressure-iron",
+                            "image": "/images/pressureIron-transparent.webp"
+                        },
+                        {
+                            "title": "Vacuum Cleaner",
+                            "href": "/products/vacuum-cleaner",
+                            "image": "/images/vacuumCleaner-transparent.webp"
+                        },
+                        {
+                            "title": "Steam Iron",
+                            "href": "/products/steam-iron",
+                            "image": "/images/steamIron-transparent.webp"
                         }
                     ]
                 },
@@ -367,21 +391,25 @@
         "title": "Featured Products",
         "items": [
             {
+                "id": "sewing-machine",
                 "image": "sewingMachine.webp",
                 "title": "Sewing Machine",
                 "description": "Our sewing machines are designed for home use. Our sewing machines are beautiful and efficient."
             },
             {
+                "id": "pressure-iron",
                 "image": "pressureIron.webp",
                 "title": "Pressure Iron",
                 "description": "Our pressure irons are lightweight and easy to use, making ironing a breeze."
             },
             {
+                "id": "steam-iron",
                 "image": "steamIron.webp",
                 "title": "Steam Iron",
                 "description": "Our steam irons provide powerful steam output for the best ironing results."
             },
             {
+                "id": "vacuum-cleaner",
                 "image": "vacuumCleaner.webp",
                 "title": "Vacuum Cleaner",
                 "description": "Our vacuum cleaners are designed for maximum suction and efficiency."
@@ -403,7 +431,7 @@
             }
         ]
     },
-     "categories": [
+    "categories": [
         {
             "_id": "sewing-machine",
             "title": "Sewing Machine",
@@ -431,6 +459,52 @@
             "description": "Our steam irons are designed to bring convenience and precision to your daily ironing routine. The details include adjustable steam settings, anti-drip features, scratch-resistant soleplates, and quick heating elements. The benefits extend to smoother garments, effortless handling, and reliable long-term performance. Positive points include lightweight construction, durable build, and energy-saving functions. The strength of a steam iron comes from its ability to handle delicate fabrics as well as tougher materials with equal ease. Efficiency is maximized with even heat distribution, reducing ironing time and effort. Whether for daily household use or professional needs, our steam irons provide powerful performance and lasting reliability.",
             "video": "/videos/steamIron.mp4",
             "image": ""
+        }
+    ],
+    "mutation": [
+        {
+            "id": "sewing-machine",
+            "images": {
+                "bg": "/images/SweingMachine2.webp",
+                "intro": [
+                    "/images/vdss.png",
+                    "/images/detail.jpg",
+                    "/images/lower quality3.jpg",
+                    "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                ]
+            },
+            "title": "PRECISION IS A MATTER OF STITCH – AND NOT JUST FOR THE FABRICS",
+            "description": [
+                "Renowned for redefining stitching performance, our sewing machines have consistently empowered professionals and hobbyists alike to bring ideas to life with accuracy and ease. With a tradition built on quality and innovation, they continue to set the benchmark for precision sewing – now more than ever.",
+                "Our sewing machines have achieved countless successes in fashion studios and creative workshops worldwide, proving their place as a trusted symbol of precision and reliability. From intricate details to bold designs, they embody innovation and craftsmanship – and today, this legacy of excellence is stronger than ever."
+            ],
+            "subTitle": "Every stitch counts",
+            "intro": [
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "/images/detail.jpg"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "/images/lq5.jpg"
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -10,9 +10,10 @@ import { getLangDir } from "@/utils";
 
 interface Props {
   lang: Locale;
+  isDark: boolean;
 }
 
-export default function LanguageSwitcher({ lang }: Props) {
+export default function LanguageSwitcher({ lang, isDark }: Props) {
   const t = useAppSelector((state) => state.dictionary.content?.components.languageSwitcher);
   const pathname = usePathname();
   const router = useRouter();
@@ -38,10 +39,12 @@ export default function LanguageSwitcher({ lang }: Props) {
       onBlur={() => setIsOpen(false)}
     >
       <div
-        className="flex items-center justify-between border border-slate-300 rounded-md py-1.5 px-1 md:p-0 cursor-pointer"
+        className={`flex items-center justify-between border ${isDark ? 'border-gray-700' : 'border-slate-300'} rounded-md py-1.5 px-1 md:p-0 cursor-pointer`}
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <span className="md:hidden">{select.title}</span>
+        <span className={`md:hidden ${isDark ? 'text-white' : 'text-black'}`}>
+          {select.title}
+        </span>
         <div className="flex items-center md:justify-between md:w-full gap-1 p-0.5 md:px-2 md:py-1 rounded-md">
           <div className="flex items-center gap-1 rounded-md md:py-0.5 md:px-1">
             <Image
@@ -51,20 +54,25 @@ export default function LanguageSwitcher({ lang }: Props) {
               alt={select.title}
               className="rounded-full object-cover border border-black/10 w-[26px] h-[26px]"
             />
-            <span className="hidden md:block font-sans uppercase">
+            <span className={`hidden md:block font-sans uppercase ${isDark ? 'text-white' : 'text-black'}`}>
               {select.language}
             </span>
           </div>
-          <IoIosArrowDown className={`text-black transition-transform duration-300 ease-out ${isOpen ? "-rotate-180" : "rotate-0"}`} />
+          <IoIosArrowDown 
+            className={`transition-transform duration-300 ease-out ${isDark ? 'text-white' : 'text-black'} ${isOpen ? "-rotate-180" : "rotate-0"}`} 
+          />
         </div>
       </div>
 
-      <div className={`md:absolute md:z-50 w-full lg:bg-white mt-1 transition-[max-height] duration-300 ease-out overflow-hidden ${isOpen ? "max-h-60" : "max-h-0"}`} dir={dir}>
-        <ul className="border border-slate-300 rounded-md">
+      <div 
+        className={`md:absolute md:z-50 w-full ${isDark ? 'bg-gray-800' : 'bg-white'} mt-1 transition-[max-height] duration-300 ease-out overflow-hidden ${isOpen ? "max-h-60" : "max-h-0"}`} 
+        dir={dir}
+      >
+        <ul className={`border ${isDark ? 'border-gray-700' : 'border-slate-300'} rounded-md`}>
           {t.items.map((item) => (
             <li
               key={item.title}
-              className="flex items-center justify-between [&:not(:last-of-type)]:border-b border-slate-300 p-1 md:px-3 md:py-1.5 cursor-pointer"
+              className={`flex items-center justify-between [&:not(:last-of-type)]:border-b ${isDark ? 'border-gray-700 hover:bg-gray-700 text-white' : 'border-slate-300 hover:bg-gray-100 text-black'} p-1 md:px-3 md:py-1.5 cursor-pointer`}
               onClick={() => router.push(`/${item.language}${newPathname}`)}
             >
               <Image

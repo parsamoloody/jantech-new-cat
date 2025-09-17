@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import LocalFont from "next/font/local";
 import { Lexend } from "next/font/google";
-import "./globals.css";
+import "../../globals.css";
 import Navbar from "@/components/Navbar";
 import { getLangDir } from "@/utils";
 import { Locale } from "@/lib/i18n.config";
@@ -12,22 +12,22 @@ import Footer from "@/components/Footer";
 const dana = LocalFont({
   src: [
     {
-      path: "../../../public/fonts/Ravi/Ravi-Light.otf",
+      path: "../../../../public/fonts/Ravi/Ravi-Light.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Ravi/Ravi-Regular.otf",
+      path: "../../../../public/fonts/Ravi/Ravi-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Ravi/Ravi-Medium.otf",
+      path: "../../../../public/fonts/Ravi/Ravi-Medium.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Ravi/Ravi-Bold.otf",
+      path: "../../../../public/fonts/Ravi/Ravi-Bold.otf",
       weight: "600",
       style: "normal",
     },

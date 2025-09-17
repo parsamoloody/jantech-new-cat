@@ -62,7 +62,7 @@ export default function ProductsPage() {
         const m = t.find(item => item._id == category) || null;
         setCat(m);
         switch (lang) {
-          case "fa":
+          case "fa":  
             setIsLatin(false);
             break;
           case "ar":
@@ -240,8 +240,8 @@ export default function ProductsPage() {
         <div className="grow min-h-screen flex flex-col items-center gap-10">
           <div className="grid grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] grid-flow-dense gap-5 w-full">
             {products.length ? (
-              products.map((product) => (
-                <ProductCard key={product._id} {...product} />
+              products.map((product, i) => (
+                <ProductCard key={i} {...product} />
               ))
             ) : (
               Array.from({ length: 9 }).map((_, index) => (

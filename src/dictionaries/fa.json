@@ -50,19 +50,23 @@
                     "children": [
                         {
                             "title": "چرخ خیاطی",
-                            "href": "/products/sewing-machine"
+                            "href": "/products/sewing-machine",
+                            "image": "/images/sewingMachine-transparent.webp"
                         },
                         {
                             "title": "اتو پرس",
-                            "href": "/products/pressure-iron"
+                            "href": "/products/pressure-iron",
+                            "image": "/images/pressureIron-transparent.webp"
                         },
                         {
                             "title": "جاروبرقی",
-                            "href": "/products/vacuum-cleaner"
+                            "href": "/products/vacuum-cleaner",
+                            "image": "/images/vacuumCleaner-transparent.webp"
                         },
                         {
                             "title": "اتو بخار",
-                            "href": "/products/steam-iron"
+                            "href": "/products/steam-iron",
+                            "image": "/images/steamIron-transparent.webp"
                         }
                     ]
                 },
@@ -367,21 +371,25 @@
         "title": "محصولات ویژه",
         "items": [
             {
+                "id": "sewing-machine",
                 "image": "sewingMachine.webp",
                 "title": "ماشین دوخت",
                 "description": "ماشین‌های دوخت ما برای استفاده خانگی طراحی شده‌اند. این ماشین‌ها زیبا و کارآمد هستند."
             },
             {
+                "id": "steam-iron",
                 "image": "steamIron.webp",
                 "title": "اتو بخار",
                 "description": "اتوهای بخار ما سبک و آسان برای استفاده هستند و اتوکشی را آسان می‌کنند."
             },
             {
+                "id": "steam-iron",
                 "image": "steamIron.webp",
                 "title": "اتو بخار",
                 "description": "اتوهای بخار ما خروجی بخار قدرتمندی برای بهترین نتایج اتوکشی ارائه می‌دهند."
             },
             {
+                "id": "vacuum-cleaner",
                 "image": "vacuumCleaner.webp",
                 "title": "جاروبرقی",
                 "description": "جاروبرقی‌های ما برای حداکثر مکش و کارایی طراحی شده‌اند."
@@ -431,6 +439,84 @@
             "description": "اتوهای بخار ما برای راحتی و دقت بیشتر در کارهای روزانه اتو طراحی شده‌اند. جزئیات شامل تنظیمات بخار قابل تنظیم، ویژگی ضدچکه، کف مقاوم در برابر خط و خش و المنت‌های سریع‌گرم است. مزایا شامل لباس‌های صاف‌تر، کاربری آسان‌تر و عملکرد مطمئن در بلندمدت می‌شود. نقاط مثبت آن وزن سبک، ساختار بادوام و قابلیت‌های صرفه‌جویی در انرژی است. قدرت اتوی بخار در توانایی آن برای اتوکشی پارچه‌های ظریف و همچنین پارچه‌های ضخیم با سهولت یکسان نهفته است. حداکثر بهره‌وری با توزیع یکنواخت حرارت حاصل می‌شود که زمان و تلاش اتو را کاهش می‌دهد. چه برای استفاده روزانه خانگی و چه برای نیازهای حرفه‌ای، اتوهای بخار ما عملکردی قدرتمند و دوام بالا ارائه می‌دهند.",
             "video": "/videos/steamIron.mp4",
             "image": ""
+        }
+    ],
+    "mutation": [
+        {
+            "id": "sewing-machine",
+            "images": {
+                "bg": "/../../../../../../public/images/SweingMachine2.webp",
+                "intro": [
+                    "../../../../../../public/images/vdss.png",
+                    "../../../../../../public/images/detail.jpg",
+                    "../../../../../../public/images/lower quality3.jpg",
+                    "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                ]
+            },
+            "intro": [
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/detail.jpg"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/vdss.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "steam-iron",
+            "images": {
+                "bg": "/../../../../../../public/images/SweingMachine2.webp",
+                "intro": [
+                    "../../../../../../public/images/vdss.png",
+                    "../../../../../../public/images/detail.jpg",
+                    "../../../../../../public/images/lower quality3.jpg",
+                    "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                ]
+            },
+            "intro": [
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/detail.jpg"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
+                    ]
+                },
+                {
+                    "title": "Attention to detail",
+                    "subTitle": "Every stitch counts",
+                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "images": [
+                        "../../../../../../public/images/vdss.jpg"
+                    ]
+                }
+            ]
         }
     ]
 }
