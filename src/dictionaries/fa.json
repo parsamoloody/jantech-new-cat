@@ -2,24 +2,24 @@
     "homePage": {
         "products": [
             {
-                "title": "چرخ خیاطی",
-                "image": "/images/sewingMachine.webp",
-                "href": "sewing-machine"
-            },
-            {
-                "title": "اتو پرس",
-                "image": "/images/pressureIron.webp",
-                "href": "pressure-iron"
-            },
-            {
                 "title": "اتو بخار",
-                "image": "/images/steamIron.webp",
+                "image": "/images/3020.webp",
                 "href": "steam-iron"
             },
             {
-                "title": "جارو برقی",
-                "image": "/images/vacuumCleaner.webp",
-                "href": "vacuum-cleaner"
+                "title": "اتو ایستاده",
+                "image": "/images/3211.webp",
+                "href": "standing-iron"
+            },
+            {
+                "title": "اتو مخزن‌دار",
+                "image": "/images/9026.webp",
+                "href": "tank-iron"
+            },
+            {
+                "title": "چرخ خیاطی",
+                "image": "/images/4556.webp",
+                "href": "sewing-machine"
             }
         ],
         "sewingMachine": {
@@ -49,24 +49,24 @@
                     "title": "محصولات",
                     "children": [
                         {
-                            "title": "چرخ خیاطی",
-                            "href": "/products/sewing-machine",
-                            "image": "/images/sewingMachine-transparent.webp"
-                        },
-                        {
-                            "title": "اتو پرس",
-                            "href": "/products/pressure-iron",
-                            "image": "/images/pressureIron-transparent.webp"
-                        },
-                        {
-                            "title": "جاروبرقی",
-                            "href": "/products/vacuum-cleaner",
-                            "image": "/images/vacuumCleaner-transparent.webp"
-                        },
-                        {
                             "title": "اتو بخار",
                             "href": "/products/steam-iron",
                             "image": "/images/steamIron-transparent.webp"
+                        },
+                        {
+                            "title": "اتو ایستاده",
+                            "href": "/products/standing-iron",
+                            "image": "/images/3211White.webp"
+                        },
+                        {
+                            "title": "اتو مخزن‌دار",
+                            "href": "/products/tank-iron",
+                            "image": "/images/SteamGenerator.webp"
+                        },
+                        {
+                            "title": "چرخ خیاطی",
+                            "href": "/products/sewing-machine",
+                            "image": "/images/sewingMachine-transparent.webp"
                         }
                     ]
                 },
@@ -371,28 +371,22 @@
         "title": "محصولات ویژه",
         "items": [
             {
-                "id": "sewing-machine",
-                "image": "sewingMachine.webp",
-                "title": "ماشین دوخت",
-                "description": "ماشین‌های دوخت ما برای استفاده خانگی طراحی شده‌اند. این ماشین‌ها زیبا و کارآمد هستند."
-            },
-            {
                 "id": "steam-iron",
-                "image": "steamIron.webp",
+                "image": "Jantech-features-3-min.jpg",
                 "title": "اتو بخار",
                 "description": "اتوهای بخار ما سبک و آسان برای استفاده هستند و اتوکشی را آسان می‌کنند."
             },
             {
-                "id": "steam-iron",
-                "image": "steamIron.webp",
-                "title": "اتو بخار",
-                "description": "اتوهای بخار ما خروجی بخار قدرتمندی برای بهترین نتایج اتوکشی ارائه می‌دهند."
+                "id": "standing-iron",
+                "image": "Jantech-features-1-min.jpg",
+                "title": "اتو ایستاده",
+                "description": "اتوهای ایستاده ما خروجی بخار قدرتمندی برای بهترین نتایج اتوکشی ارائه می‌دهند."
             },
             {
-                "id": "vacuum-cleaner",
-                "image": "vacuumCleaner.webp",
-                "title": "جاروبرقی",
-                "description": "جاروبرقی‌های ما برای حداکثر مکش و کارایی طراحی شده‌اند."
+                "id": "tank-iron",
+                "image": "Jantech-features-2-min.jpg",
+                "title": "اتو مخزن‌دار",
+                "description": "اتوهای مخزن‌دار ما برای حداکثر بخاردهی و کارایی طراحی شده‌اند."
             }
         ]
     },
@@ -413,28 +407,28 @@
     },
     "categories": [
         {
-           "_id": "sewing-machine",
+            "_id": "sewing-machine",
             "title": "چرخ خیاطی",
             "description": "چرخ‌های خیاطی ما با دقت بالا ساخته شده‌اند و ترکیبی از فناوری مدرن و عملکرد قابل اعتماد هستند. جزئیات مهم شامل الگوهای مختلف دوخت، سرعت قابل تنظیم و بدنه‌ای مقاوم است که هم برای مبتدیان و هم حرفه‌ای‌ها مناسب می‌باشد. مزایای داشتن آن بی‌شمار است—اتمام سریع‌تر پروژه‌ها، دوخت تمیز و حرفه‌ای، و کاهش تلاش دستی. ویژگی‌های مثبتی مانند کارکرد بی‌صدا، طراحی جمع‌وجور و کنترل‌های کاربرپسند، آن را برای خانه یا کسب‌وکار ایده‌آل می‌سازد. نقطه قوت آن در تنوع‌پذیری است که امکان کار آسان با انواع مختلف پارچه‌ها را فراهم می‌کند. با بهره‌وری بالا، در زمان صرفه‌جویی کرده و حداکثر کارایی را به ارمغان می‌آورد، تا هر لباس با زیبایی و دوام ماندگار دوخته شود.",
             "video": "/videos/sewingMachine.mp4",
             "image": ""
         },
         {
-           "_id": "pressure-iron",
-            "title": "اتو بخار",
+            "_id": "pressure-iron",
+            "title": "اتو پرس",
             "description": "اتو پرس ابزاری بی‌نظیر برای کسانی است که نتایج بی‌عیب و نقص را در مدت زمان کمتر می‌خواهند. جزئیات کلیدی شامل فناوری گرم شدن سریع، فشار بخار مداوم و طراحی ارگونومیک است که فشار را کاهش می‌دهد. مزایا روشن است—لباس‌های بدون چین و چروک، جلسات اتوی سریع‌تر و نتایج عالی حتی بر روی پارچه‌های ضخیم. نکات مثبت مانند خاموشی خودکار ایمنی، ویژگی‌های صرفه‌جویی در انرژی و مخازن آب بادوام، هنگام استفاده آرامش خاطر ایجاد می‌کنند. قدرت اتوی پرسی در توانایی آن برای ارائه نتایج حرفه‌ای به طور مداوم نهفته است. با بهره‌وری بالا، زمان اتو را کاهش داده و آن را برای خانه‌ها، هتل‌ها یا کارگاه‌های خیاطی که سرعت و عملکرد ضروری است، ایده‌آل می‌سازد.",
             "video": "/videos/pressureIron.mp4",
             "image": ""
         },
         {
-           "_id": "vacuum-cleaner",
+            "_id": "vacuum-cleaner",
             "title": "جاروبرقی",
             "description": "جاروبرقی‌های ما با نوآوری، دوام و عملکرد بالا ساخته شده‌اند. جزئیات مهم شامل قدرت مکش قوی، سری‌های تمیزکننده چندسطحی، فیلتر HEPA برای گرد و غبار و آلرژن‌ها و فناوری کاهش صدا است. مزایا فراتر از کف‌های تمیز است—آن‌ها کیفیت هوای داخل خانه را بهبود می‌بخشند و وظایف نظافت را ساده‌تر می‌کنند. نکات مثبت شامل قابلیت جابه‌جایی آسان به دلیل سبک بودن، ظرفیت بالای مخزن گرد و غبار و موتورهای بادوام است که آن‌ها را در استفاده روزمره متمایز می‌سازد. قدرت آن‌ها در عملکرد مکش مداوم و توانایی دسترسی آسان به هر گوشه نهفته است. با بهره‌وری فوق‌العاده، این جاروبرقی‌ها به صرفه‌جویی در زمان، انرژی و تلاش کمک کرده و انتخابی ارزشمند برای خانه‌ها و کسب‌وکارهایی هستند که به دنبال راه‌حل‌های نظافت قدرتمند می‌باشند.",
             "video": "/videos/vacuumCleaner.mp4",
             "image": ""
         },
         {
-           "_id": "steam-iron",
+            "_id": "steam-iron",
             "title": "اتو بخار",
             "description": "اتوهای بخار ما برای راحتی و دقت بیشتر در کارهای روزانه اتو طراحی شده‌اند. جزئیات شامل تنظیمات بخار قابل تنظیم، ویژگی ضدچکه، کف مقاوم در برابر خط و خش و المنت‌های سریع‌گرم است. مزایا شامل لباس‌های صاف‌تر، کاربری آسان‌تر و عملکرد مطمئن در بلندمدت می‌شود. نقاط مثبت آن وزن سبک، ساختار بادوام و قابلیت‌های صرفه‌جویی در انرژی است. قدرت اتوی بخار در توانایی آن برای اتوکشی پارچه‌های ظریف و همچنین پارچه‌های ضخیم با سهولت یکسان نهفته است. حداکثر بهره‌وری با توزیع یکنواخت حرارت حاصل می‌شود که زمان و تلاش اتو را کاهش می‌دهد. چه برای استفاده روزانه خانگی و چه برای نیازهای حرفه‌ای، اتوهای بخار ما عملکردی قدرتمند و دوام بالا ارائه می‌دهند.",
             "video": "/videos/steamIron.mp4",
@@ -443,43 +437,39 @@
     ],
     "mutation": [
         {
-            "id": "sewing-machine",
+            "id": "steam-iron",
             "images": {
-                "bg": "/images/SweingMachine2.webp",
-                "intro": [
-                    "/images/vdss.png",
-                    "/images/detail.jpg",
-                    "/images/lower quality3.jpg",
-                    "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
-                ]
+                "bg": "/videos/iron 3020-no-text-CP.mp4",
+                "intro": "/images/lower quality3.jpg"
             },
-            "title": "PRECISION IS A MATTER OF STITCH – AND NOT JUST FOR THE FABRICS",
+            "title": "بخار قدرتمند، لباس بدون چروک",
             "description": [
-                "Renowned for redefining stitching performance, our sewing machines have consistently empowered professionals and hobbyists alike to bring ideas to life with accuracy and ease. With a tradition built on quality and innovation, they continue to set the benchmark for precision sewing – now more than ever.",
-                "Our sewing machines have achieved countless successes in fashion studios and creative workshops worldwide, proving their place as a trusted symbol of precision and reliability. From intricate details to bold designs, they embody innovation and craftsmanship – and today, this legacy of excellence is stronger than ever."
+                "اتو بخار پیشرفته ما با ترکیبی از فناوری مدرن و طراحی ارگونومیک، امکان اتوکشی سریع و بدون چروک را فراهم می‌کند. با خروجی بخار قدرتمند و حرارت یکنواخت، حتی سخت‌ترین چروک‌ها روی انواع پارچه‌ها به‌راحتی از بین می‌روند و نتایجی صاف و حرفه‌ای ایجاد می‌شود.",
+                "این اتو بخار با سیستم کنترل دقیق دما و بخار، اطمینان می‌دهد که هر پارچه از ظریف‌ترین تا ضخیم‌ترین، بدون آسیب و با کیفیت عالی اتو شود. عملکرد پایدار و قابل اعتماد آن، تجربه‌ای راحت و بی‌دغدغه برای کاربران مبتدی و حرفه‌ای فراهم می‌کند."
             ],
-            "subTitle": "Every stitch counts",
+            "linear": "با طراحی هوشمند و فناوری بخار فوری، این اتو نه تنها زمان اتوکشی را به حداقل می‌رساند، بلکه حتی برای لباس‌های چندلایه و پارچه‌های حساس، نتایجی صاف و بی‌نقص فراهم می‌کند. استفاده از مواد با کیفیت بالا و سیستم ارگونومیک، تجربه‌ای راحت، سریع و مطمئن را برای همه کاربران از مبتدی تا حرفه‌ای تضمین می‌کند.",
+            "subTitle": "اتوکشی بی‌دغدغه",
             "intro": [
                 {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "title": "کنترل دقیق، نتایج بی‌نقص",
+                    "subTitle": "دقت در هر حرکت بخار",
+                    "description": "اتو بخار ما با کنترل دقیق دما و بخار، حتی سخت‌ترین چروک‌ها را بدون آسیب به پارچه از بین می‌برد و تجربه‌ای راحت و حرفه‌ای برای همه کاربران فراهم می‌کند.",
                     "images": [
                         "/images/detail.jpg"
                     ]
                 },
                 {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "title": "اتو سریع و کارآمد",
+                    "subTitle": "صرفه‌جویی در زمان",
+                    "description": "با فناوری بخار فوری و طراحی پیشرفته، این اتو زمان اتوکشی را کاهش می‌دهد. حتی لباس‌های ضخیم، پرده‌ها و پارچه‌های چندلایه به سرعت صاف می‌شوند و کیفیت حرفه‌ای حفظ می‌شود.",
                     "images": [
                         "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
                     ]
                 },
                 {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
+                    "title": "صرفه‌جویی در انرژی و راحتی استفاده",
+                    "subTitle": "راحتی و انرژی بهینه",
+                    "description": "اتو بخار ما با مصرف بهینه انرژی و طراحی سبک، راحتی کاربر را تضمین می‌کند. دسته ارگونومیک و تنظیمات آسان، حتی جلسات طولانی اتوکشی را بدون خستگی امکان‌پذیر می‌سازد.",
                     "images": [
                         "/images/lq5.jpg"
                     ]

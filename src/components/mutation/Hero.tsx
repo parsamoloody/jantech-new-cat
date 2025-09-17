@@ -1,7 +1,6 @@
 'use client'
 import React, { JSX } from 'react'
 import Image from 'next/image'
-import bg from "../../../public/images/lower quality3.jpg"
 const Hero = ({ content }: { content: any }): JSX.Element => {
     if (!content) {
         return <div>Content not found</div>;
@@ -30,7 +29,7 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
 
                     <div className="w-full lg:w-1/2">
                         <Image
-                            src={bg}
+                            src={content.images.intro}
                             alt="About our shop"
                             width={600}
                             height={400}
@@ -42,10 +41,7 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                  {/* Line */}
                 <div className='w-full text-center my-14 lg:px-40 lg:my-40'>
                     <div className='text-2xl text-center h-full lg:mx-auto text-gray-900 p-1 inline'>
-                        AMG – these three letters stand worldwide for supreme automotive
-                        performance, exclusiveness, efficiency and highly dynamic driving
-                        pleasure. Today, as a wholly owned subsidiary of Mercedes-Benz Group
-                        AG, the Affalterbach-based company represents the sporting spearhead of the Group.
+                       {content.linear}
                     </div>
                 </div>
                 {content.intro.map((section: any, index: number) => (
@@ -75,7 +71,7 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                                     alt={`${section.title} image`}
                                     width={600}
                                     height={400}
-                                    className="w-full h-auto object-cover shadow-lg"
+                                    className="w-full h-auto object-cover"
                                     priority
                                 />
                             ))}

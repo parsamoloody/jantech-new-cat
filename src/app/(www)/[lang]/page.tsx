@@ -26,7 +26,7 @@ export default async function HomePage({ params }: Props) {
                 <Hero />
             </div>
 
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] grid-flow-dense">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] grid-flow-dense xl:mt-10">
                 {t.products.map((product) => (
                     <Link
                         href={`/products/${product.href}`}

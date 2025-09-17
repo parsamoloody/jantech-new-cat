@@ -53,7 +53,7 @@ const About = async ({ params }: PageProps): Promise<JSX.Element> => {
 
   return (
     <>
-      <BgCover bgImage={content.images.bg} />
+      <BgCover bgVideo={content.images.bg} />
       <Hero content={content} />
     </>
   );

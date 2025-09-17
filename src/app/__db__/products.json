@@ -1593,7 +1593,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3230-rosegold2-600x600.webp",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Power",
@@ -1612,7 +1612,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3230-rosegold2-600x600.webp",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "القوة",
@@ -1631,7 +1631,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3230-rosegold2-600x600.webp",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Güç",
@@ -1650,7 +1650,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3230-rosegold2-600x600.webp",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Мощность",
@@ -1684,79 +1684,79 @@
         }
     },
     {
-        "_id": "68c5837045227aba56c912ee18",
+        "_id": "68c5837045227aba56c912ee17",
         "en": {
-            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230 Pro",
-            "description": "Elevate your ironing experience with the Proglide Jantech Steam Iron Model ROSE GOLD 3230 Pro, boasting 2000W power and a luxurious rose gold design. It offers 40 g/min continuous steam and a 250 g/min burst for effortless wrinkle removal on all fabrics. The anti-calc system ensures longevity, complemented by a 350ml transparent water tank, ergonomic handle, and precision tip for hard-to-reach areas. Safety features like auto-off and anti-drip make it a reliable choice for daily use.",
+            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230",
+            "description": "The Proglide Jantech Steam Iron Model ROSE GOLD 3230 features advanced steam technology with 1800W power and a rose gold finish for elegant style. It delivers continuous steam up to 35 g/min and a powerful 210 g/min steam boost, perfect for tackling stubborn wrinkles. The SteamGlide soleplate glides smoothly over fabrics, while the 300ml water tank allows for extended ironing sessions. Additional features include anti-drip protection, vertical steaming capability, and auto-off safety for worry-free use.",
             "category": "steam-iron",
-            "price": "109.99",
-            "score": "30",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3240-royalblue2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Power",
-                    "value": "2000W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Steam Output",
-                    "value": "40 g/min continuous, 250 g/min burst"
+                    "value": "35 g/min continuous, 210 g/min boost"
                 }
             ],
             "detailContent": ""
         },
         "ar": {
-            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 برو",
-            "description": "ارفع مستوى تجربة الكي مع مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 برو، بقوة 2000 واط وتصميم روز غولد فاخر. توفر 40 غرام/دقيقة بخار مستمر ودفعة 250 غرام/دقيقة لإزالة التجاعيد بسهولة على جميع الأقمشة. نظام مكافحة الترسبات يضمن الطول العمر، مع خزان ماء شفاف 350 مل، مقبض مريح، ورأس دقيق للوصول إلى الأماكن الصعبة. ميزات الأمان مثل الإيقاف التلقائي وحماية من التنقيط تجعلها خيارًا موثوقًا للاستخدام اليومي.",
+            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230",
+            "description": "تتميز مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 بتقنية البخار المتقدمة بقوة 1800 واط وتشطيب روز غولد أنيق. توفر بخارًا مستمرًا يصل إلى 35 غرام/دقيقة ودفعة بخار قوية 210 غرام/دقيقة، مثالية للتعامل مع التجاعيد العنيدة. لوحة SteamGlide تنزلق بسلاسة فوق الأقمشة، بينما خزان الماء 300 مل يسمح بجلسات كي ممتدة. تشمل الميزات الإضافية حماية من التنقيط، إمكانية البخار العمودي، وإيقاف تلقائي للاستخدام الآمن.",
             "category": "steam-iron",
-            "price": "109.99",
-            "score": "30",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3240-royalblue2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "القوة",
-                    "value": "2000 واط"
+                    "value": "1800 واط"
                 },
                 {
                     "key": "إخراج البخار",
-                    "value": "40 غرام/دقيقة مستمر، 250 غرام/دقيقة دفعة"
+                    "value": "35 غرام/دقيقة مستمر، 210 غرام/دقيقة دفعة"
                 }
             ],
             "detailContent": ""
         },
         "tr": {
-            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Pro",
-            "description": "Ütüleme deneyiminizi yükseltin: Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Pro, 2000W güç ve lüks rose gold tasarımı ile. Dakikada 40 g sürekli buhar ve 250 g/dk patlama ile tüm kumaşlarda kırışıklıkları kolayca giderir. Kireç önleme sistemi uzun ömür sağlar, 350 ml şeffaf su haznesi, ergonomik tutamak ve zor ulaşım alanları için hassas uç ile tamamlanır. Otomatik kapanma ve damlama koruması gibi güvenlik özellikleri günlük kullanım için güvenilir kılar.",
+            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230",
+            "description": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230, gelişmiş buhar teknolojisi ile 1800W güç ve zarif rose gold kaplama sunar. Dakikada 35 g sürekli buhar ve güçlü 210 g/dk buhar patlaması ile inatçı kırışıklıklara karşı mükemmeldir. SteamGlide tabanı kumaşlar üzerinde pürüzsüz kayar, 300 ml su haznesi ise uzun ütü seansları için uygundur. Ek özellikler arasında damlama koruması, dikey buharlama yeteneği ve otomatik kapanma güvenliği yer alır.",
             "category": "steam-iron",
-            "price": "109.99",
-            "score": "30",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3240-royalblue2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Güç",
-                    "value": "2000W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Buhar Çıkışı",
-                    "value": "40 g/dk sürekli, 250 g/dk patlama"
+                    "value": "35 g/dk sürekli, 210 g/dk boost"
                 }
             ],
             "detailContent": ""
         },
         "ru": {
-            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 Pro",
-            "description": "Поднимите свой опыт глажения на новый уровень с паровым утюгом Proglide Jantech Модель ROSE GOLD 3230 Pro, мощностью 2000 Вт и роскошным дизайном в цвете розовое золото. Обеспечивает 40 г/мин непрерывного пара и импульс 250 г/мин для легкого удаления складок на всех тканях. Система анти-известкового налета гарантирует долговечность, дополненная прозрачным резервуаром на 350 мл, эргономичной ручкой и прецизионным наконечником для труднодоступных мест. Функции безопасности, такие как автоотключение и антикапель, делают его надежным для ежедневного использования.",
+            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230",
+            "description": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 оснащен передовой технологией пара с мощностью 1800 Вт и элегантной отделкой в цвете розовое золото. Обеспечивает непрерывный пар до 35 г/мин и мощный импульс пара 210 г/мин, идеально для удаления стойких складок. Подошва SteamGlide плавно скользит по тканям, а резервуар для воды на 300 мл позволяет проводить длительные сессии глажения. Дополнительные функции включают защиту от капель, вертикальное отпаривание и автоматическое отключение для безопасного использования.",
             "category": "steam-iron",
-            "price": "109.99",
-            "score": "30",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3240-royalblue2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Мощность",
-                    "value": "2000 Вт"
+                    "value": "1800 Вт"
                 },
                 {
                     "key": "Выход пара",
-                    "value": "40 г/мин непрерывно, 250 г/мин импульс"
+                    "value": "35 г/мин непрерывно, 210 г/мин импульс"
                 }
             ],
             "detailContent": ""
@@ -1782,79 +1782,79 @@
         }
     },
     {
-        "_id": "68c5837045227aba56c912ee19",
+        "_id": "68c5837045227aba56c912ee17",
         "en": {
-            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230 Elite",
-            "description": "Discover premium performance in the Proglide Jantech Steam Iron Model ROSE GOLD 3230 Elite, with 2200W power and a stunning rose gold exterior. It provides 50 g/min continuous steam and an ultra-powerful 300 g/min boost, ideal for heavy-duty ironing. The scratch-resistant soleplate, 400ml water tank, and vertical steam function offer versatility, while integrated anti-scale and drip-stop systems ensure hassle-free maintenance and safe operation on delicate fabrics.",
+            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230",
+            "description": "The Proglide Jantech Steam Iron Model ROSE GOLD 3230 features advanced steam technology with 1800W power and a rose gold finish for elegant style. It delivers continuous steam up to 35 g/min and a powerful 210 g/min steam boost, perfect for tackling stubborn wrinkles. The SteamGlide soleplate glides smoothly over fabrics, while the 300ml water tank allows for extended ironing sessions. Additional features include anti-drip protection, vertical steaming capability, and auto-off safety for worry-free use.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3220-platinom2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Power",
-                    "value": "2200W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Steam Output",
-                    "value": "50 g/min continuous, 300 g/min boost"
+                    "value": "35 g/min continuous, 210 g/min boost"
                 }
             ],
             "detailContent": ""
         },
         "ar": {
-            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 إليت",
-            "description": "اكتشف أداءً فائقًا في مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 إليت، بقوة 2200 واط وخارج روز غولد مذهل. توفر 50 غرام/دقيقة بخار مستمر ودفعة فائقة القوة 300 غرام/دقيقة، مثالية للكي الثقيل. لوحة مقاومة للخدوش، خزان ماء 400 مل، ووظيفة بخار عمودي توفران التنوع، بينما أنظمة مكافحة الترسبات والتنقيط المدمجة تضمنان صيانة سهلة وتشغيلًا آمنًا على الأقمشة الرقيقة.",
+            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230",
+            "description": "تتميز مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 بتقنية البخار المتقدمة بقوة 1800 واط وتشطيب روز غولد أنيق. توفر بخارًا مستمرًا يصل إلى 35 غرام/دقيقة ودفعة بخار قوية 210 غرام/دقيقة، مثالية للتعامل مع التجاعيد العنيدة. لوحة SteamGlide تنزلق بسلاسة فوق الأقمشة، بينما خزان الماء 300 مل يسمح بجلسات كي ممتدة. تشمل الميزات الإضافية حماية من التنقيط، إمكانية البخار العمودي، وإيقاف تلقائي للاستخدام الآمن.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3220-platinom2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "القوة",
-                    "value": "2200 واط"
+                    "value": "1800 واط"
                 },
                 {
                     "key": "إخراج البخار",
-                    "value": "50 غرام/دقيقة مستمر، 300 غرام/دقيقة دفعة"
+                    "value": "35 غرام/دقيقة مستمر، 210 غرام/دقيقة دفعة"
                 }
             ],
             "detailContent": ""
         },
         "tr": {
-            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Elite",
-            "description": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Elite'te premium performansı keşfedin, 2200W güç ve büyüleyici rose gold dış görünüm ile. Dakikada 50 g sürekli buhar ve ultra güçlü 300 g/dk patlama sunar, ağır ütüleme için idealdir. Çizilmez taban, 400 ml su haznesi ve dikey buhar fonksiyonu çok yönlülük sağlar, entegre kireç önleme ve damla durdurma sistemleri ise sorunsuz bakım ve hassas kumaşlarda güvenli kullanım garantiler.",
+            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230",
+            "description": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230, gelişmiş buhar teknolojisi ile 1800W güç ve zarif rose gold kaplama sunar. Dakikada 35 g sürekli buhar ve güçlü 210 g/dk buhar patlaması ile inatçı kırışıklıklara karşı mükemmeldir. SteamGlide tabanı kumaşlar üzerinde pürüzsüz kayar, 300 ml su haznesi ise uzun ütü seansları için uygundur. Ek özellikler arasında damlama koruması, dikey buharlama yeteneği ve otomatik kapanma güvenliği yer alır.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3220-platinom2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Güç",
-                    "value": "2200W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Buhar Çıkışı",
-                    "value": "50 g/dk sürekli, 300 g/dk boost"
+                    "value": "35 g/dk sürekli, 210 g/dk boost"
                 }
             ],
             "detailContent": ""
         },
         "ru": {
-            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 Elite",
-            "description": "Откройте для себя премиум-производительность в паровом утюге Proglide Jantech Модель ROSE GOLD 3230 Elite с мощностью 2200 Вт и потрясающим внешним видом в цвете розовое золото. Обеспечивает 50 г/мин непрерывного пара и ультра-мощный импульс 300 г/мин, идеально для интенсивного глажения. Устойчивый к царапинам подошв, резервуар на 400 мл и функция вертикального пара предлагают универсальность, в то время как встроенные системы анти-известкового налета и антикапли обеспечивают беспроблемное обслуживание и безопасную работу с деликатными тканями.",
+            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230",
+            "description": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 оснащен передовой технологией пара с мощностью 1800 Вт и элегантной отделкой в цвете розовое золото. Обеспечивает непрерывный пар до 35 г/мин и мощный импульс пара 210 г/мин, идеально для удаления стойких складок. Подошва SteamGlide плавно скользит по тканям, а резервуар для воды на 300 мл позволяет проводить длительные сессии глажения. Дополнительные функции включают защиту от капель, вертикальное отпаривание и автоматическое отключение для безопасного использования.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglide-3220-platinom2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Мощность",
-                    "value": "2200 Вт"
+                    "value": "1800 Вт"
                 },
                 {
                     "key": "Выход пара",
-                    "value": "50 г/мин непрерывно, 300 г/мин импульс"
+                    "value": "35 г/мин непрерывно, 210 г/мин импульс"
                 }
             ],
             "detailContent": ""
@@ -1880,79 +1880,79 @@
         }
     },
     {
-        "_id": "68c5837045227aba56c912ee20",
+        "_id": "68c5837045227aba56c912ee17",
         "en": {
-            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230 Elite",
-            "description": "Discover premium performance in the Proglide Jantech Steam Iron Model ROSE GOLD 3230 Elite, with 2200W power and a stunning rose gold exterior. It provides 50 g/min continuous steam and an ultra-powerful 300 g/min boost, ideal for heavy-duty ironing. The scratch-resistant soleplate, 400ml water tank, and vertical steam function offer versatility, while integrated anti-scale and drip-stop systems ensure hassle-free maintenance and safe operation on delicate fabrics.",
+            "name": "Proglide Jantech Steam Iron Model ROSE GOLD 3230",
+            "description": "The Proglide Jantech Steam Iron Model ROSE GOLD 3230 features advanced steam technology with 1800W power and a rose gold finish for elegant style. It delivers continuous steam up to 35 g/min and a powerful 210 g/min steam boost, perfect for tackling stubborn wrinkles. The SteamGlide soleplate glides smoothly over fabrics, while the 300ml water tank allows for extended ironing sessions. Additional features include anti-drip protection, vertical steaming capability, and auto-off safety for worry-free use.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglider-3210-gold2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Power",
-                    "value": "2200W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Steam Output",
-                    "value": "50 g/min continuous, 300 g/min boost"
+                    "value": "35 g/min continuous, 210 g/min boost"
                 }
             ],
             "detailContent": ""
         },
         "ar": {
-            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 إليت",
-            "description": "اكتشف أداءً فائقًا في مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 إليت، بقوة 2200 واط وخارج روز غولد مذهل. توفر 50 غرام/دقيقة بخار مستمر ودفعة فائقة القوة 300 غرام/دقيقة، مثالية للكي الثقيل. لوحة مقاومة للخدوش، خزان ماء 400 مل، ووظيفة بخار عمودي توفران التنوع، بينما أنظمة مكافحة الترسبات والتنقيط المدمجة تضمنان صيانة سهلة وتشغيلًا آمنًا على الأقمشة الرقيقة.",
+            "name": "مكواة بخار بروغلايد جانتيك موديل روز غولد 3230",
+            "description": "تتميز مكواة بخار بروغلايد جانتيك موديل روز غولد 3230 بتقنية البخار المتقدمة بقوة 1800 واط وتشطيب روز غولد أنيق. توفر بخارًا مستمرًا يصل إلى 35 غرام/دقيقة ودفعة بخار قوية 210 غرام/دقيقة، مثالية للتعامل مع التجاعيد العنيدة. لوحة SteamGlide تنزلق بسلاسة فوق الأقمشة، بينما خزان الماء 300 مل يسمح بجلسات كي ممتدة. تشمل الميزات الإضافية حماية من التنقيط، إمكانية البخار العمودي، وإيقاف تلقائي للاستخدام الآمن.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglider-3210-gold2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "القوة",
-                    "value": "2200 واط"
+                    "value": "1800 واط"
                 },
                 {
                     "key": "إخراج البخار",
-                    "value": "50 غرام/دقيقة مستمر، 300 غرام/دقيقة دفعة"
+                    "value": "35 غرام/دقيقة مستمر، 210 غرام/دقيقة دفعة"
                 }
             ],
             "detailContent": ""
         },
         "tr": {
-            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Elite",
-            "description": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230 Elite'te premium performansı keşfedin, 2200W güç ve büyüleyici rose gold dış görünüm ile. Dakikada 50 g sürekli buhar ve ultra güçlü 300 g/dk patlama sunar, ağır ütüleme için idealdir. Çizilmez taban, 400 ml su haznesi ve dikey buhar fonksiyonu çok yönlülük sağlar, entegre kireç önleme ve damla durdurma sistemleri ise sorunsuz bakım ve hassas kumaşlarda güvenli kullanım garantiler.",
+            "name": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230",
+            "description": "Proglide Jantech Buharlı Ütü Model ROSE GOLD 3230, gelişmiş buhar teknolojisi ile 1800W güç ve zarif rose gold kaplama sunar. Dakikada 35 g sürekli buhar ve güçlü 210 g/dk buhar patlaması ile inatçı kırışıklıklara karşı mükemmeldir. SteamGlide tabanı kumaşlar üzerinde pürüzsüz kayar, 300 ml su haznesi ise uzun ütü seansları için uygundur. Ek özellikler arasında damlama koruması, dikey buharlama yeteneği ve otomatik kapanma güvenliği yer alır.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglider-3210-gold2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Güç",
-                    "value": "2200W"
+                    "value": "1800W"
                 },
                 {
                     "key": "Buhar Çıkışı",
-                    "value": "50 g/dk sürekli, 300 g/dk boost"
+                    "value": "35 g/dk sürekli, 210 g/dk boost"
                 }
             ],
             "detailContent": ""
         },
         "ru": {
-            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 Elite",
-            "description": "Откройте для себя премиум-производительность в паровом утюге Proglide Jantech Модель ROSE GOLD 3230 Elite с мощностью 2200 Вт и потрясающим внешним видом в цвете розовое золото. Обеспечивает 50 г/мин непрерывного пара и ультра-мощный импульс 300 г/мин, идеально для интенсивного глажения. Устойчивый к царапинам подошв, резервуар на 400 мл и функция вертикального пара предлагают универсальность, в то время как встроенные системы анти-известкового налета и антикапли обеспечивают беспроблемное обслуживание и безопасную работу с деликатными тканями.",
+            "name": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230",
+            "description": "Паровой утюг Proglide Jantech Модель ROSE GOLD 3230 оснащен передовой технологией пара с мощностью 1800 Вт и элегантной отделкой в цвете розовое золото. Обеспечивает непрерывный пар до 35 г/мин и мощный импульс пара 210 г/мин, идеально для удаления стойких складок. Подошва SteamGlide плавно скользит по тканям, а резервуар для воды на 300 мл позволяет проводить длительные сессии глажения. Дополнительные функции включают защиту от капель, вертикальное отпаривание и автоматическое отключение для безопасного использования.",
             "category": "steam-iron",
-            "price": "129.99",
-            "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglider-3210-gold2-600x600.webp",
+            "price": "89.99",
+            "score": "28",
+            "image": "/images/products/0gf2.png",
             "features": [
                 {
                     "key": "Мощность",
-                    "value": "2200 Вт"
+                    "value": "1800 Вт"
                 },
                 {
                     "key": "Выход пара",
-                    "value": "50 г/мин непрерывно, 300 г/мин импульс"
+                    "value": "35 г/мин непрерывно, 210 г/мин импульс"
                 }
             ],
             "detailContent": ""
