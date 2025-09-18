@@ -425,50 +425,47 @@
             "image": ""
         }
     ],
-    "mutation": [
+  "mutation": [
+    {
+      "id": "steam-iron",
+      "images": {
+        "bg": "/videos/iron 3020-no-text-CP.mp4",
+        "intro": "/images/2.jpg"
+      },
+      "title": "Güçlü Buhar, Kırışıksız Kıyafetler",
+      "description": [
+        "Modern teknoloji ile ergonomik tasarımı birleştiren gelişmiş buharlı ütümüz, hızlı ve kırışıksız ütüleme sağlar. Güçlü buhar çıkışı ve eşit ısı dağılımı sayesinde her türlü kumaştaki en zorlu kırışıklıklar bile kolayca giderilir ve pürüzsüz, profesyonel sonuçlar elde edilir.",
+        "Hassas sıcaklık ve buhar kontrolü ile buharlı ütümüz, en hassas kumaştan en kalınına kadar her kumaşı güvenli ve üstün kaliteyle ütüler. Kararlı ve güvenilir performansı, hem yeni başlayanlar hem de profesyoneller için rahat ve endişesiz bir deneyim sunar."
+      ],
+      "linear": "Akıllı tasarım ve anında buhar teknolojisi ile bu ütü yalnızca ütüleme süresini en aza indirmekle kalmaz, aynı zamanda çok katlı giysiler ve hassas kumaşlarda bile pürüzsüz ve kusursuz sonuçlar sunar. Yüksek kaliteli malzemelerin ve ergonomik sistemin kullanımı, tüm kullanıcılar için — yeni başlayanlardan profesyonellere kadar — rahat, hızlı ve güvenilir bir deneyim sağlar.",
+      "subTitle": "Zahmetsiz Ütüleme",
+      "intro": [
         {
-            "id": "sewing-machine",
-            "images": {
-                "bg": "/images/SweingMachine2.webp",
-                "intro": [
-                    "/images/vdss.png",
-                    "/images/detail.jpg",
-                    "/images/lower quality3.jpg",
-                    "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
-                ]
-            },
-            "title": "PRECISION IS A MATTER OF STITCH – AND NOT JUST FOR THE FABRICS",
-            "description": [
-                "Renowned for redefining stitching performance, our sewing machines have consistently empowered professionals and hobbyists alike to bring ideas to life with accuracy and ease. With a tradition built on quality and innovation, they continue to set the benchmark for precision sewing – now more than ever.",
-                "Our sewing machines have achieved countless successes in fashion studios and creative workshops worldwide, proving their place as a trusted symbol of precision and reliability. From intricate details to bold designs, they embody innovation and craftsmanship – and today, this legacy of excellence is stronger than ever."
-            ],
-            "subTitle": "Every stitch counts",
-            "intro": [
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "/images/detail.jpg"
-                    ]
-                },
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "/images/aac9c815-6b26-4f4e-bf08-d08294ee61a1.png"
-                    ]
-                },
-                {
-                    "title": "Attention to detail",
-                    "subTitle": "Every stitch counts",
-                    "description": "Experience unmatched precision with our advanced sewing machine, designed for both beginners and professionals. Engineered with high-quality components, it ensures smooth stitching, consistent tension, and accurate results on every fabric. From delicate details to heavy-duty projects, its precision control makes sewing effortless and flawless. Perfect for fashion, crafts, or home projects, this sewing machine delivers reliability, accuracy, and superior performance every time.",
-                    "images": [
-                        "/images/lq5.jpg"
-                    ]
-                }
-            ]
+          "title": "Hassas Kontrol, Kusursuz Sonuçlar",
+          "subTitle": "Her Buhar Hareketinde Hassasiyet",
+          "description": "Hassas sıcaklık ve buhar kontrolüne sahip buharlı ütümüz, en zorlu kırışıklıkları bile kumaşa zarar vermeden giderir, tüm kullanıcılar için pürüzsüz ve profesyonel bir deneyim sunar.",
+          "images": [
+            "/images/4 (1).jpg"
+          ]
+        },
+        {
+          "title": "Hızlı ve Verimli Ütüleme",
+          "subTitle": "Zamandan Tasarruf Eden Performans",
+          "description": "Anında buhar teknolojisi ve gelişmiş tasarımı sayesinde bu ütü, ütüleme süresini önemli ölçüde kısaltır. Kalın giysiler, perdeler ve çok katlı kumaşlar bile profesyonel kaliteyi koruyarak hızla düzeltilir.",
+          "images": [
+            "/images/3.jpg"
+          ]
+        },
+        {
+          "title": "Enerji Tasarruflu ve Konforlu",
+          "subTitle": "Konfor ve Optimize Edilmiş Enerji",
+          "description": "Buharlı ütümüz, optimize edilmiş enerji tüketimi ve hafif tasarımıyla kullanıcı konforunu garanti eder. Ergonomik sapı ve kolay kullanımlı kontrolleri, uzun ütüleme seanslarını yorgunluktan uzak ve keyifli hale getirir.",
+          "images": [
+            "/images/6.jpg"
+          ]
         }
-    ]
+      ]
+    }
+  ]
+
 }
