@@ -31,8 +31,8 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                         <Image
                             src={content.images.intro}
                             alt="About our shop"
-                            width={600}
-                            height={400}
+                            width={1100}
+                            height={900}
                             className="w-full h-auto object-cover"
                             priority
                         />
@@ -72,7 +72,7 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                                     width={1200}
                                     height={800}
                                     className="w-full h-auto object-cover"
-                                    priority
+                                    placeholder='blur'
                                 />
                             ))}
                         </div>
