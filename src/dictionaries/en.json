@@ -466,5 +466,36 @@
             }
         ]
     }
-]
+],
+  "about": {
+    "title": "The Jantec Story",
+    "description": "Every brand has a story. But the story of Jantec is a tale of <b>three generations of innovation, perseverance, and passion for Iranian industry</b>. Our journey goes back to the 1960s, when <b>Ali Akbar</b> Monzavi, the spiritual father of Iran’s sewing machine industry, laid the foundation of this industry in the country by obtaining the world’s first Janome dealership. A generation whose tireless efforts transformed sewing from a traditional workshop craft into a modern industry.",
+    "items": [
+      {
+        "description": [
+          "The second generation of this legacy was Mehdi Monzavi; a man whose creativity and courage elevated the Janome brand to new heights in Iran. He saved the Iranian market from second-hand and used sewing machines and revived home sewing by introducing modern technologies and new products."
+        ],
+        "image": "/images/about-1.webp"
+      },
+      {
+        "description": [
+          "And finally, the third generation: Engineer Hamed Monzavi. He is not only the heir to a proud history but also the architect of a new future for the home appliance industry in Iran. With his managerial experience and academic knowledge in electrical engineering and executive management, Hamed Monzavi established in 2018 the most modern sewing machine factory in Iran and the Middle East, located in Shamsabad Industrial Town — a factory with an annual production capacity of 300,000 units."
+        ],
+        "image": "/images/about-2.webp"
+      },
+      {
+        "description": [
+          "But Jantec has not relied solely on the past. We are pioneers of innovation:",
+          "<b>Inventor of the home steam press system</b> with curved plates and optimized steam injection mechanism.",
+          "<b>Designer of advanced four-axis CNC machining processes</b> in the sewing machine industry.",
+          "And builder of multi-channel sales and distribution networks, bringing new life to the supply chain.",
+          "Today, Negin Jan & Meh Company, as the parent holding of Jantec, moves forward with a clear vision:",
+          "<b>The largest provider of household products nationwide.</b><br>Our mission is simple and direct:",
+          "By utilizing modern technologies and continuous research and development, we produce products that make the lives of Iranians easier, more beautiful, and more reliable. We believe in the loyalty of our customers and representatives, and we honor this trust with quality, innovative after-sales services, and prompt responsiveness. Jantec is not just a brand;",
+          "<b>it is the continuation of a legacy, the beginning of a future, and a bridge between tradition and innovation.</b>"
+        ],
+        "image": "/images/about-3.webp"
+      }
+    ]
+  }
 }

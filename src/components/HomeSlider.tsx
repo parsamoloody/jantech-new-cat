@@ -13,19 +13,18 @@ import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/i18n.config';
 
 interface SlideItemProps {
-    slide: { 
+    slide: {
         id: string;
-        image: string; 
-        description: string; 
-        title: string; 
+        image: string;
+        description: string;
+        title: string;
     };
     index: number;
     isActive: boolean;
     lang: Locale;
-    onMouseEnter: () => void;  // Add this prop definition
+    onMouseEnter: () => void;
 }
 
-// Memoize individual slide component
 const SlideItem = memo(({ slide, index, isActive, lang, onMouseEnter }: SlideItemProps) => (
     <div
         className={`flex items-start pt-6 font-bold border-t-2  ${isActive ? "border-black" : "border-white"}`}
@@ -50,7 +49,7 @@ SlideItem.displayName = 'SlideItem';
 const HomeSlider = memo(({ lang }: { lang: Locale }) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const [activeIndex, setActiveIndex] = useState(0);
-    const [slides, setSlides] = useState<{ 
+    const [slides, setSlides] = useState<{
         items: { image: string; description: string; title: string, id: string }[];
         title: string;
     }>();
@@ -85,7 +84,7 @@ const HomeSlider = memo(({ lang }: { lang: Locale }) => {
             <h4 className='text-center text-2xl md:text-3xl font-bold flex flex-col md:flex-row gap-1 md:justify-center md:items-center w-full'>
                 {slides.title}<span> Jantech</span>
             </h4>
-            
+
             {/* Mobile Slider */}
             <div className='lg:hidden'>
                 <Swiper

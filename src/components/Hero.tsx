@@ -31,18 +31,16 @@ const FullScreenPage: React.FC = () => {
           src={bg_1}
           alt="Background 1"
           fill
-          className={`object-cover transition-opacity duration-1000 ${
-            activeIndex === 0 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-cover transition-opacity duration-1000 ${activeIndex === 0 ? "opacity-100" : "opacity-0"
+            }`}
           priority
         />
         <Image
           src={bg_2}
           alt="Background 2"
           fill
-          className={`object-cover transition-opacity duration-1000 ${
-            activeIndex === 1 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-cover transition-opacity duration-1000 ${activeIndex === 1 ? "opacity-100" : "opacity-0"
+            }`}
           priority
         />
       </div>
@@ -63,7 +61,7 @@ const FullScreenPage: React.FC = () => {
         <button
           onClick={() => handleImageChange(0)}
           className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8d7663] cursor-pointer border border-gray-800 rounded-full transition"
-          ></button>
+        ></button>
         <button
           onClick={() => handleImageChange(1)}
           className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8a8684] cursor-pointer border border-gray-800 rounded-full transition"

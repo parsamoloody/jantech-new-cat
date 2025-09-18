@@ -32,8 +32,6 @@ type Product = {
 const slogan: Record<Locale, string> = {
   en: " take your creativity to the next level!",
   fa: "چرخ خیاطی‌های جانتک، خلاقیتتان را به اوج بسونید!",
-  ar: "ماكينات جانتِك للخياطة، ارتقِ بإبداعك إلى القمة!",
-  ru: "поднимите своё творчество на новый уровень!",
   tr: "yaratıcılığınızı zirveye taşıyın!"
 };
 
@@ -63,9 +61,6 @@ export default function ProductsPage() {
         setCat(m);
         switch (lang) {
           case "fa":  
-            setIsLatin(false);
-            break;
-          case "ar":
             setIsLatin(false);
             break;
           default:

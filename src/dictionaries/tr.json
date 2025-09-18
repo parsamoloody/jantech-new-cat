@@ -466,6 +466,35 @@
         }
       ]
     }
-  ]
-
+  ],  "about": {
+    "title": "Jantec’in Hikayesi",
+    "description": "Her markanın bir hikayesi vardır. Ancak Jantec’in hikayesi, <b>üç nesillik yenilik, azim ve İran sanayisine duyulan tutkunun</b> öyküsüdür. Yolculuğumuz 1960’lı yıllara dayanır; o zaman <b>Ali Akbar</b> Monzavi, İran dikiş makinesi sanayisinin manevi babası, dünyanın ilk Janome bayiliğini alarak bu sanayinin temelini ülkede attı. Bu nesil, yorulmak bilmeyen çabalarıyla dikişi geleneksel bir atölye işinden modern bir endüstriye dönüştürdü.",
+    "items": [
+      {
+        "description": [
+          "Bu mirasın ikinci nesli Mehdi Monzavi’ydi; yaratıcılığı ve cesaretiyle Janome markasını İran’da yeni bir seviyeye taşıyan adam. O, İran pazarını ikinci el ve kullanılmış dikiş makinelerinden kurtardı ve modern teknolojileri ve yeni ürünleri tanıtarak ev tipi dikişi yeniden canlandırdı."
+        ],
+        "image": "/images/about-1.webp"
+      },
+      {
+        "description": [
+          "Ve sonunda, üçüncü nesil: Mühendis Hamed Monzavi. O sadece gurur verici bir tarihin varisi değil, aynı zamanda İran’daki beyaz eşya sektörüne yeni bir gelecek inşa eden bir mimar. Elektrik mühendisliği ve yönetim alanındaki akademik bilgisi ve yöneticilik tecrübesiyle Hamed Monzavi, 2018 yılında Şemsabad Organize Sanayi Bölgesi’nde Orta Doğu’nun ve İran’ın en modern dikiş makinesi fabrikasını kurdu; yıllık 300.000 adet üretim kapasitesine sahip bir fabrika."
+        ],
+        "image": "/images/about-2.webp"
+      },
+      {
+        "description": [
+          "Ama Jantec yalnızca geçmişe yaslanmadı. Biz yeniliğin öncüleriyiz:",
+          "<b>Kavisli plakalar ve optimize edilmiş buhar enjeksiyon mekanizmasına sahip ev tipi buharlı ütü pres sisteminin mucidi.</b>",
+          "<b>Dikiş makinesi endüstrisinde ileri dört eksenli CNC işleme süreçlerinin tasarımcısı.</b>",
+          "Ve tedarik zincirine yeni bir soluk getiren çok kanallı satış ve dağıtım ağlarının kurucusu.",
+          "Bugün Jantec’in ana holdingi olan Negin Jan & Meh Şirketi, net bir vizyonla ilerliyor:",
+          "<b>Ülke çapında en büyük ev ürünleri sağlayıcısı.</b><br>Misyonumuz basit ve nettir:",
+          "Modern teknolojilerden ve sürekli araştırma-geliştirmeden yararlanarak, İranlıların hayatını daha kolay, daha güzel ve daha güvenli kılacak ürünler üretiyoruz. Müşterilerimizin ve temsilcilerimizin sadakatine inanıyoruz ve bu güveni kalite, yenilikçi satış sonrası hizmetler ve hızlı geri dönüşlerle onurlandırıyoruz. Jantec sadece bir marka değildir;",
+          "<b>bir mirasın devamı, bir geleceğin başlangıcı ve gelenek ile yenilik arasında bir köprüdür.</b>"
+        ],
+        "image": "/images/about-3.webp"
+      }
+    ]
+  }
 }
