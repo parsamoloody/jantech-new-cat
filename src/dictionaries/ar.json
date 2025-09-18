@@ -96,16 +96,6 @@
                     "title": "التركية",
                     "src": "/icons/turkey.svg",
                     "language": "tr"
-                },
-                {
-                    "title": "الروسية",
-                    "src": "/icons/russia.svg",
-                    "language": "ru"
-                },
-                {
-                    "title": "عربي",
-                    "src": "/icons/arabia.svg",
-                    "language": "ar"
                 }
             ]
         },

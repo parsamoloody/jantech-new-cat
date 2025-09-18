@@ -69,8 +69,8 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                                     key={imgIndex}
                                     src={image}
                                     alt={`${section.title} image`}
-                                    width={600}
-                                    height={400}
+                                    width={1200}
+                                    height={800}
                                     className="w-full h-auto object-cover"
                                     priority
                                 />

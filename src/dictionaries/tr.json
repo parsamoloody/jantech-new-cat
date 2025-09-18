@@ -3,22 +3,22 @@
         "products": [
             {
                 "title": "Dikiş Makinesi",
-                "image": "/images/sewingMachine.webp",
+                "image": "/images/3020.webp",
                 "href": "sewing-machine"
             },
             {
                 "title": "Baskı Ütüsü",
-                "image": "/images/pressureIron.webp",
+                "image": "/images/3211.webp",
                 "href": "pressure-iron"
             },
             {
                 "title": "Buhar Ütüsü",
-                "image": "/images/steamIron.webp",
+                "image": "/images/9026.webp",
                 "href": "steam-iron"
             },
             {
                 "title": "Vakum Temizleyici",
-                "image": "/images/vacuumCleaner.webp",
+                "image": "/images/4556.webp",
                 "href": "vacuum-cleaner"
             }
         ],
@@ -42,31 +42,31 @@
                     "href": "/"
                 },
                 {
-                    "title": "Satış Ağı",
-                    "href": "#"
+                    "title": "Hakkında",
+                    "href": "/about-us"
                 },
                 {
                     "title": "Ürünler",
                     "children": [
                         {
                             "title": "Dikiş Makinesi",
-                            "href": "/products/sewing-machine",
-                            "image": "/images/sewingMachine-transparent.webp"
+                            "href": "/products/steam-iron",
+                            "image": "/images/steamIron-transparent.webp"
                         },
                         {
                             "title": "Buharlı Pres",
-                            "href": "/products/pressure-iron",
-                            "image": "/images/pressureIron-transparent.webp"
+                            "href": "/products/standing-iron",
+                            "image": "/images/3211White.webp"
                         },
                         {
                             "title": "Elektrikli Süpürge",
-                            "href": "/products/vacuum-cleaner",
-                            "image": "/images/vacuumCleaner-transparent.webp"
+                            "href": "/products/tank-iron",
+                            "image": "/images/SteamGenerator.webp"
                         },
                         {
                             "title": "Buhar Ütüsü",
-                            "href": "/products/steam-iron",
-                            "image": "/images/steamIron-transparent.webp"
+                            "href": "/products/sewing-machine",
+                            "image": "/images/sewingMachine-transparent.webp"
                         }
                     ]
                 },
@@ -96,16 +96,6 @@
                     "title": "Türkçe",
                     "src": "/icons/turkey.svg",
                     "language": "tr"
-                },
-                {
-                    "title": "Rusça",
-                    "src": "/icons/russia.svg",
-                    "language": "ru"
-                },
-                {
-                    "title": "Arapça",
-                    "src": "/icons/arabia.svg",
-                    "language": "ar"
                 }
             ]
         },
@@ -371,28 +361,22 @@
         "title": "Öne Çıkan Ürünler",
         "items": [
             {
-                "id": "sewing-machine",
-                "image": "sewingMachine.webp",
-                "title": "Dikiş Makinesi",
-                "description": "Dikiş makinelerimiz ev kullanımı için tasarlanmıştır. Makinelerimiz güzel ve verimlidir."
-            },
-            {
-                "id": "pressure-iron",
-                "image": "pressureIron.webp",
-                "title": "Basınçlı Ütü",
-                "description": "Basınçlı ütülerimiz hafif ve kullanımı kolaydır, ütülemeyi kolaylaştırır."
-            },
-            {
                 "id": "steam-iron",
-                "image": "steamIron.webp",
+                "image": "Jantech-features-3-min.jpg",
                 "title": "Buharlı Ütü",
-                "description": "Buharlı ütülerimiz güçlü buhar çıkışı sağlayarak en iyi ütüleme sonuçlarını sunar."
+                "description": "Buharlı ütülerimiz hafif ve kullanımı kolaydır, ütü yapmayı zahmetsiz hale getirir."
             },
             {
-                "id": "vacuum-cleaner",
-                "image": "vacuumCleaner.webp",
-                "title": "Elektrik Süpürgesi",
-                "description": "Elektrik süpürgelerimiz maksimum emiş gücü ve verimlilik için tasarlanmıştır."
+                "id": "standing-iron",
+                "image": "Jantech-features-1-min.jpg",
+                "title": "Dik Ütü",
+                "description": "Dik ütülerimiz en iyi ütüleme sonuçları için güçlü buhar çıkışı sağlar."
+            },
+            {
+                "id": "tank-iron",
+                "image": "Jantech-features-2-min.jpg",
+                "title": "Kazanlı Ütü",
+                "description": "Kazanlı ütülerimiz maksimum buhar çıkışı ve verimlilik için tasarlanmıştır."
             }
         ]
     },
@@ -413,35 +397,35 @@
     },
     "categories": [
         {
-           "_id": "sewing-machine",
+            "_id": "sewing-machine",
             "title": "Dikiş Makinesi",
             "description": "Dikiş makinelerimiz hassasiyetle üretilmiş olup, modern teknolojiyi güvenilir performansla birleştirir. Önemli ayrıntılar arasında çoklu dikiş desenleri, ayarlanabilir hız ve hem yeni başlayanlara hem de profesyonellere uygun dayanıklı yapı bulunur. Sahip olmanın faydaları sayısızdır—projelerin daha hızlı tamamlanması, düzenli ve profesyonel bitiş, ve manuel çabanın azaltılması. Sessiz çalışma, kompakt tasarım ve kullanıcı dostu kontroller gibi olumlu özellikler onları ev veya iş için mükemmel kılar. Güçleri çok yönlülüklerinde yatar, bu sayede geniş bir kumaş yelpazesinde kolayca çalışabilirsiniz. Yüksek verimlilikle zamandan tasarruf sağlar ve üretkenliği artırır, her giysinin güzel ve dayanıklı olmasını garanti eder.",
             "video": "/videos/sewingMachine.mp4",
             "image": ""
         },
         {
-           "_id": "pressure-iron",
+            "_id": "pressure-iron",
             "title": "Basınçlı Ütü",
             "description": "Buhar basınçlı ütü, kusursuz sonuçları daha kısa sürede isteyenler için en ideal araçtır. Önemli detaylar arasında hızlı ısınma teknolojisi, sürekli buhar basıncı ve ergonomik, yorulmayı azaltan tasarım bulunur. Faydaları açıktır—kırışıksız giysiler, daha kısa ütüleme seansları ve ağır kumaşlarda bile mükemmel sonuçlar. Güvenlik için otomatik kapanma, enerji tasarruf özellikleri ve uzun ömürlü su hazneleri gibi olumlu yönler kullanım sırasında size güven verir. Basınçlı ütünün gücü, profesyonel düzeyde sonuçları sürekli olarak sunabilmesindedir. Yüksek verimliliği sayesinde ütüleme süresini kısaltır ve hız ile performansın önemli olduğu evler, oteller veya terziler için mükemmel bir tercihtir.",
             "video": "/videos/pressureIron.mp4",
             "image": ""
         },
         {
-           "_id": "vacuum-cleaner",
+            "_id": "vacuum-cleaner",
             "title": "Elektrik Süpürgesi",
             "description": "Elektrikli süpürgelerimiz yenilik, dayanıklılık ve yüksek performans gözetilerek üretilmiştir. Önemli detaylar arasında yüksek emiş gücü çok yüzeyli temizlik başlıkları toz ve alerjenler için HEPA filtreleme ve gürültü azaltma teknolojisi bulunur. Faydaları yalnızca tertemiz zeminlerle sınırlı değildir—iç mekân hava kalitesini artırır ve temizlik işlerini kolaylaştırır. Hafifliği sayesinde kolay manevra kabiliyeti, geniş toz haznesi ve dayanıklı motorlarıyla günlük kullanımda öne çıkar. Gücü, sürekli emiş performansında ve her köşeye rahatça ulaşabilme yeteneğinde yatar. Olağanüstü verimlilikleri sayesinde bu elektrikli süpürgeler zamandan, enerjiden ve emekten tasarruf sağlar, güçlü temizlik çözümleri arayan evler ve işletmeler için değerli bir seçimdir.",
             "video": "/videos/vacuumCleaner.mp4",
             "image": ""
         },
         {
-           "_id": "steam-iron",
+            "_id": "steam-iron",
             "title": "Buharlı Ütü",
             "description": "Buharlı ütülerimiz günlük ütüleme rutininize kolaylık ve hassasiyet katmak için tasarlanmıştır. Ayrıntılar arasında ayarlanabilir buhar ayarları, damlatmaz özellikler, çizilmez taban plakaları ve hızlı ısınan rezistanslar bulunur. Faydaları arasında daha pürüzsüz giysiler, zahmetsiz kullanım ve uzun vadeli güvenilir performans vardır. Olumlu özellikleri hafif tasarım, dayanıklı yapı ve enerji tasarrufu fonksiyonlarıdır. Buharlı ütünün gücü, hassas kumaşların yanı sıra daha kalın malzemeleri de aynı kolaylıkla ütüleyebilmesinde yatar. Verimlilik, ısının eşit dağılmasıyla en üst düzeye çıkar, bu da ütüleme süresini ve eforu azaltır. Günlük ev kullanımı ya da profesyonel ihtiyaçlar için, buharlı ütülerimiz güçlü performans ve uzun ömürlü güvenilirlik sunar.",
             "video": "/videos/steamIron.mp4",
             "image": ""
         }
     ],
-   "mutation": [
+    "mutation": [
         {
             "id": "sewing-machine",
             "images": {
