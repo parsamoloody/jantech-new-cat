@@ -62,11 +62,11 @@ const FullScreenPage: React.FC = () => {
       <div className="absolute right-7 xl:right-20 top-[82%] flex gap-4">
         <button
           onClick={() => handleImageChange(0)}
-          className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8a8684] cursor-pointer border border-gray-800 rounded-full transition"
-        ></button>
+          className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8d7663] cursor-pointer border border-gray-800 rounded-full transition"
+          ></button>
         <button
           onClick={() => handleImageChange(1)}
-          className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8d7663] cursor-pointer border border-gray-800 rounded-full transition"
+          className="w-10 h-10 sm:w-16 sm:h-16 xl:w-10 xl:h-10 bg-[#8a8684] cursor-pointer border border-gray-800 rounded-full transition"
         ></button>
       </div>
     </div>

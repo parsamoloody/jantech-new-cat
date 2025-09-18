@@ -72,7 +72,6 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
                                     height={800}
                                     className="w-full h-auto object-cover"
                                     priority
-                                    placeholder='blur'
                                 />
                             ))}
                         </div>

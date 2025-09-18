@@ -123,7 +123,7 @@ const HomeSlider = memo(({ lang }: { lang: Locale }) => {
                             </div>
                             <div className="text-center font-medium py-4 px-6 space-y-3">
                                 <p>{slide.description}</p>
-                                <Link href="#" className='border-b-2 text-sm'>
+                                <Link href={`${lang}/mutation/${slide.id}`} className='border-b-2 text-sm'>
                                     Learn more
                                 </Link>
                             </div>

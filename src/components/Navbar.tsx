@@ -117,7 +117,7 @@ export default function Navbar() {
           isOpen ? "start-0" : "-start-full"
         }`}
       >
-        <Image src={jantechLogo} width={150} height={150} alt="logo" className="mx-auto" />
+        <Image src={jantechLogo} width={150} height={150} alt="logo" className="mx-auto" priority />
         <ul className="mt-8 space-y-6 relative z-10">
           {t.items.map((item) => (
             <li key={item.title}>
