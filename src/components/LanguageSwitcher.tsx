@@ -39,7 +39,7 @@ export default function LanguageSwitcher({ lang, isDark }: Props) {
       onBlur={() => setIsOpen(false)}
     >
       <div
-        className={`flex items-center justify-between border ${isDark ? 'border-gray-700' : 'border-slate-300'} rounded-md py-1.5 px-1 md:p-0 cursor-pointer`}
+        className={`flex items-center justify-between backdrop-blur-sm border ${isDark ? 'border-gray-700' : 'border-slate-300'} rounded-md py-1.5 px-1 md:p-0 cursor-pointer`}
         onClick={() => setIsOpen((prev) => !prev)}
       >
         <span className={`md:hidden ${isDark ? 'text-white' : 'text-black'}`}>

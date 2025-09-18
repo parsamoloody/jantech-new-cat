@@ -112,8 +112,10 @@ export default function Navbar() {
                 </h3>
               </Link>
             ))}
+            
           </div>
         </div>
+        
       </div>
     </div>
   )}
@@ -121,7 +123,7 @@ export default function Navbar() {
 
             ))}
           </ul>
-          <div className="hidden 2xl:block">
+          <div className="hidden 2xl:block ">
             <LanguageSwitcher lang={lang} isDark={isMutationPage && !dropHov && !isScrolled} />
           </div>
         </div>
