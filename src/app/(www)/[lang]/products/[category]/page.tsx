@@ -122,7 +122,7 @@ export default function ProductsPage() {
   }, []);
 
   const swiperSlides = [
-    { title: "vacuum cleaner", image: "/images/vacuumCleaner-transparent.webp" },
+    { title: "vacuum cleaner", image: "/images/VaccuumCleaner.webp" },
     { title: "steam iron", image: "/images/steamIron-transparent.webp" },
     { title: "sewing machine", image: "/images/sewingMachine-transparent.webp" },
     { title: "pressure iron", image: "/images/pressureIron-transparent.webp" },

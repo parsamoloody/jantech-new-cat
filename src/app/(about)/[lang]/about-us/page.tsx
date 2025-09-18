@@ -4,7 +4,7 @@ import React from "react";
 import { motion, Variants } from "framer-motion"; // Import Variants type
 import Image from "next/image";
 
-import fixedImage from "@/images/about-1.webp";
+import fixedImage from "@/images/AMR_2780-5050.jpg";
 import contentImage1 from "@/images/about-1.webp";
 import contentImage2 from "@/images/about-2.webp";
 import contentImage3 from "@/images/about-3.webp";

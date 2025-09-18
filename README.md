@@ -1,1 +1,1 @@
-[`live demo`](https://smartcd.vercel.app)
+[`live demo`](https://smartcdv2.vercel.app)
