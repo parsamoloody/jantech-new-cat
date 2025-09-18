@@ -44,7 +44,11 @@ export default function Navbar() {
       }`}
     >
       <div className="flex max-w-[1655px] mx-auto items-center justify-between px-4 md:px-12 xl:px-16 py-5.5">
+        <Link
+          href={`/${lang}`}
+        >
         <Image src={jantechLogo} alt="Logo" width={135} height={24} priority className="" />
+        </Link>
         <div
           className="flex flex-col gap-[5px] *:w-7 *:h-[3px] *:bg-red-primary *:rounded-md cursor-pointer 2xl:hidden ms-auto"
           onClick={() => setIsOpen((prev) => !prev)}
