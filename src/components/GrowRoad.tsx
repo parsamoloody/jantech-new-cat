@@ -141,9 +141,7 @@ export default async function GrowRoad({lang}: {lang: Locale}) {
         <section className="px-4">
             <h2 className="text-2xl font-bold text-center mb-16">
                 {lang === 'fa' ? 'مسیر رشد برند ما' :
-                 lang === 'ar' ? 'رحلة نمو علامتنا التجارية' :
                  lang === 'tr' ? 'Markamızın Büyüme Yolculuğu' :
-                 lang === 'ru' ? 'Путь развития нашего бренда' :
                  'Our Brand Growth Journey'}
             </h2>
             <div className="relative max-w-5xl mx-auto before:content-[''] before:absolute before:top-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-1 before:h-full before:bg-black">

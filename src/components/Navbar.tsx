@@ -38,6 +38,7 @@ export default function Navbar() {
 
   return (
     <header
+      dir={(dir === "rtl" ? "ltr" : "rtl")}
       className={`fixed top-0 start-0 z-50 w-full transition-[background-color] duration-300 ease-linear ${
         dropHov || isScrolled || !isHome ? "bg-white shadow-md" : "bg-transparent"
       }`}
@@ -59,52 +60,61 @@ export default function Navbar() {
           >
             {t.items.map((item) => (
               <li key={item.title} className="relative group">
-                <div
-                  className="flex items-center gap-1.5 cursor-pointer"
-                  onMouseEnter={() => item.children && setDropHov(true)}
-                  onMouseLeave={() => item.children && setDropHov(false)}
-                >
-                  <Link
-                    href={`/${lang}/${item.href}`}
-                  
-                  >{item.title}</Link>
-                  {item.children && (
-                    <FaAngleDown className="group-hover:-rotate-180 transition-all duration-300" />
-                  )}
+  <div
+    className="flex items-center gap-1.5 cursor-pointer"
+    onMouseEnter={() => item.children && setDropHov(true)}
+    onMouseLeave={() => item.children && setDropHov(false)}
+  >
+    {item.children ? (
+      // Just text for dropdown parent
+      <span>{item.title}</span>
+    ) : (
+      // Normal link if no children
+      <Link href={`/${lang}/${item.href}`}>
+        {item.title}
+      </Link>
+    )}
+    {item.children && (
+      <FaAngleDown className="group-hover:-rotate-180 transition-all duration-300" />
+    )}
+  </div>
+
+  {item.children && (
+    <div
+      className="invisible group-hover:visible opacity-0 group-hover:opacity-100 fixed left-0 right-0 transition-all duration-300 ease-out scale-95 group-hover:scale-100 origin-top"
+      onMouseEnter={() => setDropHov(true)}
+      onMouseLeave={() => setDropHov(false)}
+    >
+      <div className="bg-white shadow-lg w-full">
+        <div className="max-w-[700px] mx-auto">
+          <div className="grid grid-cols-4 gap-y-7 p-8 justify-center">
+            {item.children.map((child, i) => (
+              <Link
+                key={i}
+                href={`/${lang}/${child.href}`}
+                className="group/item"
+              >
+                <div className="relative overflow-hidden rounded-lg justify-center items-center flex">
+                  <Image
+                    src={child.image || ""}
+                    alt={child.title}
+                    width={90}
+                    height={60}
+                    className="transition-transform w-[100px] duration-300 group-hover/item:scale-105"
+                  />
                 </div>
-                {item.children && (
-                  <div
-                    className="invisible group-hover:visible opacity-0 group-hover:opacity-100 fixed left-0 right-0 transition-all duration-300 ease-out scale-95 group-hover:scale-100 origin-top"
-                    onMouseEnter={() => setDropHov(true)}
-                    onMouseLeave={() => setDropHov(false)}
-                  >
-                    <div className="bg-white shadow-lg w-full">
-                      <div className="max-w-[700px] mx-auto">
-                        <div className="grid grid-cols-4 gap-y-7 p-8 justify-center">
-                          {item.children.map((child, i) => (
-                            <Link
-                              key={i}
-                              href={`/${lang}/${child.href}`}
-                              className="group/item"
-                            >
-                              <div className="relative overflow-hidden rounded-lg justify-center items-center flex">
-                                <Image
-                                  src={child.image || ""}
-                                  alt={child.title}
-                                  width={90}
-                                  height={60}
-                                  className="transition-transform w-[100px] duration-300 group-hover/item:scale-105"
-                                />
-                              </div>
-                              <h3 className="text-center font-medium text-gray-800">{child.title}</h3>
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </li>
+                <h3 className="text-center font-medium text-gray-800">
+                  {child.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+</li>
+
             ))}
           </ul>
           <div className="hidden 2xl:block">

@@ -71,7 +71,7 @@ export default function ProductsPage() {
       }
       fetchCategory();
     }
-  }, [lang, category]); // Added dependencies
+  }, [lang, category]);
 
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
@@ -125,7 +125,7 @@ export default function ProductsPage() {
 
   return (
     <div className="flex flex-col md:gap-12 pt-[90px] xl:pt-20 pb-10 max-w-[1600px] mx-auto">
-      <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-8  ml-4">
+      <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-8 sm:ml-4">
         <div className="md:basis-[40%]">
           <div className="space-y-4 mx-auto">
             <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
@@ -159,10 +159,10 @@ export default function ProductsPage() {
                 <video
                   autoPlay
                   muted
+                  src={cat?.video}
                   loop
                   className="w-full h-full object-cover"
                 >
-                  <source src={cat?.video} type="video/mp4" />
                 </video>
               ) : (
                 "loading ..."
