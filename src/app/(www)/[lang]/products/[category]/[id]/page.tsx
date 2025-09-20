@@ -14,7 +14,7 @@ export default async function ProductPage({
     const { lang, category, id } = await params;
     const t = (await getDictionary(lang)).productPage;
 
-    const  data = await fetch(`/api/products?lang=${lang}&category=${category}&id=${id}`).then(res => res.json());
+    const  data = await fetch(`https://smartcdv2.vercel.app/api/${lang}/products?lang=${lang}&category=${category}&id=${id}`).then(res => res.json());
     if (!t || !data[0]) return null;
 
     return (
