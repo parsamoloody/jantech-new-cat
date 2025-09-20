@@ -39,8 +39,8 @@ export default function Navbar() {
   return (
     <header
       dir={(dir === "rtl" ? "ltr" : "rtl")}
-      className={`fixed top-0 start-0 z-50 w-full transition-[background-color] duration-300 ease-linear ${
-        dropHov || isScrolled || !isHome ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed top-0 start-0 z-50 w-full bg-white opacity-75 transition-[background-color] duration-300 ease-linear ${
+        dropHov || isScrolled || !isHome ? "bg-white shadow-md opacity-100" : "bg-transparent"
       }`}
     >
       <div className="flex max-w-[1655px] mx-auto items-center justify-between px-4 md:px-12 xl:px-16 py-5.5">
