@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <header
       dir={(dir === "rtl" ? "ltr" : "rtl")}
-      className={`fixed top-0 start-0 z-50 w-full bg-white opacity-75 transition-[background-color] duration-300 ease-linear ${
+      className={`fixed top-0 start-0 z-50 w-full ${(!isMutationPage) ? "bg-white opacity-75" : ""} transition-[background-color] duration-300 ease-linear ${
         dropHov || isScrolled || !isHome ? "bg-white shadow-md opacity-100" : "bg-transparent"
       }`}
     >
