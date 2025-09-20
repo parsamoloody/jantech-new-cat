@@ -11,7 +11,25 @@ type PageProps = {
     cat: string;
   }>;
 };
-
+interface IntroSection {
+    subTitle: string;
+    title: string;
+    description: string;
+    images: string[];
+}
+// Import the HeroContent type
+interface HeroContent {
+    id: string;
+    images: {
+        bg: string;
+        intro: string;
+    };
+    title: string;
+    description: string[] | [string, string]; // Union type
+    linear: string;
+    subTitle: string;
+    intro: IntroSection[];
+}
 
 export const metadata: Metadata = {
   title: 'Product Categories | JanTech',
@@ -45,10 +63,17 @@ const About = async ({ params }: PageProps): Promise<JSX.Element> => {
   const { lang, cat } = resolvedParams;
 
   const dictionary = await getDictionary(lang);
-  const content = dictionary.mutation.find((item) => item.id === cat);
+  const content = dictionary.mutation.find((item) => item.id === cat) as HeroContent | undefined;
 
   if (!content) {
-    return <div>Content not found</div>;
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center py-12">
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">Content Not Found</h1>
+          <p className="text-gray-600">The content you're looking for doesn't exist.</p>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -58,6 +83,5 @@ const About = async ({ params }: PageProps): Promise<JSX.Element> => {
     </>
   );
 };
-
 
 export default About;
