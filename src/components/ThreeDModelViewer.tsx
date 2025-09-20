@@ -5,17 +5,34 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { MdOutline3dRotation } from "react-icons/md";
 
 export default function ModelViewer() {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [materialRef, setMaterialRef] = useState<THREE.MeshStandardMaterial | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [activeColor, setActiveColor] = useState<string>(""); // track selected color
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (!mountRef.current) return;
 
     // Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x0000);
+    scene.background = new THREE.Color(0x000000);
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
@@ -57,7 +74,7 @@ export default function ModelViewer() {
       const center = box.getCenter(new THREE.Vector3());
 
       const maxDim = Math.max(size.x, size.y, size.z);
-      const fov = camera.fov * (Math.PI / 120);
+      const fov = camera.fov * (Math.PI / (isMobile ? 115 : 215));
       let cameraZ = Math.abs(maxDim / Math.tan(fov / 2));
 
       cameraZ *= offset;
@@ -96,19 +113,20 @@ export default function ModelViewer() {
             const mesh = child as THREE.Mesh;
             const mat = mesh.material as THREE.MeshStandardMaterial;
             if (mat.name === "Base Plastic.001") {
-              setMaterialRef(mat); // store reference to update later
+              setMaterialRef(mat);
             }
           }
         });
 
         scene.add(model);
         fitCameraToObject(camera, model, 1.5);
+
+        setLoading(false); // hide loading screen
       },
-      (xhr) => {
-        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-      },
+      undefined,
       (error) => {
         console.error("Error loading model:", error);
+        setLoading(false);
       }
     );
 
@@ -143,18 +161,46 @@ export default function ModelViewer() {
   const changeColor = (color: string) => {
     if (materialRef) {
       materialRef.color.set(color);
+      setActiveColor(color);
     }
   };
 
   return (
-    <div 
-    className="bg-black h-screen"
-    style={{ textAlign: "center" }}>
+    <div className="bg-black h-screen relative flex flex-col items-center justify-center">
+      {/* Heading on top */}
+      <h2 className="absolute top-6 text-white text-2xl sm:text-3xl font-semibold">
+        Customize your dream order
+      </h2>
+
+      {/* Canvas */}
       <div ref={mountRef} style={{ width: "100%", height: "100vh" }} />
-      <div 
-      className="flex justify-center gap-4 -mt-40 bg-red-500">
-        <button className="bg-[#c7c7c7] w-7 h-7 rounded-full cursor-pointer " onClick={() => changeColor("#c7c7c7")}></button>
-        <button className="bg-[#ffffff] w-7 h-7 rounded-full cursor-pointer " onClick={() => changeColor("#ffffff")}></button>
+
+      {/* Loading Overlay */}
+      {loading && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black text-white text-4xl">
+          <MdOutline3dRotation className="animate-pulse" size={48} />
+        </div>
+      )}
+
+      {/* Color buttons */}
+      <div className="absolute bottom-10 flex justify-center gap-4">
+        <div className="border border-white bg-[#1c1c1c] p-3 rounded-full flex gap-2.5">
+          {[
+            { color: "#c7c7c7" },
+            { color: "#ffffff" },
+            { color: "#ead2c6" },
+          ].map(({ color }) => (
+            <button
+              key={color}
+              className={`w-7 h-7 rounded-full cursor-pointer`}
+              style={{
+                backgroundColor: color,
+                outline: activeColor === color ? "2px solid skyblue" : "none",
+              }}
+              onClick={() => changeColor(color)}
+            ></button>
+          ))}
+        </div>
       </div>
     </div>
   );
