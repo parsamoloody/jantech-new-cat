@@ -27,7 +27,7 @@ const Hero = ({ content }: { content: any }): JSX.Element => {
 
                     </div>
 
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 aspect-[16/9]">
                         <Image
                             src={content.images.intro}
                             alt="About our shop"

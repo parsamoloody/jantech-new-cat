@@ -2,10 +2,8 @@
 import React, { JSX } from 'react'
 
 const BgCover = ({ bgVideo }: { bgVideo: string }): JSX.Element => {
-    console.log("bg video",bgVideo)
     return (
             <video
-                
                 autoPlay
                 muted
                 loop

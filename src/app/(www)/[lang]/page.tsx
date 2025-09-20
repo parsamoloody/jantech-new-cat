@@ -37,7 +37,8 @@ export default async function HomePage({ params }: Props) {
                             <Image
                                 src={product.image}
                                 alt={product.title}
-                                fill
+                                width={1200}
+                                height={1200}
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 33vw"
                             />
