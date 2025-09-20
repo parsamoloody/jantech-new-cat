@@ -11,16 +11,17 @@ export default function ModelViewer() {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [materialRef, setMaterialRef] = useState<THREE.MeshStandardMaterial | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeColor, setActiveColor] = useState<string>(""); // track selected color
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [activeColor, setActiveColor] = useState<string>("");
+  const [modelSize, setModelSize] = useState<number>(115);
 
+  // ✅ update modelSize on window resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setModelSize(window.innerWidth < 768 ? 220 : 115);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize();
+    handleResize(); // call once on mount
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -74,7 +75,7 @@ export default function ModelViewer() {
       const center = box.getCenter(new THREE.Vector3());
 
       const maxDim = Math.max(size.x, size.y, size.z);
-      const fov = camera.fov * (Math.PI / (isMobile ? 115 : 215));
+      const fov = camera.fov * (Math.PI / modelSize); // ✅ use state here
       let cameraZ = Math.abs(maxDim / Math.tan(fov / 2));
 
       cameraZ *= offset;
@@ -119,7 +120,7 @@ export default function ModelViewer() {
         });
 
         scene.add(model);
-        fitCameraToObject(camera, model, 1.5);
+        fitCameraToObject(camera, model, 1.5); // ✅ camera fitted after load
 
         setLoading(false); // hide loading screen
       },
@@ -130,7 +131,7 @@ export default function ModelViewer() {
       }
     );
 
-    // Resize handler
+    // Resize handler for renderer only
     const handleResize = () => {
       if (!mountRef.current) return;
       camera.aspect =
@@ -155,7 +156,7 @@ export default function ModelViewer() {
       window.removeEventListener("resize", handleResize);
       mountRef.current?.removeChild(renderer.domElement);
     };
-  }, []);
+  }, [modelSize]); // ✅ re-run when modelSize changes
 
   // Handlers for color change
   const changeColor = (color: string) => {
@@ -168,7 +169,7 @@ export default function ModelViewer() {
   return (
     <div className="bg-black h-screen relative flex flex-col items-center justify-center">
       {/* Heading on top */}
-      <h2 className="absolute top-6 text-white text-2xl sm:text-3xl font-semibold">
+      <h2 className="absolute top-32 text-white text-2xl sm:text-3xl font-semibold">
         Customize your dream order
       </h2>
 
@@ -192,7 +193,7 @@ export default function ModelViewer() {
           ].map(({ color }) => (
             <button
               key={color}
-              className={`w-7 h-7 rounded-full cursor-pointer`}
+              className="w-7 h-7 rounded-full cursor-pointer"
               style={{
                 backgroundColor: color,
                 outline: activeColor === color ? "2px solid skyblue" : "none",

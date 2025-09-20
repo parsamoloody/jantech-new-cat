@@ -38,10 +38,9 @@ export default async function HomePage({ params }: Props) {
                             <Image
                                 src={product.image}
                                 alt={product.title}
-                                width={2100}
-                                height={2100}
+                                width={1200}
+                                height={1200}
                                 className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 33vw"
                                 priority
                                 placeholder="blur"
                             />
@@ -58,6 +57,9 @@ export default async function HomePage({ params }: Props) {
 
             <VideoSlider lang={lang} />
             <ThreeDModelViewer />
+            <div className="w-full h-40 bg-black">
+
+            </div>
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">
