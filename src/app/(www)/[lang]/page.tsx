@@ -41,6 +41,7 @@ export default async function HomePage({ params }: Props) {
                                 height={2100}
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 33vw"
+                                placeholder="blur"
                             />
                             <div className="absolute inset-0 bg-gradient-to-tl from-black/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                             <h3 className="absolute bottom-8 start-8 text-2xl font-bold opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bottom-10 max-w-[calc(100%-4rem)]">
