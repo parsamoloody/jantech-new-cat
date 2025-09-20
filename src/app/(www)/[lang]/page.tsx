@@ -10,6 +10,7 @@ import { FaGem, FaShippingFast, FaHeadset } from "react-icons/fa";
 import HomeSlider from "@/components/HomeSlider";
 import VideoSlider from "@/components/VideoSlider";
 import GrowRoad from "@/components/GrowRoad";
+import ThreeDModelViewer from "@/components/ThreeDModelViewer";
 
 interface Props {
     params: Promise<{ lang: Locale }>;
@@ -41,6 +42,7 @@ export default async function HomePage({ params }: Props) {
                                 height={2100}
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 33vw"
+                                priority
                                 placeholder="blur"
                             />
                             <div className="absolute inset-0 bg-gradient-to-tl from-black/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -55,6 +57,7 @@ export default async function HomePage({ params }: Props) {
             <HomeSlider lang={lang} />
 
             <VideoSlider lang={lang} />
+            <ThreeDModelViewer />
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">
