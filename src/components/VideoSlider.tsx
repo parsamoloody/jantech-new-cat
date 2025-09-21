@@ -146,12 +146,12 @@ export default function VideoSlider({lang}: {lang: Locale}) {
                                 muted
                                 playsInline
                             />
-                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t md:bg-gradient-to-r from-black from-40% md:from-30% to-transparent z-20 pointer-events-none" />
+                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t md:bg-gradient-to-t from-black from-5% md:from-5% to-transparent z-20 pointer-events-none" />
 
-                            <div className='absolute bottom-0 md:bottom-auto md:top-1/2 -translate-y-1/2 z-30 left-1/2 -translate-x-1/2 md:left-30 md:translate-x-0 text-white text-center md:text-start max-w-[400px] space-y-5'>
+                            {/* <div className='absolute bottom-0 md:bottom-auto md:top-1/2 -translate-y-1/2 z-30 left-1/2 -translate-x-1/2 md:left-30 md:translate-x-0 text-white text-center md:text-start max-w-[400px] space-y-5'>
                                 <h3 className='text-red-primary text-3xl md:text-5xl text-nowrap font-bold'>{slide.title}</h3>
                                 <p>{slide.description}</p>
-                            </div>
+                            </div> */}
                         </div>
                     </SwiperSlide>
                 ))}
@@ -179,7 +179,7 @@ export default function VideoSlider({lang}: {lang: Locale}) {
                         </div>
                     ))}
 
-                    <div className="flex items-center justify-center">
+                    {/* <div className="flex items-center justify-center">
                         {isPlaying ? (
                             <FaPause
                                 className="text-red-primary size-5 cursor-pointer"
@@ -191,12 +191,12 @@ export default function VideoSlider({lang}: {lang: Locale}) {
                                 onClick={handlePlay}
                             />
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
-            <IoIosArrowBack className='hidden md:block absolute start-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handlePrev}/>
-            <IoIosArrowForward className='hidden md:block absolute end-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handleNext}/>
+            {/* <IoIosArrowBack className='hidden md:block absolute start-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handlePrev}/>
+            <IoIosArrowForward className='hidden md:block absolute end-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handleNext}/> */}
         </div>
     );
 }

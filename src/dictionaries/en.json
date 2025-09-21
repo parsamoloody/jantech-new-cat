@@ -506,10 +506,13 @@
         },
         "options": {
             "color": {
-                "controlsHex": [
-                    "#99914C",
-                    "#999999",
-                    "#ffffff"
+                "controlsImg": [
+                    "/images/materials/silver.jpg",
+                    "/images/materials/fliped.jpg"
+                ],
+                "controlsColor": [
+                    "#979796",
+                    "#a38e65"
                 ],
                 "bodiesHex": [
                     "#F8F8F4",
@@ -522,9 +525,8 @@
                 "controls": {
                     "name": "Controls Color",
                     "colorsName": [
-                        "Gold",
                         "Silver",
-                        "White"
+                        "Gold"
                     ]
                 },
                 "body": {

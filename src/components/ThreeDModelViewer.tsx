@@ -5,32 +5,9 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 import { MdOutline3dRotation } from "react-icons/md";
-
-interface ModelViewerProps {
-  title: string;
-  selectOptions: {
-    beforeSelect: string;
-    afterSelectColor: string;
-  };
-  options: {
-    color: {
-      controlsHex: string[];
-      bodiesHex: string[];
-    },
-     metaTitle: {
-    controls: {
-      name: string;
-      colorsName: string[];
-    };
-    body: {
-      name: string;
-      colorsName: string[];
-    };
-  };
-  };
- 
-}
+import ModelViewerProps from "@/types/three";
 
 export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   const mountRef = useRef<HTMLDivElement | null>(null);
@@ -40,20 +17,15 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   const [activeColor, setActiveColor] = useState<string>("");
   const [activeColorName, setActiveColorName] = useState<string>("");
   const [modelSize, setModelSize] = useState<number>(115);
-
   const [activeTab, setActiveTab] = useState<"body" | "controls">("body");
 
   useEffect(() => {
     const handleResize = () => {
       setModelSize(window.innerWidth < 768 ? 200 : 115);
     };
-
     window.addEventListener("resize", handleResize);
     handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -69,15 +41,25 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
       1000
     );
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer: any = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
+    renderer.outputEncoding = (THREE as any).sRGBEncoding;
+    renderer.toneMapping = (THREE as any).ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 0.2;
     mountRef.current.appendChild(renderer.domElement);
 
+    // ✅ Low-res HDRI for reflections
+    const rgbeLoader = new RGBELoader();
+    rgbeLoader.load("/images/hdri/outdoor_chapel_1k.hdr", (texture) => {
+      texture.mapping = THREE.EquirectangularReflectionMapping;
+      scene.environment = texture; // Reflections
+    });
+
     const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
-    hemiLight.position.set(0, 20, 0);
+    hemiLight.position.set(0, 0, 0);
     scene.add(hemiLight);
 
-    const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+    const dirLight = new THREE.DirectionalLight(0xffffff, 5);
     dirLight.position.set(5, 10, 7.5);
     scene.add(dirLight);
 
@@ -120,7 +102,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     loader.setDRACOLoader(dracoLoader);
 
     loader.load(
-      "/models/sewingMachine2.glb",
+      "/models/SweingMachineForArbabParsasSite.glb",
       (gltf) => {
         const model = gltf.scene;
 
@@ -132,14 +114,15 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
           if ((child as THREE.Mesh).isMesh) {
             const mesh = child as THREE.Mesh;
             const mat = mesh.material as THREE.MeshStandardMaterial;
-            if (mat.name === "Base Plastic.001") {
+
+            if (mesh.geometry.attributes.uv2) {
+              mesh.geometry.setAttribute("uv", mesh.geometry.attributes.uv2.clone());
+            }
+
+            if (mat.name === "Base_Plastic_001_001.002") {
               setMaterialRef(mat);
             }
-            if (
-              mat.name === "Material.010" ||
-              mat.name === "Material.011" ||
-              mat.name === "Material.012"
-            ) {
+            if (mat.name === "BilBilaks") {
               setControlsRef((prev) => [...(prev ?? []), mat]);
             }
           }
@@ -177,7 +160,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     };
   }, [modelSize]);
 
-  // 🔹 Change body color
   const changeColor = (color: string, name: string) => {
     if (materialRef) {
       materialRef.color.set(color);
@@ -186,26 +168,46 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     }
   };
 
-  // 🔹 Change controls color
-  const changeControlsColor = (color: string, name: string) => {
+  const changeControlsTexture = (imageUrl: string, color: string, name: string) => {
     if (controlsRef) {
-      controlsRef.forEach((mat) => mat.color.set(color));
-      setActiveColor(color);
+      controlsRef.forEach((mat) => {
+        if (mat.metalnessMap) {
+          mat.metalnessMap.dispose();
+          mat.metalnessMap = null;
+        }
+        if (mat.roughnessMap) {
+          mat.roughnessMap.dispose();
+          mat.roughnessMap = null;
+        }
+        if (mat.map) {
+          mat.map.dispose();
+          mat.map = null;
+        }
+
+        const loader = new THREE.TextureLoader();
+        const texture = loader.load(imageUrl);
+
+        mat.map = texture;
+        mat.color.set(color);
+        mat.roughness = 0.2;
+        mat.metalness = 1;
+        mat.needsUpdate = true;
+      });
+
+      setActiveColor(imageUrl);
       setActiveColorName(name);
     }
   };
 
   return (
-    <div className="bg-black h-screen relative flex flex-col items-center justify-center">
-
-      <h2 className="absolute top-36 text-white text-lg text-center sm:text-2xl xl:text-3xl font-semibold">
+    <div className="bg-black h-screen relative flex flex-col items-center justify-center -mt-1 -mb-1 xl:mt-0 xl:mb-0">
+      <h2 className="absolute top-32 font-bold text-white text-lg text-center sm:text-2xl xl:text-3xl">
         {prop.title}
       </h2>
+
       {/* Canvas */}
       <div className="w-full px-10 flex justify-center items-center">
-        <div ref={mountRef} style={{ height: "100vh" }}
-      className=" w-full"
-       />
+        <div ref={mountRef} style={{ height: "100vh" }} className=" w-full" />
       </div>
 
       {loading && (
@@ -216,7 +218,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
       {/* Tabs */}
       <div className="absolute bottom-10 flex flex-col items-center gap-y-4">
-        <p className="text-white text-xl xl:text-2xl 2xl:text-3xl">
+        <p className="text-white text-lg xl:text-xl 2xl:text-xl">
           {activeColorName ? `${prop.selectOptions.afterSelectColor}: ${activeColorName}` : ""}
         </p>
 
@@ -225,9 +227,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
           <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "body"
-                  ? "bg-sky-500 text-white"
-                  : "bg-gray-700 text-gray-300"
+                activeTab === "body" ? "bg-sky-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("body")}
             >
@@ -235,9 +235,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
             </button>
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "controls"
-                  ? "bg-sky-500 text-white"
-                  : "bg-gray-700 text-gray-300"
+                activeTab === "controls" ? "bg-sky-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("controls")}
             >
@@ -255,8 +253,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
                     className="w-7 h-7 rounded-full cursor-pointer"
                     style={{
                       backgroundColor: color,
-                      outline:
-                        activeColor === color ? "2px solid skyblue" : "none",
+                      outline: activeColor === color ? "2px solid skyblue" : "none",
                     }}
                     onClick={() =>
                       changeColor(color, prop.options.metaTitle.body.colorsName[i])
@@ -268,17 +265,20 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
             {activeTab === "controls" && (
               <div className="border border-slate-600 bg-[#1c1c1c] p-3 rounded-full flex items-center justify-center gap-2.5">
-                {prop.options.color.controlsHex.map((color, i) => (
+                {prop.options.color.controlsImg.map((color, i) => (
                   <button
                     key={color}
                     className="w-7 h-7 rounded-full cursor-pointer"
                     style={{
-                      backgroundColor: color,
-                      outline:
-                        activeColor === color ? "2px solid skyblue" : "none",
+                      backgroundColor: `${prop.options.color.controlsColor[i]}`,
+                      outline: activeColor === color ? "2px solid skyblue" : "none",
                     }}
                     onClick={() =>
-                      changeControlsColor(color, prop.options.metaTitle.controls.colorsName[i])
+                      changeControlsTexture(
+                        color,
+                        "#ffffff",
+                        prop.options.metaTitle.controls.colorsName[i]
+                      )
                     }
                   ></button>
                 ))}

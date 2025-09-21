@@ -10,13 +10,11 @@ import { FaGem, FaShippingFast, FaHeadset } from "react-icons/fa";
 import HomeSlider from "@/components/HomeSlider";
 import VideoSlider from "@/components/VideoSlider";
 import GrowRoad from "@/components/GrowRoad";
-import ThreeDModelViewer from "@/components/ThreeDModelViewer";
+import HomeEdModel from "@/components/homeEdModel";
 
 interface Props {
     params: Promise<{ lang: Locale }>;
 }
-
-
 
 export default async function HomePage({ params }: Props) {
     const { lang } = await params;
@@ -56,14 +54,11 @@ export default async function HomePage({ params }: Props) {
                     </Link>
                 ))}
             </div>
-
             <HomeSlider lang={lang} />
 
             <VideoSlider lang={lang} />
-            <ThreeDModelViewer prop={tD} />
-            <div className="w-full h-40 bg-black">
-
-            </div>
+            <HomeEdModel tD={tD} />
+            <div className="w-full h-40 bg-black"></div>
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">

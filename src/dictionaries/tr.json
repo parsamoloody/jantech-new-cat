@@ -425,118 +425,120 @@
             "image": ""
         }
     ],
-  "mutation": [
-    {
-      "id": "steam-iron",
-      "images": {
-        "bg": "/videos/iron 3020-no-text-CP.mp4",
-        "intro": "/images/2.jpg"
-      },
-      "title": "Güçlü Buhar, Kırışıksız Kıyafetler",
-      "description": [
-        "Modern teknoloji ile ergonomik tasarımı birleştiren gelişmiş buharlı ütümüz, hızlı ve kırışıksız ütüleme sağlar. Güçlü buhar çıkışı ve eşit ısı dağılımı sayesinde her türlü kumaştaki en zorlu kırışıklıklar bile kolayca giderilir ve pürüzsüz, profesyonel sonuçlar elde edilir.",
-        "Hassas sıcaklık ve buhar kontrolü ile buharlı ütümüz, en hassas kumaştan en kalınına kadar her kumaşı güvenli ve üstün kaliteyle ütüler. Kararlı ve güvenilir performansı, hem yeni başlayanlar hem de profesyoneller için rahat ve endişesiz bir deneyim sunar."
-      ],
-      "linear": "Akıllı tasarım ve anında buhar teknolojisi ile bu ütü yalnızca ütüleme süresini en aza indirmekle kalmaz, aynı zamanda çok katlı giysiler ve hassas kumaşlarda bile pürüzsüz ve kusursuz sonuçlar sunar. Yüksek kaliteli malzemelerin ve ergonomik sistemin kullanımı, tüm kullanıcılar için — yeni başlayanlardan profesyonellere kadar — rahat, hızlı ve güvenilir bir deneyim sağlar.",
-      "subTitle": "Zahmetsiz Ütüleme",
-      "intro": [
+    "mutation": [
         {
-          "title": "Hassas Kontrol, Kusursuz Sonuçlar",
-          "subTitle": "Her Buhar Hareketinde Hassasiyet",
-          "description": "Hassas sıcaklık ve buhar kontrolüne sahip buharlı ütümüz, en zorlu kırışıklıkları bile kumaşa zarar vermeden giderir, tüm kullanıcılar için pürüzsüz ve profesyonel bir deneyim sunar.",
-          "images": [
-            "/images/4 (1).jpg"
-          ]
-        },
-        {
-          "title": "Hızlı ve Verimli Ütüleme",
-          "subTitle": "Zamandan Tasarruf Eden Performans",
-          "description": "Anında buhar teknolojisi ve gelişmiş tasarımı sayesinde bu ütü, ütüleme süresini önemli ölçüde kısaltır. Kalın giysiler, perdeler ve çok katlı kumaşlar bile profesyonel kaliteyi koruyarak hızla düzeltilir.",
-          "images": [
-            "/images/3.jpg"
-          ]
-        },
-        {
-          "title": "Enerji Tasarruflu ve Konforlu",
-          "subTitle": "Konfor ve Optimize Edilmiş Enerji",
-          "description": "Buharlı ütümüz, optimize edilmiş enerji tüketimi ve hafif tasarımıyla kullanıcı konforunu garanti eder. Ergonomik sapı ve kolay kullanımlı kontrolleri, uzun ütüleme seanslarını yorgunluktan uzak ve keyifli hale getirir.",
-          "images": [
-            "/images/6.jpg"
-          ]
-        }
-      ]
-    }
-  ],  "about": {
-    "title": "Jantec’in Hikayesi",
-    "description": "Her markanın bir hikayesi vardır. Ancak Jantec’in hikayesi, <b>üç nesillik yenilik, azim ve İran sanayisine duyulan tutkunun</b> öyküsüdür. Yolculuğumuz 1960’lı yıllara dayanır; o zaman <b>Ali Akbar</b> Monzavi, İran dikiş makinesi sanayisinin manevi babası, dünyanın ilk Janome bayiliğini alarak bu sanayinin temelini ülkede attı. Bu nesil, yorulmak bilmeyen çabalarıyla dikişi geleneksel bir atölye işinden modern bir endüstriye dönüştürdü.",
-    "items": [
-      {
-        "description": [
-          "Bu mirasın ikinci nesli Mehdi Monzavi’ydi; yaratıcılığı ve cesaretiyle Janome markasını İran’da yeni bir seviyeye taşıyan adam. O, İran pazarını ikinci el ve kullanılmış dikiş makinelerinden kurtardı ve modern teknolojileri ve yeni ürünleri tanıtarak ev tipi dikişi yeniden canlandırdı."
-        ],
-        "image": "/images/about-1.webp"
-      },
-      {
-        "description": [
-          "Ve sonunda, üçüncü nesil: Mühendis Hamed Monzavi. O sadece gurur verici bir tarihin varisi değil, aynı zamanda İran’daki beyaz eşya sektörüne yeni bir gelecek inşa eden bir mimar. Elektrik mühendisliği ve yönetim alanındaki akademik bilgisi ve yöneticilik tecrübesiyle Hamed Monzavi, 2018 yılında Şemsabad Organize Sanayi Bölgesi’nde Orta Doğu’nun ve İran’ın en modern dikiş makinesi fabrikasını kurdu; yıllık 300.000 adet üretim kapasitesine sahip bir fabrika."
-        ],
-        "image": "/images/about-2.webp"
-      },
-      {
-        "description": [
-          "Ama Jantec yalnızca geçmişe yaslanmadı. Biz yeniliğin öncüleriyiz:",
-          "<b>Kavisli plakalar ve optimize edilmiş buhar enjeksiyon mekanizmasına sahip ev tipi buharlı ütü pres sisteminin mucidi.</b>",
-          "<b>Dikiş makinesi endüstrisinde ileri dört eksenli CNC işleme süreçlerinin tasarımcısı.</b>",
-          "Ve tedarik zincirine yeni bir soluk getiren çok kanallı satış ve dağıtım ağlarının kurucusu.",
-          "Bugün Jantec’in ana holdingi olan Negin Jan & Meh Şirketi, net bir vizyonla ilerliyor:",
-          "<b>Ülke çapında en büyük ev ürünleri sağlayıcısı.</b><br>Misyonumuz basit ve nettir:",
-          "Modern teknolojilerden ve sürekli araştırma-geliştirmeden yararlanarak, İranlıların hayatını daha kolay, daha güzel ve daha güvenli kılacak ürünler üretiyoruz. Müşterilerimizin ve temsilcilerimizin sadakatine inanıyoruz ve bu güveni kalite, yenilikçi satış sonrası hizmetler ve hızlı geri dönüşlerle onurlandırıyoruz. Jantec sadece bir marka değildir;",
-          "<b>bir mirasın devamı, bir geleceğin başlangıcı ve gelenek ile yenilik arasında bir köprüdür.</b>"
-        ],
-        "image": "/images/about-3.webp"
-      }
-    ]
-  },
-  "threeDModelViewer": {
-    "title": "Jantech Dikiş Makinesi, benzersiz özellikleriyle",
-    "selectOptions": {
-    "beforeSelect": "Düzenlemek için bir sekme seçin",
-    "afterSelectColor": "seçilen renk"
-},
-    "options": {
-        "color": {
-            "controlsHex": [
-                "#99914C",
-                "#999999",
-                "#ffffff"
+            "id": "steam-iron",
+            "images": {
+                "bg": "/videos/iron 3020-no-text-CP.mp4",
+                "intro": "/images/2.jpg"
+            },
+            "title": "Güçlü Buhar, Kırışıksız Kıyafetler",
+            "description": [
+                "Modern teknoloji ile ergonomik tasarımı birleştiren gelişmiş buharlı ütümüz, hızlı ve kırışıksız ütüleme sağlar. Güçlü buhar çıkışı ve eşit ısı dağılımı sayesinde her türlü kumaştaki en zorlu kırışıklıklar bile kolayca giderilir ve pürüzsüz, profesyonel sonuçlar elde edilir.",
+                "Hassas sıcaklık ve buhar kontrolü ile buharlı ütümüz, en hassas kumaştan en kalınına kadar her kumaşı güvenli ve üstün kaliteyle ütüler. Kararlı ve güvenilir performansı, hem yeni başlayanlar hem de profesyoneller için rahat ve endişesiz bir deneyim sunar."
             ],
-            "bodiesHex": [
-                "#F8F8F4",
-                "#ffffff",
-                "#D9D9D9",
-                "#A6A6A6"
+            "linear": "Akıllı tasarım ve anında buhar teknolojisi ile bu ütü yalnızca ütüleme süresini en aza indirmekle kalmaz, aynı zamanda çok katlı giysiler ve hassas kumaşlarda bile pürüzsüz ve kusursuz sonuçlar sunar. Yüksek kaliteli malzemelerin ve ergonomik sistemin kullanımı, tüm kullanıcılar için — yeni başlayanlardan profesyonellere kadar — rahat, hızlı ve güvenilir bir deneyim sağlar.",
+            "subTitle": "Zahmetsiz Ütüleme",
+            "intro": [
+                {
+                    "title": "Hassas Kontrol, Kusursuz Sonuçlar",
+                    "subTitle": "Her Buhar Hareketinde Hassasiyet",
+                    "description": "Hassas sıcaklık ve buhar kontrolüne sahip buharlı ütümüz, en zorlu kırışıklıkları bile kumaşa zarar vermeden giderir, tüm kullanıcılar için pürüzsüz ve profesyonel bir deneyim sunar.",
+                    "images": [
+                        "/images/4 (1).jpg"
+                    ]
+                },
+                {
+                    "title": "Hızlı ve Verimli Ütüleme",
+                    "subTitle": "Zamandan Tasarruf Eden Performans",
+                    "description": "Anında buhar teknolojisi ve gelişmiş tasarımı sayesinde bu ütü, ütüleme süresini önemli ölçüde kısaltır. Kalın giysiler, perdeler ve çok katlı kumaşlar bile profesyonel kaliteyi koruyarak hızla düzeltilir.",
+                    "images": [
+                        "/images/3.jpg"
+                    ]
+                },
+                {
+                    "title": "Enerji Tasarruflu ve Konforlu",
+                    "subTitle": "Konfor ve Optimize Edilmiş Enerji",
+                    "description": "Buharlı ütümüz, optimize edilmiş enerji tüketimi ve hafif tasarımıyla kullanıcı konforunu garanti eder. Ergonomik sapı ve kolay kullanımlı kontrolleri, uzun ütüleme seanslarını yorgunluktan uzak ve keyifli hale getirir.",
+                    "images": [
+                        "/images/6.jpg"
+                    ]
+                }
             ]
+        }
+    ],
+    "about": {
+        "title": "Jantec’in Hikayesi",
+        "description": "Her markanın bir hikayesi vardır. Ancak Jantec’in hikayesi, <b>üç nesillik yenilik, azim ve İran sanayisine duyulan tutkunun</b> öyküsüdür. Yolculuğumuz 1960’lı yıllara dayanır; o zaman <b>Ali Akbar</b> Monzavi, İran dikiş makinesi sanayisinin manevi babası, dünyanın ilk Janome bayiliğini alarak bu sanayinin temelini ülkede attı. Bu nesil, yorulmak bilmeyen çabalarıyla dikişi geleneksel bir atölye işinden modern bir endüstriye dönüştürdü.",
+        "items": [
+            {
+                "description": [
+                    "Bu mirasın ikinci nesli Mehdi Monzavi’ydi; yaratıcılığı ve cesaretiyle Janome markasını İran’da yeni bir seviyeye taşıyan adam. O, İran pazarını ikinci el ve kullanılmış dikiş makinelerinden kurtardı ve modern teknolojileri ve yeni ürünleri tanıtarak ev tipi dikişi yeniden canlandırdı."
+                ],
+                "image": "/images/about-1.webp"
+            },
+            {
+                "description": [
+                    "Ve sonunda, üçüncü nesil: Mühendis Hamed Monzavi. O sadece gurur verici bir tarihin varisi değil, aynı zamanda İran’daki beyaz eşya sektörüne yeni bir gelecek inşa eden bir mimar. Elektrik mühendisliği ve yönetim alanındaki akademik bilgisi ve yöneticilik tecrübesiyle Hamed Monzavi, 2018 yılında Şemsabad Organize Sanayi Bölgesi’nde Orta Doğu’nun ve İran’ın en modern dikiş makinesi fabrikasını kurdu; yıllık 300.000 adet üretim kapasitesine sahip bir fabrika."
+                ],
+                "image": "/images/about-2.webp"
+            },
+            {
+                "description": [
+                    "Ama Jantec yalnızca geçmişe yaslanmadı. Biz yeniliğin öncüleriyiz:",
+                    "<b>Kavisli plakalar ve optimize edilmiş buhar enjeksiyon mekanizmasına sahip ev tipi buharlı ütü pres sisteminin mucidi.</b>",
+                    "<b>Dikiş makinesi endüstrisinde ileri dört eksenli CNC işleme süreçlerinin tasarımcısı.</b>",
+                    "Ve tedarik zincirine yeni bir soluk getiren çok kanallı satış ve dağıtım ağlarının kurucusu.",
+                    "Bugün Jantec’in ana holdingi olan Negin Jan & Meh Şirketi, net bir vizyonla ilerliyor:",
+                    "<b>Ülke çapında en büyük ev ürünleri sağlayıcısı.</b><br>Misyonumuz basit ve nettir:",
+                    "Modern teknolojilerden ve sürekli araştırma-geliştirmeden yararlanarak, İranlıların hayatını daha kolay, daha güzel ve daha güvenli kılacak ürünler üretiyoruz. Müşterilerimizin ve temsilcilerimizin sadakatine inanıyoruz ve bu güveni kalite, yenilikçi satış sonrası hizmetler ve hızlı geri dönüşlerle onurlandırıyoruz. Jantec sadece bir marka değildir;",
+                    "<b>bir mirasın devamı, bir geleceğin başlangıcı ve gelenek ile yenilik arasında bir köprüdür.</b>"
+                ],
+                "image": "/images/about-3.webp"
+            }
+        ]
+    },
+    "threeDModelViewer": {
+        "title": "Jantech Dikiş Makinesi, benzersiz özellikleriyle",
+        "selectOptions": {
+            "beforeSelect": "Düzenlemek için bir sekme seçin",
+            "afterSelectColor": "seçilen renk"
         },
-        "metaTitle": {
-            "controls": {
-                "name": "Kontrollerin Rengi",
-                "colorsName": [
-                    "Altın",
-                    "Gümüş",
-                    "Beyaz"
+        "options": {
+            "color": {
+                "controlsImg": [
+                    "/images/materials/silver.jpg",
+                    "/images/materials/fliped.jpg"
+                ],
+                "controlsColor": [
+                    "#979796",
+                    "#a38e65"
+                ],
+                "bodiesHex": [
+                    "#F8F8F4",
+                    "#ffffff",
+                    "#D9D9D9",
+                    "#A6A6A6"
                 ]
             },
-            "body": {
-                "name": "Gövde Rengi",
-                "colorsName": [
-                    "Fildişi Beyazı",
-                    "Beyaz",
-                    "Açık Gri",
-                    "Gri"
-                ]
+            "metaTitle": {
+                "controls": {
+                    "name": "Kontrollerin Rengi",
+                    "colorsName": [
+                        "Gümüş",
+                        "Altın"
+                    ]
+                },
+                "body": {
+                    "name": "Gövde Rengi",
+                    "colorsName": [
+                        "Fildişi Beyazı",
+                        "Beyaz",
+                        "Açık Gri",
+                        "Gri"
+                    ]
+                }
             }
         }
     }
-}
-
 }

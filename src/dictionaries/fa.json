@@ -505,11 +505,14 @@
             "afterSelectColor": "رنگ انتخاب‌شده"
         },
         "options": {
-            "color": {
-                "controlsHex": [
-                    "#99914C",
-                    "#999999",
-                    "#ffffff"
+             "color": {
+                "controlsImg": [
+                    "/images/materials/silver.jpg",
+                    "/images/materials/fliped.jpg"
+                ],
+                "controlsColor": [
+                    "#979796",
+                    "#a38e65"
                 ],
                 "bodiesHex": [
                     "#F8F8F4",
@@ -522,9 +525,8 @@
                 "controls": {
                     "name": "رنگ دکمه‌ها",
                     "colorsName": [
-                        "طلایی",
                         "نقره‌ای",
-                        "سفید"
+                        "طلایی"
                     ]
                 },
                 "body": {
