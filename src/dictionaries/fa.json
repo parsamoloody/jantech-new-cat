@@ -497,5 +497,46 @@
                 "image": "/images/about-3.webp"
             }
         ]
+    },
+    "threeDModelViewer": {
+        "title": "چرخ خیاطی جانتک با امکاناتی بی‌نظیر",
+        "selectOptions": {
+            "beforeSelect": "برای ویرایش یک زبانه انتخاب کنید",
+            "afterSelectColor": "رنگ انتخاب‌شده"
+        },
+        "options": {
+            "color": {
+                "controlsHex": [
+                    "#99914C",
+                    "#999999",
+                    "#ffffff"
+                ],
+                "bodiesHex": [
+                    "#F8F8F4",
+                    "#ffffff",
+                    "#D9D9D9",
+                    "#A6A6A6"
+                ]
+            },
+            "metaTitle": {
+                "controls": {
+                    "name": "رنگ دکمه‌ها",
+                    "colorsName": [
+                        "طلایی",
+                        "نقره‌ای",
+                        "سفید"
+                    ]
+                },
+                "body": {
+                    "name": "رنگ بدنه",
+                    "colorsName": [
+                        "سفید عاجی",
+                        "سفید",
+                        "خاکستری روشن",
+                        "خاکستری"
+                    ]
+                }
+            }
+        }
     }
 }

@@ -426,76 +426,117 @@
         }
     ],
     "mutation": [
-    {
-        "id": "steam-iron",
-        "images": {
-            "bg": "/videos/iron 3020-no-text-CP.mp4",
-             "intro": "/images/2.jpg"
-        },
-        "title": "Powerful Steam, Wrinkle-Free Clothes",
-        "description": [
-            "Our advanced steam iron, combining modern technology with ergonomic design, enables fast and wrinkle-free ironing. With powerful steam output and even heat distribution, even the toughest wrinkles on all types of fabrics are easily removed, delivering smooth and professional results.",
-            "With precise temperature and steam control, this steam iron ensures that every fabric—from the most delicate to the thickest—is ironed safely and with excellent quality. Its stable and reliable performance provides a comfortable and worry-free experience for both beginners and professionals."
-        ],
-        "linear": "With intelligent design and instant steam technology, this iron not only minimizes ironing time but also delivers smooth and flawless results, even for multilayer garments and delicate fabrics. The use of high-quality materials and an ergonomic system ensures a comfortable, fast, and reliable experience for all users, from beginners to professionals.",
-        "subTitle": "Effortless Ironing",
-        "intro": [
+        {
+            "id": "steam-iron",
+            "images": {
+                "bg": "/videos/iron 3020-no-text-CP.mp4",
+                "intro": "/images/2.jpg"
+            },
+            "title": "Powerful Steam, Wrinkle-Free Clothes",
+            "description": [
+                "Our advanced steam iron, combining modern technology with ergonomic design, enables fast and wrinkle-free ironing. With powerful steam output and even heat distribution, even the toughest wrinkles on all types of fabrics are easily removed, delivering smooth and professional results.",
+                "With precise temperature and steam control, this steam iron ensures that every fabric—from the most delicate to the thickest—is ironed safely and with excellent quality. Its stable and reliable performance provides a comfortable and worry-free experience for both beginners and professionals."
+            ],
+            "linear": "With intelligent design and instant steam technology, this iron not only minimizes ironing time but also delivers smooth and flawless results, even for multilayer garments and delicate fabrics. The use of high-quality materials and an ergonomic system ensures a comfortable, fast, and reliable experience for all users, from beginners to professionals.",
+            "subTitle": "Effortless Ironing",
+            "intro": [
+                {
+                    "title": "Precise Control, Flawless Results",
+                    "subTitle": "Accuracy in Every Steam Move",
+                    "description": "Our steam iron, with precise temperature and steam control, removes even the toughest wrinkles without damaging the fabric, providing a smooth and professional experience for all users.",
+                    "images": [
+                        "/images/4 (1).jpg"
+                    ]
+                },
+                {
+                    "title": "Fast and Efficient Ironing",
+                    "subTitle": "Time-Saving Performance",
+                    "description": "With instant steam technology and advanced design, this iron significantly reduces ironing time. Even thick clothes, curtains, and multi-layered fabrics are quickly smoothed while maintaining professional-quality results.",
+                    "images": [
+                        "/images/3.jpg"
+                    ]
+                },
+                {
+                    "title": "Energy-Saving and Comfortable",
+                    "subTitle": "Comfort and Optimized Energy",
+                    "description": "Our steam iron ensures user comfort with optimized energy consumption and lightweight design. The ergonomic handle and easy-to-use controls make long ironing sessions fatigue-free and enjoyable.",
+                    "images": [
+                        "/images/6.jpg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "about": {
+        "title": "The Jantec Story",
+        "description": "Every brand has a story. But the story of Jantec is a tale of <b>three generations of innovation, perseverance, and passion for Iranian industry</b>. Our journey goes back to the 1960s, when <b>Ali Akbar</b> Monzavi, the spiritual father of Iran’s sewing machine industry, laid the foundation of this industry in the country by obtaining the world’s first Janome dealership. A generation whose tireless efforts transformed sewing from a traditional workshop craft into a modern industry.",
+        "items": [
             {
-                "title": "Precise Control, Flawless Results",
-                "subTitle": "Accuracy in Every Steam Move",
-                "description": "Our steam iron, with precise temperature and steam control, removes even the toughest wrinkles without damaging the fabric, providing a smooth and professional experience for all users.",
-                "images": [
-                    "/images/4 (1).jpg"
-                ]
+                "description": [
+                    "The second generation of this legacy was Mehdi Monzavi; a man whose creativity and courage elevated the Janome brand to new heights in Iran. He saved the Iranian market from second-hand and used sewing machines and revived home sewing by introducing modern technologies and new products."
+                ],
+                "image": "/images/about-1.webp"
             },
             {
-                "title": "Fast and Efficient Ironing",
-                "subTitle": "Time-Saving Performance",
-                "description": "With instant steam technology and advanced design, this iron significantly reduces ironing time. Even thick clothes, curtains, and multi-layered fabrics are quickly smoothed while maintaining professional-quality results.",
-                "images": [
-                    "/images/3.jpg"
-                ]
+                "description": [
+                    "And finally, the third generation: Engineer Hamed Monzavi. He is not only the heir to a proud history but also the architect of a new future for the home appliance industry in Iran. With his managerial experience and academic knowledge in electrical engineering and executive management, Hamed Monzavi established in 2018 the most modern sewing machine factory in Iran and the Middle East, located in Shamsabad Industrial Town — a factory with an annual production capacity of 300,000 units."
+                ],
+                "image": "/images/about-2.webp"
             },
             {
-                "title": "Energy-Saving and Comfortable",
-                "subTitle": "Comfort and Optimized Energy",
-                "description": "Our steam iron ensures user comfort with optimized energy consumption and lightweight design. The ergonomic handle and easy-to-use controls make long ironing sessions fatigue-free and enjoyable.",
-                "images": [
-                    "/images/6.jpg"
-                ]
+                "description": [
+                    "But Jantec has not relied solely on the past. We are pioneers of innovation:",
+                    "<b>Inventor of the home steam press system</b> with curved plates and optimized steam injection mechanism.",
+                    "<b>Designer of advanced four-axis CNC machining processes</b> in the sewing machine industry.",
+                    "And builder of multi-channel sales and distribution networks, bringing new life to the supply chain.",
+                    "Today, Negin Jan & Meh Company, as the parent holding of Jantec, moves forward with a clear vision:",
+                    "<b>The largest provider of household products nationwide.</b><br>Our mission is simple and direct:",
+                    "By utilizing modern technologies and continuous research and development, we produce products that make the lives of Iranians easier, more beautiful, and more reliable. We believe in the loyalty of our customers and representatives, and we honor this trust with quality, innovative after-sales services, and prompt responsiveness. Jantec is not just a brand;",
+                    "<b>it is the continuation of a legacy, the beginning of a future, and a bridge between tradition and innovation.</b>"
+                ],
+                "image": "/images/about-3.webp"
             }
         ]
+    },
+    "threeDModelViewer": {
+        "title": "Jantech Sewing Machine with exceptional features.",
+        "selectOptions": {
+            "beforeSelect": "Select a tab to edit",
+            "afterSelectColor": "selected color"
+        },
+        "options": {
+            "color": {
+                "controlsHex": [
+                    "#99914C",
+                    "#999999",
+                    "#ffffff"
+                ],
+                "bodiesHex": [
+                    "#F8F8F4",
+                    "#ffffff",
+                    "#D9D9D9",
+                    "#A6A6A6"
+                ]
+            },
+            "metaTitle": {
+                "controls": {
+                    "name": "Controls Color",
+                    "colorsName": [
+                        "Gold",
+                        "Silver",
+                        "White"
+                    ]
+                },
+                "body": {
+                    "name": "Body Color",
+                    "colorsName": [
+                        "Ivory White",
+                        "White",
+                        "Light Gray",
+                        "Gray"
+                    ]
+                }
+            }
+        }
     }
-],
-  "about": {
-    "title": "The Jantec Story",
-    "description": "Every brand has a story. But the story of Jantec is a tale of <b>three generations of innovation, perseverance, and passion for Iranian industry</b>. Our journey goes back to the 1960s, when <b>Ali Akbar</b> Monzavi, the spiritual father of Iran’s sewing machine industry, laid the foundation of this industry in the country by obtaining the world’s first Janome dealership. A generation whose tireless efforts transformed sewing from a traditional workshop craft into a modern industry.",
-    "items": [
-      {
-        "description": [
-          "The second generation of this legacy was Mehdi Monzavi; a man whose creativity and courage elevated the Janome brand to new heights in Iran. He saved the Iranian market from second-hand and used sewing machines and revived home sewing by introducing modern technologies and new products."
-        ],
-        "image": "/images/about-1.webp"
-      },
-      {
-        "description": [
-          "And finally, the third generation: Engineer Hamed Monzavi. He is not only the heir to a proud history but also the architect of a new future for the home appliance industry in Iran. With his managerial experience and academic knowledge in electrical engineering and executive management, Hamed Monzavi established in 2018 the most modern sewing machine factory in Iran and the Middle East, located in Shamsabad Industrial Town — a factory with an annual production capacity of 300,000 units."
-        ],
-        "image": "/images/about-2.webp"
-      },
-      {
-        "description": [
-          "But Jantec has not relied solely on the past. We are pioneers of innovation:",
-          "<b>Inventor of the home steam press system</b> with curved plates and optimized steam injection mechanism.",
-          "<b>Designer of advanced four-axis CNC machining processes</b> in the sewing machine industry.",
-          "And builder of multi-channel sales and distribution networks, bringing new life to the supply chain.",
-          "Today, Negin Jan & Meh Company, as the parent holding of Jantec, moves forward with a clear vision:",
-          "<b>The largest provider of household products nationwide.</b><br>Our mission is simple and direct:",
-          "By utilizing modern technologies and continuous research and development, we produce products that make the lives of Iranians easier, more beautiful, and more reliable. We believe in the loyalty of our customers and representatives, and we honor this trust with quality, innovative after-sales services, and prompt responsiveness. Jantec is not just a brand;",
-          "<b>it is the continuation of a legacy, the beginning of a future, and a bridge between tradition and innovation.</b>"
-        ],
-        "image": "/images/about-3.webp"
-      }
-    ]
-  }
 }

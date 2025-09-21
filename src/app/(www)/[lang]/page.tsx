@@ -16,10 +16,14 @@ interface Props {
     params: Promise<{ lang: Locale }>;
 }
 
+
+
 export default async function HomePage({ params }: Props) {
     const { lang } = await params;
     const t = (await getDictionary(lang)).homePage;
     const services = (await getDictionary(lang)).services;
+    const tD = (await getDictionary(lang)).threeDModelViewer;
+    
     if (!t) return null;
     return (
         <div className="overflow-x-hidden">
@@ -56,7 +60,7 @@ export default async function HomePage({ params }: Props) {
             <HomeSlider lang={lang} />
 
             <VideoSlider lang={lang} />
-            <ThreeDModelViewer />
+            <ThreeDModelViewer prop={tD} />
             <div className="w-full h-40 bg-black">
 
             </div>

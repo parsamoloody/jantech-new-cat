@@ -496,5 +496,47 @@
         "image": "/images/about-3.webp"
       }
     ]
-  }
+  },
+  "threeDModelViewer": {
+    "title": "Jantech Dikiş Makinesi, benzersiz özellikleriyle",
+    "selectOptions": {
+    "beforeSelect": "Düzenlemek için bir sekme seçin",
+    "afterSelectColor": "seçilen renk"
+},
+    "options": {
+        "color": {
+            "controlsHex": [
+                "#99914C",
+                "#999999",
+                "#ffffff"
+            ],
+            "bodiesHex": [
+                "#F8F8F4",
+                "#ffffff",
+                "#D9D9D9",
+                "#A6A6A6"
+            ]
+        },
+        "metaTitle": {
+            "controls": {
+                "name": "Kontrollerin Rengi",
+                "colorsName": [
+                    "Altın",
+                    "Gümüş",
+                    "Beyaz"
+                ]
+            },
+            "body": {
+                "name": "Gövde Rengi",
+                "colorsName": [
+                    "Fildişi Beyazı",
+                    "Beyaz",
+                    "Açık Gri",
+                    "Gri"
+                ]
+            }
+        }
+    }
+}
+
 }

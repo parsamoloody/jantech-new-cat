@@ -31,6 +31,7 @@ const FullScreenPage: React.FC = () => {
           src={bg_1}
           alt="Background 1"
           fill
+          quality={100}
           className={`object-cover transition-opacity duration-1000 ${activeIndex === 0 ? "opacity-100" : "opacity-0"
             }`}
           priority
@@ -39,6 +40,7 @@ const FullScreenPage: React.FC = () => {
           src={bg_2}
           alt="Background 2"
           fill
+          quality={100}
           className={`object-cover transition-opacity duration-1000 ${activeIndex === 1 ? "opacity-100" : "opacity-0"
             }`}
           priority

@@ -7,21 +7,49 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import { MdOutline3dRotation } from "react-icons/md";
 
-export default function ModelViewer() {
+interface ModelViewerProps {
+  title: string;
+  selectOptions: {
+    beforeSelect: string;
+    afterSelectColor: string;
+  };
+  options: {
+    color: {
+      controlsHex: string[];
+      bodiesHex: string[];
+    },
+     metaTitle: {
+    controls: {
+      name: string;
+      colorsName: string[];
+    };
+    body: {
+      name: string;
+      colorsName: string[];
+    };
+  };
+  };
+ 
+}
+
+export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [materialRef, setMaterialRef] = useState<THREE.MeshStandardMaterial | null>(null);
+  const [controlsRef, setControlsRef] = useState<THREE.MeshStandardMaterial[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeColor, setActiveColor] = useState<string>("");
+  const [activeColorName, setActiveColorName] = useState<string>("");
   const [modelSize, setModelSize] = useState<number>(115);
 
-  // ✅ update modelSize on window resize
+  const [activeTab, setActiveTab] = useState<"body" | "controls">("body");
+
   useEffect(() => {
     const handleResize = () => {
       setModelSize(window.innerWidth < 768 ? 220 : 115);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // call once on mount
+    handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -31,11 +59,9 @@ export default function ModelViewer() {
   useEffect(() => {
     if (!mountRef.current) return;
 
-    // Scene
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
 
-    // Camera
     const camera = new THREE.PerspectiveCamera(
       45,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
@@ -43,12 +69,10 @@ export default function ModelViewer() {
       1000
     );
 
-    // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Lights
     const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
     hemiLight.position.set(0, 20, 0);
     scene.add(hemiLight);
@@ -57,14 +81,12 @@ export default function ModelViewer() {
     dirLight.position.set(5, 10, 7.5);
     scene.add(dirLight);
 
-    // Controls (rotation only)
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
     controls.enablePan = false;
-    controls.minPolarAngle = Math.PI / 2;
-    controls.maxPolarAngle = Math.PI / 3;
+    controls.minPolarAngle = 0;
+    controls.maxPolarAngle = Math.PI;
 
-    // Helper: fit camera to object
     function fitCameraToObject(
       camera: THREE.PerspectiveCamera,
       object: THREE.Object3D,
@@ -75,7 +97,7 @@ export default function ModelViewer() {
       const center = box.getCenter(new THREE.Vector3());
 
       const maxDim = Math.max(size.x, size.y, size.z);
-      const fov = camera.fov * (Math.PI / modelSize); // ✅ use state here
+      const fov = camera.fov * (Math.PI / modelSize);
       let cameraZ = Math.abs(maxDim / Math.tan(fov / 2));
 
       cameraZ *= offset;
@@ -89,7 +111,6 @@ export default function ModelViewer() {
       controls.update();
     }
 
-    // Load GLB with Draco support
     const dracoLoader = new DRACOLoader();
     dracoLoader.setDecoderPath(
       "https://unpkg.com/three@0.165.0/examples/jsm/libs/draco/"
@@ -103,12 +124,10 @@ export default function ModelViewer() {
       (gltf) => {
         const model = gltf.scene;
 
-        // Center model
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
         model.position.sub(center);
 
-        // Find material by name
         model.traverse((child) => {
           if ((child as THREE.Mesh).isMesh) {
             const mesh = child as THREE.Mesh;
@@ -116,13 +135,19 @@ export default function ModelViewer() {
             if (mat.name === "Base Plastic.001") {
               setMaterialRef(mat);
             }
+            if (
+              mat.name === "Material.010" ||
+              mat.name === "Material.011" ||
+              mat.name === "Material.012"
+            ) {
+              setControlsRef((prev) => [...(prev ?? []), mat]);
+            }
           }
         });
 
         scene.add(model);
-        fitCameraToObject(camera, model, 1.5); // ✅ camera fitted after load
-
-        setLoading(false); // hide loading screen
+        fitCameraToObject(camera, model, 1.5);
+        setLoading(false);
       },
       undefined,
       (error) => {
@@ -131,20 +156,14 @@ export default function ModelViewer() {
       }
     );
 
-    // Resize handler for renderer only
     const handleResize = () => {
       if (!mountRef.current) return;
-      camera.aspect =
-        mountRef.current.clientWidth / mountRef.current.clientHeight;
+      camera.aspect = mountRef.current.clientWidth / mountRef.current.clientHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(
-        mountRef.current.clientWidth,
-        mountRef.current.clientHeight
-      );
+      renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     };
     window.addEventListener("resize", handleResize);
 
-    // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
       controls.update();
@@ -156,51 +175,112 @@ export default function ModelViewer() {
       window.removeEventListener("resize", handleResize);
       mountRef.current?.removeChild(renderer.domElement);
     };
-  }, [modelSize]); // ✅ re-run when modelSize changes
+  }, [modelSize]);
 
-  // Handlers for color change
-  const changeColor = (color: string) => {
+  // 🔹 Change body color
+  const changeColor = (color: string, name: string) => {
     if (materialRef) {
       materialRef.color.set(color);
       setActiveColor(color);
+      setActiveColorName(name);
+    }
+  };
+
+  // 🔹 Change controls color
+  const changeControlsColor = (color: string, name: string) => {
+    if (controlsRef) {
+      controlsRef.forEach((mat) => mat.color.set(color));
+      setActiveColor(color);
+      setActiveColorName(name);
     }
   };
 
   return (
     <div className="bg-black h-screen relative flex flex-col items-center justify-center">
-      {/* Heading on top */}
-      <h2 className="absolute top-32 text-white text-2xl sm:text-3xl font-semibold">
-        Customize your dream order
-      </h2>
 
+      <h2 className="absolute top-36 text-white text-2xl sm:text-3xl font-semibold">
+        {prop.title}
+      </h2>
       {/* Canvas */}
       <div ref={mountRef} style={{ width: "100%", height: "100vh" }} />
 
-      {/* Loading Overlay */}
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-black text-white text-4xl">
           <MdOutline3dRotation className="animate-pulse" size={48} />
         </div>
       )}
 
-      {/* Color buttons */}
-      <div className="absolute bottom-10 flex justify-center gap-4">
-        <div className="border border-white bg-[#1c1c1c] p-3 rounded-full flex gap-2.5">
-          {[
-            { color: "#c7c7c7" },
-            { color: "#ffffff" },
-            { color: "#ead2c6" },
-          ].map(({ color }) => (
+      {/* Tabs */}
+      <div className="absolute bottom-10 flex flex-col items-center gap-y-4">
+        <p className="text-white text-3xl">
+          {activeColorName ? `${prop.selectOptions.afterSelectColor}: ${activeColorName}` : prop.selectOptions.beforeSelect}
+        </p>
+
+        <div className="flex items-center gap-5">
+          {/* Tab Switcher */}
+          <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
             <button
-              key={color}
-              className="w-7 h-7 rounded-full cursor-pointer"
-              style={{
-                backgroundColor: color,
-                outline: activeColor === color ? "2px solid skyblue" : "none",
-              }}
-              onClick={() => changeColor(color)}
-            ></button>
-          ))}
+              className={`px-4 py-2 cursor-pointer rounded-full ${
+                activeTab === "body"
+                  ? "bg-sky-500 text-white"
+                  : "bg-gray-700 text-gray-300"
+              }`}
+              onClick={() => setActiveTab("body")}
+            >
+              {prop.options.metaTitle.body.name}
+            </button>
+            <button
+              className={`px-4 py-2 cursor-pointer rounded-full ${
+                activeTab === "controls"
+                  ? "bg-sky-500 text-white"
+                  : "bg-gray-700 text-gray-300"
+              }`}
+              onClick={() => setActiveTab("controls")}
+            >
+              {prop.options.metaTitle.controls.name}
+            </button>
+          </div>
+
+          {/* Tab Content */}
+          <div className="transition-all duration-500">
+            {activeTab === "body" && (
+              <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
+                {prop.options.color.bodiesHex.map((color, i) => (
+                  <button
+                    key={color}
+                    className="w-7 h-7 rounded-full cursor-pointer"
+                    style={{
+                      backgroundColor: color,
+                      outline:
+                        activeColor === color ? "2px solid skyblue" : "none",
+                    }}
+                    onClick={() =>
+                      changeColor(color, prop.options.metaTitle.body.colorsName[i])
+                    }
+                  ></button>
+                ))}
+              </div>
+            )}
+
+            {activeTab === "controls" && (
+              <div className="border border-slate-600 bg-[#1c1c1c] p-3 rounded-full flex items-center justify-center gap-2.5">
+                {prop.options.color.controlsHex.map((color, i) => (
+                  <button
+                    key={color}
+                    className="w-7 h-7 rounded-full cursor-pointer"
+                    style={{
+                      backgroundColor: color,
+                      outline:
+                        activeColor === color ? "2px solid skyblue" : "none",
+                    }}
+                    onClick={() =>
+                      changeControlsColor(color, prop.options.metaTitle.controls.colorsName[i])
+                    }
+                  ></button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
