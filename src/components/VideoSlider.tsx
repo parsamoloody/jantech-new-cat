@@ -2,8 +2,6 @@
 
 import { useRef, useState, useEffect } from 'react';
 import {SwiperSlide, Swiper } from 'swiper/react';
-import { FaPlay, FaPause } from "react-icons/fa";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import 'swiper/css';
 import { Locale } from '@/lib/i18n.config';
 import { getDictionary } from '@/lib/dictionaries';
@@ -27,7 +25,6 @@ const mock = {
 export default function VideoSlider({lang}: {lang: Locale}) {
     const swiperRef = useRef<any>(null);
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    const [isPlaying, setIsPlaying] = useState(true);
     const [progress, setProgress] = useState(0);
     const [activeIndex, setActiveIndex] = useState(0);
     const [slides, setSlides] = useState<{ items: { description: string, title: string, video: string }[], title: string }>(mock);
@@ -59,20 +56,6 @@ export default function VideoSlider({lang}: {lang: Locale}) {
         }
     };
 
-    const handlePlay = () => {
-        if (videoRef.current) {
-            videoRef.current.play();
-            setIsPlaying(true);
-        }
-    };
-
-    const handlePause = () => {
-        if (videoRef.current) {
-            videoRef.current.pause();
-            setIsPlaying(false);
-        }
-    };
-
     const handleTimeUpdate = () => {
         if (videoRef.current && videoRef.current.duration > 0) {
             const percent = (videoRef.current.currentTime / videoRef.current.duration) * 100;
@@ -84,33 +67,10 @@ export default function VideoSlider({lang}: {lang: Locale}) {
         swiperRef.current?.swiper.slideTo(index);
     };
 
-    const handlePrev = () => {
-        const swiper = swiperRef.current?.swiper;
-        if (!swiper) return;
-    
-        if (swiper.activeIndex === 0) {
-            swiper.slideTo(slides.items.length - 1);
-        } else {
-            swiper.slidePrev();
-        }
-    }
-
-    const handleNext = () => {
-        const swiper = swiperRef.current?.swiper;
-        if (!swiper) return;
-
-        if (swiper.activeIndex === slides.items.length - 1) {
-            swiper.slideTo(0);
-        } else {
-            swiper.slideNext();
-        }
-    }
-
     useEffect(() => {
         const video = videoRef.current;
         if (video) {
             video.play();
-            setIsPlaying(true);
         }
     }, [activeIndex]);
 
