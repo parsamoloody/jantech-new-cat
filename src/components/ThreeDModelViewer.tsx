@@ -200,7 +200,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   };
 
   return (
-    <div className="bg-black h-screen relative flex flex-col items-center justify-center -mt-1 -mb-1 xl:mt-0 xl:mb-0">
+    <div className="bg-black h-screen relative flex flex-col items-center justify-center *:m-0">
       <h2 className="absolute top-32 font-bold text-white text-lg text-center sm:text-2xl xl:text-3xl">
         {prop.title}
       </h2>
@@ -227,7 +227,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
           <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "body" ? "bg-sky-500 text-white" : "bg-gray-700 text-gray-300"
+                activeTab === "body" ? "bg-gray-600  border-[1px] border-gray-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("body")}
             >
@@ -235,7 +235,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
             </button>
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "controls" ? "bg-sky-500 text-white" : "bg-gray-700 text-gray-300"
+                activeTab === "controls" ? "bg-gray-600  border-[1px] border-gray-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("controls")}
             >

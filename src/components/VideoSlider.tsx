@@ -78,7 +78,7 @@ export default function VideoSlider({lang}: {lang: Locale}) {
         return <div>Loading...</div>;
     }
     return (
-        <div className="relative w-full">
+        <div className="relative w-full m">
             <Swiper
                 ref={swiperRef}
                 onSlideChange={(swiper) => {

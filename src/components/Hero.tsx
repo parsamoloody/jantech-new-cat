@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import bg_1 from "@/images/bg-0-1.webp";
 import bg_2 from "@/images/bg-0-2.webp";
-import text_2 from "@/images/text-0.webp";
-import text_1 from "@/images/text-1.webp";
+import text_1 from "@/images/text-0.webp";
+import text_2 from "@/images/text-1.webp";
 
 type ImageSet = {
   topRight: typeof text_1;
@@ -48,7 +48,7 @@ const FullScreenPage: React.FC = () => {
       </div>
 
       {/* Top-right image */}
-      <div className="absolute top-12 xl:top-41 right-10 xl:right-8 w-47 h-40 sm:w-99 sm:h-88 sm:right-8 xl:w-170 xl:h-90">
+      <div className="absolute top-60 sm:top-42 md:top-22 xl:top-41 right-2 xl:right-8 w-47 h-40 sm:w-62 sm:h-52 sm:right-8 xl:w-170 xl:h-90">
         <Image
           src={imageSets[activeIndex].topRight}
           alt="Top Right Image"

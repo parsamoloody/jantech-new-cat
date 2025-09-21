@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @layer base {
     body {
         @apply scroll-smooth;
@@ -15,7 +14,7 @@
 
     .editor-container ul p,
     .editor-container ol p {
-        @apply inline-block;
+        @apply inline-block;        
     }
 
     .editor-container a {
