@@ -507,8 +507,8 @@
         "options": {
             "color": {
                 "controlsImg": [
-                    "/images/materials/silver.jpg",
-                    "/images/materials/fliped.jpg"
+                    "/images/materials/silver.webp",
+                    "/images/materials/fliped.webp"
                 ],
                 "controlsColor": [
                     "#979796",
