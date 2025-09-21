@@ -45,7 +45,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setModelSize(window.innerWidth < 768 ? 220 : 115);
+      setModelSize(window.innerWidth < 768 ? 200 : 115);
     };
 
     window.addEventListener("resize", handleResize);
@@ -198,11 +198,15 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   return (
     <div className="bg-black h-screen relative flex flex-col items-center justify-center">
 
-      <h2 className="absolute top-36 text-white text-2xl sm:text-3xl font-semibold">
+      <h2 className="absolute top-36 text-white text-lg text-center sm:text-2xl xl:text-3xl font-semibold">
         {prop.title}
       </h2>
       {/* Canvas */}
-      <div ref={mountRef} style={{ width: "100%", height: "100vh" }} />
+      <div className="w-full px-10 flex justify-center items-center">
+        <div ref={mountRef} style={{ height: "100vh" }}
+      className=" w-full"
+       />
+      </div>
 
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-black text-white text-4xl">
@@ -212,15 +216,15 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
       {/* Tabs */}
       <div className="absolute bottom-10 flex flex-col items-center gap-y-4">
-        <p className="text-white text-3xl">
-          {activeColorName ? `${prop.selectOptions.afterSelectColor}: ${activeColorName}` : prop.selectOptions.beforeSelect}
+        <p className="text-white text-xl xl:text-2xl 2xl:text-3xl">
+          {activeColorName ? `${prop.selectOptions.afterSelectColor}: ${activeColorName}` : ""}
         </p>
 
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col lg:flex-row items-center gap-5">
           {/* Tab Switcher */}
           <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
             <button
-              className={`px-4 py-2 cursor-pointer rounded-full ${
+              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
                 activeTab === "body"
                   ? "bg-sky-500 text-white"
                   : "bg-gray-700 text-gray-300"
@@ -230,7 +234,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
               {prop.options.metaTitle.body.name}
             </button>
             <button
-              className={`px-4 py-2 cursor-pointer rounded-full ${
+              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
                 activeTab === "controls"
                   ? "bg-sky-500 text-white"
                   : "bg-gray-700 text-gray-300"
