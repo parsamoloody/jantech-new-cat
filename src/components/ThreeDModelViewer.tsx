@@ -48,7 +48,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     renderer.toneMappingExposure = 0.2;
     mountRef.current.appendChild(renderer.domElement);
 
-    // ✅ Low-res HDRI for reflections
     const rgbeLoader = new RGBELoader();
     rgbeLoader.load("/images/hdri/outdoor_chapel_1k.hdr", (texture) => {
       texture.mapping = THREE.EquirectangularReflectionMapping;

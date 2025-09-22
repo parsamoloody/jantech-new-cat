@@ -77,7 +77,7 @@ export default function ProductsPage() {
     if (!lang || !category) return;
     setLoading(true);
     try {
-      const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}`, {
+      const response = await fetch(`/api/products?lang=${lang}&category=${category}`, {
         next: {
           revalidate: 3600,
           tags: [`product-${category}`]
@@ -244,7 +244,7 @@ export default function ProductsPage() {
       <div className="flex flex-col lg:flex-row-reverse justify-between gap-4 lg:gap-8 w-full px-4 lg:pe-[calc(16px+100px)] py-4">
         <FilterForm category={category} />
         <div className="grow min-h-screen flex flex-col items-center gap-10">
-          <div className="grid grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] grid-flow-dense gap-5 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
             {products.length ? (
               products.map((product, i) => (
                 <ProductCard key={i} {...product} />
@@ -255,6 +255,7 @@ export default function ProductsPage() {
               ))
             )}
           </div>
+
           {hasMore && <div ref={loaderRef} className="h-10" />}
         </div>
       </div>
