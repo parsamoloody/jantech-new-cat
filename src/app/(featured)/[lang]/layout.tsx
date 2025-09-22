@@ -7,7 +7,6 @@ import { getLangDir } from "@/utils";
 import { Locale } from "@/lib/i18n.config";
 import { getDictionary } from "@/lib/dictionaries";
 import StoreProvider from "@/lib/states/StoreProvider";
-import Footer from "@/components/Footer";
 
 const dana = LocalFont({
   src: [
@@ -39,7 +38,6 @@ const lexend = Lexend({
   weight: ["400", "500", "600", "700"],
   variable: "--lexend",
 });
-console.log(lexend, dana)
 
 export const metadata: Metadata = {
   title: "jantech",
@@ -60,19 +58,19 @@ export default async function RootLayout({
   const dictionary = await getDictionary(lang);
 
   return (
-    <html
-      lang={lang}
-      dir={dir}
-    >
-      <body
-        className={`mx-auto ${dir === "rtl" ? "font-dana" : "font-lexend"}`}
-      >
-        <StoreProvider dictionary={dictionary}>
-          <Navbar />
-          {children}
-          <Footer />
-        </StoreProvider>
-      </body>
-    </html>
+ <html lang={lang} dir={dir} className={`${dana.variable} ${lexend.variable}`}>
+  <body
+    className={`relative mx-auto ${
+      dir === "rtl" ? "font-dana" : "font-lexend"
+    }`}
+  >
+    <StoreProvider dictionary={dictionary}>
+      <Navbar />
+      {children}
+    </StoreProvider>
+  </body>
+</html>
+
+
   );
 }

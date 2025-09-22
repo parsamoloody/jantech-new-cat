@@ -10,7 +10,6 @@ import { MdOutline3dRotation } from "react-icons/md";
 import ModelViewerProps from "@/types/three";
 
 export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
-  const textureCache = useRef<{ [url: string]: THREE.Texture }>({});
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [materialRef, setMaterialRef] = useState<THREE.MeshStandardMaterial | null>(null);
   const [controlsRef, setControlsRef] = useState<THREE.MeshStandardMaterial[] | null>(null);
@@ -19,33 +18,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   const [activeColorName, setActiveColorName] = useState<string>("");
   const [modelSize, setModelSize] = useState<number>(115);
   const [activeTab, setActiveTab] = useState<"body" | "controls">("body");
-
-  useEffect(() => {
-    const loader = new THREE.TextureLoader();
-
-    // preload control textures
-    prop.options.color.controlsImg.forEach((url) => {
-      if (!textureCache.current[url]) {
-        textureCache.current[url] = loader.load(url);
-      }
-    });
-
-    // if someday you switch bodiesHex to image textures instead of just colors
-    prop.options.color.bodiesHex.forEach((hex) => {
-      if (!textureCache.current[hex]) {
-        // store a dummy 1x1 texture with solid color (for consistency)
-        const canvas = document.createElement("canvas");
-        canvas.width = canvas.height = 1;
-        const ctx = canvas.getContext("2d");
-        if (ctx) {
-          ctx.fillStyle = hex;
-          ctx.fillRect(0, 0, 1, 1);
-        }
-        const texture = new THREE.CanvasTexture(canvas);
-        textureCache.current[hex] = texture;
-      }
-    });
-  }, [prop.options.color.controlsImg, prop.options.color.bodiesHex]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -76,11 +48,11 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     renderer.toneMappingExposure = 0.2;
     mountRef.current.appendChild(renderer.domElement);
 
-    // ✅ HDRI reflections
+    // ✅ Low-res HDRI for reflections
     const rgbeLoader = new RGBELoader();
     rgbeLoader.load("/images/hdri/outdoor_chapel_1k.hdr", (texture) => {
       texture.mapping = THREE.EquirectangularReflectionMapping;
-      scene.environment = texture;
+      scene.environment = texture; // Reflections
     });
 
     const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
@@ -122,7 +94,9 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     }
 
     const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath("https://unpkg.com/three@0.165.0/examples/jsm/libs/draco/");
+    dracoLoader.setDecoderPath(
+      "https://unpkg.com/three@0.165.0/examples/jsm/libs/draco/"
+    );
 
     const loader = new GLTFLoader();
     loader.setDRACOLoader(dracoLoader);
@@ -186,7 +160,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     };
   }, [modelSize]);
 
-  // 📌 Body color switch
   const changeColor = (color: string, name: string) => {
     if (materialRef) {
       materialRef.color.set(color);
@@ -195,13 +168,25 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     }
   };
 
-  // 📌 Control texture switch
   const changeControlsTexture = (imageUrl: string, color: string, name: string) => {
     if (controlsRef) {
-      const texture = textureCache.current[imageUrl];
-      if (!texture) return;
-
       controlsRef.forEach((mat) => {
+        if (mat.metalnessMap) {
+          mat.metalnessMap.dispose();
+          mat.metalnessMap = null;
+        }
+        if (mat.roughnessMap) {
+          mat.roughnessMap.dispose();
+          mat.roughnessMap = null;
+        }
+        if (mat.map) {
+          mat.map.dispose();
+          mat.map = null;
+        }
+
+        const loader = new THREE.TextureLoader();
+        const texture = loader.load(imageUrl);
+
         mat.map = texture;
         mat.color.set(color);
         mat.roughness = 0.2;
@@ -242,9 +227,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
           <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "body"
-                  ? "bg-gray-600  border-[1px] border-gray-500 text-white"
-                  : "bg-gray-700 text-gray-300"
+                activeTab === "body" ? "bg-gray-600  border-[1px] border-gray-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("body")}
             >
@@ -252,9 +235,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
             </button>
             <button
               className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "controls"
-                  ? "bg-gray-600  border-[1px] border-gray-500 text-white"
-                  : "bg-gray-700 text-gray-300"
+                activeTab === "controls" ? "bg-gray-600  border-[1px] border-gray-500 text-white" : "bg-gray-700 text-gray-300"
               }`}
               onClick={() => setActiveTab("controls")}
             >

@@ -23,7 +23,6 @@ async function getProductData(lang: Locale, category: Category, id: string) {
                 },
             }
         );
-        console.log(response)
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }

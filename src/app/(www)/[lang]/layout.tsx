@@ -39,7 +39,7 @@ const lexend = Lexend({
   weight: ["400", "500", "600", "700"],
   variable: "--lexend",
 });
-console.log(lexend, dana)
+// console.log(lexend, dana)
 
 export const metadata: Metadata = {
   title: "jantech",
@@ -60,19 +60,19 @@ export default async function RootLayout({
   const dictionary = await getDictionary(lang);
 
   return (
-    <html
-      lang={lang}
-      dir={dir}
-    >
-      <body
-        className={`relative mx-auto ${dir === "rtl" ? "font-dana" : "font-lexend"}`}
-      >
-        <StoreProvider dictionary={dictionary}>
-          <Navbar />
-          {children}
-          <Footer />
-        </StoreProvider>
-      </body>
-    </html>
+   <html lang={lang} dir={dir} className={`${dana.variable} ${lexend.variable}`}>
+  <body
+    className={`relative mx-auto ${
+      dir === "rtl" ? "font-dana" : "font-lexend"
+    }`}
+  >
+    <StoreProvider dictionary={dictionary}>
+      <Navbar />
+      {children}
+      <Footer />
+    </StoreProvider>
+  </body>
+</html>
+
   );
 }
