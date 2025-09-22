@@ -36,7 +36,7 @@ const slogan: Record<Locale, string> = {
 };
 
 export default function ProductsPage() {
-  const category = useParams().category as Category;  
+  const category = useParams().category as Category;
   const lang = useParams().lang as Locale;
   const dir = getLangDir(lang);
 
@@ -72,12 +72,12 @@ export default function ProductsPage() {
       fetchCategory();
     }
   }, [lang, category]);
-
   const fetchData = async (pageNumber: number, limit: number = 9) => {
     if (loading || !hasMore) return;
+    if (!lang || !category) return;
     setLoading(true);
     try {
-      const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}`, {
+      const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}`, {
         next: {
           revalidate: 3600,
           tags: [`product-${category}`]
