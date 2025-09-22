@@ -36,7 +36,7 @@ const slogan: Record<Locale, string> = {
 };
 
 export default function ProductsPage() {
-  const category = useParams().category as Category;
+  const category = useParams().category as Category;  
   const lang = useParams().lang as Locale;
   const dir = getLangDir(lang);
 
@@ -60,7 +60,7 @@ export default function ProductsPage() {
         const m = t.find(item => item._id == category) || null;
         setCat(m);
         switch (lang) {
-          case "fa":  
+          case "fa":
             setIsLatin(false);
             break;
           default:
@@ -77,8 +77,19 @@ export default function ProductsPage() {
     if (loading || !hasMore) return;
     setLoading(true);
     try {
-      const data = await fetch(`/api/products?lang=${lang}&category=${category}`).then(res => res.json());
-
+      const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}`, {
+        next: {
+          revalidate: 3600,
+          tags: [`product-${category}`]
+        },
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      const data = await response.json();
       setProducts(data);
 
       if (data.length < limit || pageNumber >= 4) {
@@ -136,8 +147,8 @@ export default function ProductsPage() {
               }
               {
                 isLatin
-                ? (cat?.title.slice(1).split("-").join(" "))
-                : (cat?.title)
+                  ? (cat?.title.slice(1).split("-").join(" "))
+                  : (cat?.title)
               }
               <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
             </h3>

@@ -18,13 +18,12 @@ async function getProductData(lang: Locale, category: Category, id: string) {
                     revalidate: 3600,
                     tags: [`product-${category}-${id}`]
                 },
-                cache: 'no-store',
                 headers: {
                     'Content-Type': 'application/json',
                 },
             }
         );
-
+        console.log(response)
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }

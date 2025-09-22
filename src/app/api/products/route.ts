@@ -20,7 +20,7 @@ type Product = {
   ru: ProductTranslation;
   tr: ProductTranslation;
   fa: ProductTranslation;
-};
+} | null;
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
@@ -40,12 +40,11 @@ export async function GET(req: Request) {
   }
 
   if (id) {
-    filteredProducts = filteredProducts.filter((p) => p._id === id);
+     filteredProducts.push(...filteredProducts.filter((p) => (p as any).id === id));
   }
 
-  // Return only requested language
   const result = filteredProducts.map((p) => ({
-    _id: p._id,
+    _id: p?._id,
     ...(p as any)[lang],
   }));
 
