@@ -5,20 +5,19 @@ import ProductCard from "@/components/ProductCard";
 import ProductSkeleton from "@/components/skeletons/ProductSkeleton";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 import { Category } from "@/types";
-import Image from "next/image";
+// import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
 import { getLangDir } from "@/utils";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Locale } from "@/lib/i18n.config";
-import Button from "@/components/Button";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+// import Button from "@/components/Button";
+// import { IoIosArrowBack } from "react-icons/io";
+// import { IoIosArrowForward } from "react-icons/io";
 import { getDictionary } from "@/lib/dictionaries";
+import ElementSkeleton from "@/components/skeletons/ElementSkeleton";
 
 type Product = {
   _id: string;
@@ -28,26 +27,19 @@ type Product = {
   score: string;
 };
 
-
-const slogan: Record<Locale, string> = {
-  en: " take your creativity to the next level!",
-  fa: "چرخ خیاطی‌های جانتک، خلاقیتتان را به اوج بسونید!",
-  tr: "yaratıcılığınızı zirveye taşıyın!"
-};
-
 export default function ProductsPage() {
   const category = useParams().category as Category;
   const lang = useParams().lang as Locale;
   const dir = getLangDir(lang);
 
   const [products, setProducts] = useState<Product[]>([]);
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const swiperRef = useRef<SwiperType | null>(null);
   const [catLoading, setCatLoading] = useState(false);
-  const [cat, setCat] = useState<{ _id: string; title: string; description: string; image: string, video: string } | null>({ _id: "", title: "", description: "", image: "", video: "" });
+  const [cat, setCat] = useState<{ _id: string; title: string; description: string; image: string, video: string, slogan: string } | null>({ _id: "", title: "", description: "", image: "", video: "", slogan: "" });
   const [isLatin, setIsLatin] = useState(false);
   // const [mainImage, setMainImage] = useState("");
 
@@ -55,7 +47,6 @@ export default function ProductsPage() {
     if (lang && category) {
       async function fetchCategory() {
         const t = (await getDictionary(lang)).categories;
-        console.log("catData:", t);
         setCatLoading(true);
         const m = t.find(item => item._id == category) || null;
         setCat(m);
@@ -77,7 +68,7 @@ export default function ProductsPage() {
     if (!lang || !category) return;
     setLoading(true);
     try {
-      const response = await fetch(`/api/products?lang=${lang}&category=${category}`, {
+      const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}`, {
         next: {
           revalidate: 3600,
           tags: [`product-${category}`]
@@ -123,38 +114,46 @@ export default function ProductsPage() {
     }
   }, []);
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+  // useEffect(() => {
+  //   setIsClient(true);
+  // }, []);
 
-  const swiperSlides = [
-    { title: "vacuum cleaner", image: "/images/VaccuumCleaner.webp" },
-    { title: "steam iron", image: "/images/steamIron-transparent.webp" },
-    { title: "sewing machine", image: "/images/sewingMachine-transparent.webp" },
-    { title: "pressure iron", image: "/images/pressureIron-transparent.webp" },
-  ];
+  // const swiperSlides = [
+  //   { title: "vacuum cleaner", image: "/images/VaccuumCleaner.webp" },
+  //   { title: "steam iron", image: "/images/steamIron-transparent.webp" },
+  //   { title: "sewing machine", image: "/images/sewingMachine-transparent.webp" },
+  //   { title: "pressure iron", image: "/images/pressureIron-transparent.webp" },
+  // ];
 
   return (
-    <div className="flex flex-col md:gap-12 pt-[90px] xl:pt-20 pb-10 max-w-[1600px] mx-auto">
+    <div className="flex flex-col md:gap-12 pt-[90px] xl:pt-32 pb-10 max-w-[1600px] mx-auto">
       <div className="flex flex-col-reverse md:flex-row items-start lg:items-center md:justify-between md:gap-10 px-8 sm:ml-4">
         <div className="md:basis-[40%]">
           <div className="space-y-4 mx-auto">
-            <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
-              {
-                isLatin
-                  ? (<span className="text-7xl">{cat?.title.slice(0, 1).toUpperCase()}</span>)
-                  : null
-              }
-              {
-                isLatin
-                  ? (cat?.title.slice(1).split("-").join(" "))
-                  : (cat?.title)
-              }
-              <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
-            </h3>
             {
-              catLoading ? (
-                "loading..."
+              cat?.title ? (
+                <h3 className="text-red-primary text-3xl md:text-5xl font-bold relative inline-block pb-4">
+                  {
+                    isLatin
+                      ? (<span className="text-7xl">{cat?.title.slice(0, 1).toUpperCase()}</span>)
+                      : null
+                  }
+                  {
+                    isLatin
+                      ? (cat?.title.slice(1).split("-").join(" "))
+                      : (cat?.title)
+                  }
+                  <span className="absolute left-0 bottom-0 w-2/3 md:w-1/3 h-0.5 bg-red-primary"></span>
+                </h3>
+              ) : (
+                <ElementSkeleton type="text" className="h-13 mb-10" />
+              )
+            }
+            {
+              (cat && cat?.description.length < 1) ? (
+                Array.from({ length: 8 }, (_, index) => (
+                  <ElementSkeleton type="text" className="h-8" key={index} />
+                ))
               ) : (
                 <p className="line-clamp-6 md:line-clamp-[14] max-w-lg text-justify">{cat?.description}</p>
               )
@@ -176,7 +175,7 @@ export default function ProductsPage() {
                 >
                 </video>
               ) : (
-                "loading ..."
+                <ElementSkeleton type="picture" className="h-full" />
               )
             }
             <h2
@@ -190,16 +189,16 @@ export default function ProductsPage() {
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <p className="writing-lr w-[100px] hidden md:flex md:justify-center md:items-center md:pt-[120px]">
+            <p className="writing-lr w-[100px] hidden md:flex md:justify-center md:items-center">
               {
                 lang ? (
-                  <>{slogan[lang]}</>
+                  <>{cat?.slogan}</>
                 ) : (
-                  <>{slogan.en}</>
+                  <>""</>
                 )
               }
             </p>
-            <div className="w-[150px] md:w-[200px] absolute bottom-0 end-0">
+            {/* <div className="w-[150px] md:w-[200px] absolute bottom-0 end-0">
               {isClient && (
                 <Swiper
                   modules={[Autoplay, Navigation, Pagination]}
@@ -236,7 +235,7 @@ export default function ProductsPage() {
                   className="size-[50px] rounded-none swiper-button-forward"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

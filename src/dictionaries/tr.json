@@ -401,35 +401,39 @@
             "title": "Dikiş Makinesi",
             "description": "Dikiş makinelerimiz hassasiyetle üretilmiş olup, modern teknolojiyi güvenilir performansla birleştirir. Önemli ayrıntılar arasında çoklu dikiş desenleri, ayarlanabilir hız ve hem yeni başlayanlara hem de profesyonellere uygun dayanıklı yapı bulunur. Sahip olmanın faydaları sayısızdır—projelerin daha hızlı tamamlanması, düzenli ve profesyonel bitiş, ve manuel çabanın azaltılması. Sessiz çalışma, kompakt tasarım ve kullanıcı dostu kontroller gibi olumlu özellikler onları ev veya iş için mükemmel kılar. Güçleri çok yönlülüklerinde yatar, bu sayede geniş bir kumaş yelpazesinde kolayca çalışabilirsiniz. Yüksek verimlilikle zamandan tasarruf sağlar ve üretkenliği artırır, her giysinin güzel ve dayanıklı olmasını garanti eder.",
             "video": "/videos/sewingMachine.mp4",
-            "image": ""
+            "image": "",
+            "slogan": "Jantech dikiş makineleri, yaratıcılığınızı bir üst seviyeye taşıyın!"
         },
         {
-            "_id": "pressure-iron",
-            "title": "Basınçlı Ütü",
-            "description": "Buhar basınçlı ütü, kusursuz sonuçları daha kısa sürede isteyenler için en ideal araçtır. Önemli detaylar arasında hızlı ısınma teknolojisi, sürekli buhar basıncı ve ergonomik, yorulmayı azaltan tasarım bulunur. Faydaları açıktır—kırışıksız giysiler, daha kısa ütüleme seansları ve ağır kumaşlarda bile mükemmel sonuçlar. Güvenlik için otomatik kapanma, enerji tasarruf özellikleri ve uzun ömürlü su hazneleri gibi olumlu yönler kullanım sırasında size güven verir. Basınçlı ütünün gücü, profesyonel düzeyde sonuçları sürekli olarak sunabilmesindedir. Yüksek verimliliği sayesinde ütüleme süresini kısaltır ve hız ile performansın önemli olduğu evler, oteller veya terziler için mükemmel bir tercihtir.",
-            "video": "/videos/pressureIron.mp4",
-            "image": ""
+            "_id": "standing-iron",
+            "title": "Dikey Ütü",
+            "description": "Dikey ütü, kusursuz sonuçları daha kısa sürede isteyenler için mükemmel bir araçtır. Öne çıkan detaylar arasında hızlı ısınma teknolojisi, sürekli buhar basıncı ve yorgunluğu azaltan ergonomik tasarım yer alır. Avantajları açıktır—kırışıksız giysiler, daha kısa ütüleme seansları ve kalın kumaşlarda bile üstün sonuçlar. Güvenlik için otomatik kapanma, enerji tasarrufu özellikleri ve dayanıklı su hazneleri gibi olumlu noktalar kullanım sırasında gönül rahatlığı sağlar. Dikey ütünün gücü, sürekli olarak profesyonel düzeyde sonuç verebilmesinde yatar. Yüksek verimliliği sayesinde ütüleme süresini kısaltır, bu da onu hız ve performansın gerekli olduğu evler, oteller veya terzihaneler için mükemmel bir seçim haline getirir.",
+            "video": "/videos/sewingMachine.mp4",
+            "image": "",
+            "slogan": "Jantec dikey ütü; hız, rahatlık, şıklık."
         },
         {
-            "_id": "vacuum-cleaner",
-            "title": "Elektrik Süpürgesi",
-            "description": "Elektrikli süpürgelerimiz yenilik, dayanıklılık ve yüksek performans gözetilerek üretilmiştir. Önemli detaylar arasında yüksek emiş gücü çok yüzeyli temizlik başlıkları toz ve alerjenler için HEPA filtreleme ve gürültü azaltma teknolojisi bulunur. Faydaları yalnızca tertemiz zeminlerle sınırlı değildir—iç mekân hava kalitesini artırır ve temizlik işlerini kolaylaştırır. Hafifliği sayesinde kolay manevra kabiliyeti, geniş toz haznesi ve dayanıklı motorlarıyla günlük kullanımda öne çıkar. Gücü, sürekli emiş performansında ve her köşeye rahatça ulaşabilme yeteneğinde yatar. Olağanüstü verimlilikleri sayesinde bu elektrikli süpürgeler zamandan, enerjiden ve emekten tasarruf sağlar, güçlü temizlik çözümleri arayan evler ve işletmeler için değerli bir seçimdir.",
-            "video": "/videos/vacuumCleaner.mp4",
-            "image": ""
+            "_id": "tank-iron",
+            "title": "Kazanlı Ütü",
+            "description": "Koleksiyonumuzdaki kazanlı ütüler yenilik, dayanıklılık ve yüksek performans düşünülerek üretilmiştir. Önemli detaylar arasında yüksek buhar çıkışı, ayarlanabilir sıcaklık seçenekleri ve uzun süreli kullanım için geniş su haznesi bulunur. Avantajları yalnızca kırışıksız giysilerle sınırlı değildir—ütü verimliliğini artırır ve süreci kolaylaştırır. Hafif tasarım, kolay manevra kabiliyeti ve sağlam yapı gibi olumlu özellikler onları günlük kullanımda öne çıkarır. Güçleri, tutarlı buhar performansında ve farklı kumaşlarla kolayca başa çıkabilmelerinde yatmaktadır. Üstün verimlilikleri sayesinde bu kazanlı ütüler zaman ve emekten tasarruf sağlar, güçlü ütüleme çözümleri arayan evler ve işletmeler için değerli bir seçimdir.",
+            "video": "/videos/tankIron.mp4",
+            "image": "",
+            "slogan": "Daha güçlü buhar, daha kusursuz sonuç."
         },
         {
             "_id": "steam-iron",
             "title": "Buharlı Ütü",
             "description": "Buharlı ütülerimiz günlük ütüleme rutininize kolaylık ve hassasiyet katmak için tasarlanmıştır. Ayrıntılar arasında ayarlanabilir buhar ayarları, damlatmaz özellikler, çizilmez taban plakaları ve hızlı ısınan rezistanslar bulunur. Faydaları arasında daha pürüzsüz giysiler, zahmetsiz kullanım ve uzun vadeli güvenilir performans vardır. Olumlu özellikleri hafif tasarım, dayanıklı yapı ve enerji tasarrufu fonksiyonlarıdır. Buharlı ütünün gücü, hassas kumaşların yanı sıra daha kalın malzemeleri de aynı kolaylıkla ütüleyebilmesinde yatar. Verimlilik, ısının eşit dağılmasıyla en üst düzeye çıkar, bu da ütüleme süresini ve eforu azaltır. Günlük ev kullanımı ya da profesyonel ihtiyaçlar için, buharlı ütülerimiz güçlü performans ve uzun ömürlü güvenilirlik sunar.",
-            "video": "/videos/steamIron.mp4",
-            "image": ""
+            "video": "/videos/steamIron-text.mp4",
+            "image": "",
+            "slogan": "Buhar gücü, şıklığın zarafeti; Jantec."
         }
     ],
     "mutation": [
         {
             "id": "steam-iron",
             "images": {
-                "bg": "/videos/iron 3020-no-text-CP.mp4",
+                "bg": "/videos/steamIron-noText.mp4",
                 "intro": "/images/2.jpg"
             },
             "title": "Güçlü Buhar, Kırışıksız Kıyafetler",
@@ -485,13 +489,13 @@
             },
             {
                 "description": [
-                    "Ama Jantec yalnızca geçmişe yaslanmadı. Biz yeniliğin öncüleriyiz:",
+                    "Ama Jantech yalnızca geçmişe yaslanmadı. Biz yeniliğin öncüleriyiz:",
                     "<b>Kavisli plakalar ve optimize edilmiş buhar enjeksiyon mekanizmasına sahip ev tipi buharlı ütü pres sisteminin mucidi.</b>",
                     "<b>Dikiş makinesi endüstrisinde ileri dört eksenli CNC işleme süreçlerinin tasarımcısı.</b>",
                     "Ve tedarik zincirine yeni bir soluk getiren çok kanallı satış ve dağıtım ağlarının kurucusu.",
                     "Bugün Jantec’in ana holdingi olan Negin Jan & Meh Şirketi, net bir vizyonla ilerliyor:",
                     "<b>Ülke çapında en büyük ev ürünleri sağlayıcısı.</b><br>Misyonumuz basit ve nettir:",
-                    "Modern teknolojilerden ve sürekli araştırma-geliştirmeden yararlanarak, İranlıların hayatını daha kolay, daha güzel ve daha güvenli kılacak ürünler üretiyoruz. Müşterilerimizin ve temsilcilerimizin sadakatine inanıyoruz ve bu güveni kalite, yenilikçi satış sonrası hizmetler ve hızlı geri dönüşlerle onurlandırıyoruz. Jantec sadece bir marka değildir;",
+                    "Modern teknolojilerden ve sürekli araştırma-geliştirmeden yararlanarak, İranlıların hayatını daha kolay, daha güzel ve daha güvenli kılacak ürünler üretiyoruz. Müşterilerimizin ve temsilcilerimizin sadakatine inanıyoruz ve bu güveni kalite, yenilikçi satış sonrası hizmetler ve hızlı geri dönüşlerle onurlandırıyoruz. Jantech sadece bir marka değildir;",
                     "<b>bir mirasın devamı, bir geleceğin başlangıcı ve gelenek ile yenilik arasında bir köprüdür.</b>"
                 ],
                 "image": "/images/about-3.webp"

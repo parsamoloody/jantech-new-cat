@@ -44,7 +44,8 @@ export default async function HomePage({ params }: Props) {
                                 height={1200}
                                 className="object-cover"
                                 // priority
-                                // placeholder="blur"
+                                // placeholder=blurDataURL"blur"
+                                // blurDataURL={product.image}
                             />
                             <div className="absolute inset-0 bg-gradient-to-tl from-black/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                             <h3 className="absolute bottom-8 start-8 text-2xl font-bold opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bottom-10 max-w-[calc(100%-4rem)]">
@@ -58,7 +59,6 @@ export default async function HomePage({ params }: Props) {
 
             <VideoSlider lang={lang} />
             <HomeEdModel tD={tD} />
-            <div className="w-full h-40 bg-black"></div>
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">

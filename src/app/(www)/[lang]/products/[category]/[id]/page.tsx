@@ -23,10 +23,10 @@ async function getProductData(lang: Locale, category: Category, id: string) {
                 },
             }
         );
+
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
-
         const data = await response.json();
         return data;
     } catch (error) {
@@ -82,8 +82,8 @@ export default async function ProductPage({
 
                     <div className="mt-8">
                         <div className="mt-4 space-y-4">
-                            {data[0].features?.map((feature: { id: string; key: string; value: string; }) => (
-                                <div key={feature.id} className="flex items-center">
+                            {data[0].features?.map((feature: { id: string; key: string; value: string; }, i: number) => (
+                                <div key={i} className="flex items-center">
                                     <div className="text-sm font-medium text-gray-500">
                                         {feature.key}:
                                     </div>

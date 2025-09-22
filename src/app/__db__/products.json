@@ -2,7 +2,7 @@
     {
         "_id": "68c5837045227aba56c912ee1",
         "ar": {
-            "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
+            "name": "چرخ خیاطی جانتک مدل VERSACE GOLD",
             "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cyclone، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
             "category": "sewing-machine",
             "price": "522.99",
@@ -18,8 +18,8 @@
             "detailContent": ""
         },
         "en": {
-            "name": "Jantech Vacuum Cleaner Model CLEAN MASTER 3000",
-            "description": "The Jantech Vacuum Cleaner Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional cleaning performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy cleaning possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Vacuum Cleaner Model 3000 is a reliable and practical choice for modern homes.",
+            "name": "Jantech sewing machine model VERSACE GOLD",
+            "description": "The Jantech Sewing Machine Model 3000 with a powerful 2600 watts and Cyclone tank delivers exceptional sewing performance. This device comes with 6 different accessories including two nozzles (regular and pet-specific), a sofa brush, a corner brush, two permanent bags, and five disposable bags, making efficient and easy sewing possible. With a 2-month replacement warranty and a 60-month after-sales service warranty, the Jantech Sewing Machine Model 3000 is a reliable and practical choice for modern homes.",
             "category": "sewing-machine",
             "price": "522.99",
             "score": "33",
@@ -66,8 +66,8 @@
             "detailContent": ""
         },
         "fa": {
-            "name": "جارو برقی جانتک سری CLEAN MASTER 3000",
-            "description": "جارو برقی جانتک سری 3000 با توان قدرتمند ۲۶۰۰ وات و مخزن Cycling، عملکردی بی‌نظیر در تمیزکاری ارائه می‌دهد. این دستگاه با ۶ نوع لوازم جانبی متنوع شامل دو پارویی (معمولی و مخصوص حیوانات خانگی)، برس مبل، برس مخصوص گوشه‌های دیوار، دو کیسه دائم و پنج کیسه یکبار مصرف، تمیزکاری کارآمد و آسان را ممکن می‌سازد. با ۲ ماه گارانتی تعویض و ۶۰ ماه گارانتی خدمات پس از فروش، جارو برقی جانتک سری 3000 انتخابی مطمئن و کاربردی برای خانه‌های مدرن است.",
+            "name": "چرخ خیاطی جانتک مدل VERSACE GOLD",
+            "description": "چرخ خیاطی جانتک مدل VERSACE GOLD با 32 نوع دوخت و حاشیه دوزی ، علاوه بر تامین نیاز های مختلف در دوخت دوز، اولین چرخ خیاطی در ایران با گارانتی 60 ماهه و 2 ماه تعویض بی‌قید و شرط است. این مدل دارای سوزن نخ کن اتوماتیک، 10 پایه مختلف برای انواع دوخت و قابلیت تنظیم عرض و طول دوخت می‌باشد. سرعت 860 دوخت در دقیقه، قابلیت دوخت پارچه‌های ضخیم و نازک، سیستم فشار پایه و توانایی دوخت‌های حلقوی از ویژگی‌های برجسته این چرخ خیاطی است. مدل VERSACE GOLD مناسب برای خیاطان حرفه‌ای و مبتدی بوده و تمامی نیازهای خیاطی شما را به بهترین نحو پوشش می‌دهد.",
             "category": "sewing-machine",
             "price": "522.99",
             "score": "33",
@@ -1593,7 +1593,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "/images/products/0gf2.png",
+            "image": "/images/products/0gf2.webp",
             "features": [
                 {
                     "key": "Power",
@@ -1612,7 +1612,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "/images/products/0gf2.png",
+            "image": "/images/products/0gf2.webp",
             "features": [
                 {
                     "key": "القوة",
@@ -1631,7 +1631,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "/images/products/0gf2.png",
+            "image": "/images/products/0gf2.webp",
             "features": [
                 {
                     "key": "Güç",
@@ -1650,7 +1650,7 @@
             "category": "steam-iron",
             "price": "89.99",
             "score": "28",
-            "image": "/images/products/0gf2.png",
+            "image": "/images/products/0gf2.webp",
             "features": [
                 {
                     "key": "Мощность",
@@ -1663,13 +1663,13 @@
             ],
             "detailContent": ""
         },
-         "fa": {
+        "fa": {
             "name": "اتو بخار پروگلاید جانتک مدل ROSE GOLD 3230",
             "description": "عملکرد برتر را در اتو بخار پروگلاید جانتک مدل ROSE GOLD 3230 کشف کنید، با قدرت 2200 وات و ظاهری خیره کننده به رنگ رز گلد. این اتو 50 گرم بخار مداوم در دقیقه و 300 گرم بخار قوی در دقیقه ارائه می‌دهد که برای اتو کردن سنگین ایده‌آل است. کفی ضد خش، مخزن آب 400 میلی‌لیتری و عملکرد بخار عمودی، تنوع را ارائه می‌دهند، در حالی که سیستم‌های ضد رسوب و ضد چکه یک نگهداری بدون دردسر و ایمنی در کار با پارچه‌های ظریف را تضمین می‌کنند.",
             "category": "steam-iron",
             "price": "129.99",
             "score": "35",
-            "image": "https://jantech.ir/wp-content/uploads/2024/08/proglider-3210-gold2-600x600.webp",
+            "image": "/images/products/0gf2.webp",
             "features": [
                 {
                     "key": "قدرت",
@@ -1681,6 +1681,222 @@
                 }
             ],
             "detailContent": " اتو بخار پروگلاید جانتک مدل GOLD 3210، با ویژگی‌های پیشرفته و طراحی شیک، تجربه‌ای حرفه‌ای و بی‌نظیر از اتوکشی را ارائه می‌دهد. با قدرت 3250 وات و کفه‌های DURILIUM SOLEPLATE، این اتو به سرخوردگی بالا و مقاومت در برابر خراش و ضربه مجهز شده است، که موجب کارایی فوق‌العاده و دوام بالا می‌شود. این دستگاه با بخار انفجاری 260 گرم در دقیقه و بخاردهی پیوسته 90 گرم در دقیقه، قابلیت اتوکشی انواع پارچه‌ها از 50 تا 220 درجه سانتی‌گراد را به راحتی فراهم می‌کند."
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee18",
+        "en": {
+            "name": "Jantech tank iron model SG9140",
+            "description": "The Jantek tank iron, combining a handheld iron and a standing steamer, with 3000 watts of power and up to 7.5 bar of explosive steam, is an efficient and professional option for ironing. With the DURILIUM SOLEPLATE soleplate, anti-drip system and 1.9 liter tank capacity, this device is easy to use and long-lasting. The intelligent temperature adjustment system and automatic cleaning make maintenance easier. With a 24-month warranty, this iron is a reliable and economical choice for any home.",
+            "category": "tank-iron",
+            "price": "219.450000",
+            "score": "28",
+            "image": "https://jantech.ir/wp-content/uploads/2024/09/jantech-sg9140-600x600.webp",
+            "features": [
+                {
+                    "key": "Explosive steam power",
+                    "value": "7.5 times"
+                },
+                {
+                    "key": "Hand ironing power",
+                    "value": "33000W"
+                },
+                {
+                    "key": "Continuous steam power",
+                    "value": "5.5 times"
+                },
+                {
+                    "key": "Warranty",
+                    "value": "18+6 months"
+                },
+                {
+                    "key": "Smart temperature control",
+                    "value": "Yes"
+                },
+                {
+                    "key": "Sole material",
+                    "value": "Durilium airglide soleplate"
+                }
+            ],
+            "detailContent": "The unique Jantech tank iron offers a new generation of handheld irons and standing steamers in one device. This iron has DURILIUM SOLEPLATE soleplates that distribute heat in the best way and have a smooth movement on the fabric. The handheld iron power of this device is 3000 watts, which, combined with the ability to blast steam up to 7.5 bar and continuous steam with a pressure of 5.5 bar, makes it a powerful and efficient device. With a blast steam volume of up to 550 grams per minute, this iron is able to quickly remove tough wrinkles. The water tank capacity of this device is 1.9 liters, which allows for long-term use without the need to refill the tank frequently. The device's standby time is only 2 minutes, and its automatic shut-off system ensures user safety. This iron is easier to maintain with its automatic sediment cleaning system and anti-drip system, which prevents even a single drop of water from dripping. The ability to be used as a standing steamer is also a competitive advantage of this device. The intelligent temperature adjustment system optimizes energy consumption according to the type of clothing, and the eco system reduces energy consumption by up to 20%. The sediment collection compartment and the antibacterial and antifungal system of this device ensure the cleanliness and hygiene of the clothes. The 24-month warranty of this product gives users more confidence."
+        },
+        "fa": {
+            "name": "اتو مخزن‌دار جانتک مدل SG9140",
+            "description": "اتو مخزن‌دار جانتک که ترکیبی از اتوی دستی و بخار ایستاده است، با توان 3000 وات و بخار انفجاری تا 7.5 بار، گزینه‌ای حرفه‌ای و کارآمد برای اتوکشی محسوب می‌شود. با کفی DURILIUM SOLEPLATE، سیستم ضد چکه و مخزن آب با ظرفیت 1.9 لیتر، این دستگاه هم کاربردی است و هم ماندگار. سیستم تنظیم هوشمند دما و تمیزکننده خودکار، نگهداری از آن را آسان‌تر می‌سازد. همراه با 24 ماه گارانتی، این اتو انتخابی مطمئن و اقتصادی برای هر خانه است.",
+            "category": "tank-iron",
+            "price": "219.450000",
+            "score": "28",
+            "image": "https://jantech.ir/wp-content/uploads/2024/09/jantech-sg9140-600x600.webp",
+            "features": [
+                {
+                    "key": "قدرت بخار انفجاری",
+                    "value": "7.5 بار"
+                },
+                {
+                    "key": "توان اتوی دستی",
+                    "value": "3000 وات"
+                },
+                {
+                    "key": "قدرت بخار پیوسته",
+                    "value": "5.5 بار"
+                },
+                {
+                    "key": "گارانتی",
+                    "value": "18+6 ماه"
+                },
+                {
+                    "key": "کنترل هوشمند دما",
+                    "value": "بله"
+                },
+                {
+                    "key": "جنس کفی",
+                    "value": "Durilium airglide soleplate"
+                }
+            ],
+            "detailContent": "اتو مخزن‌دار منحصر‌به‌فرد جانتک، نسل جدیدی از اتوهای دستی و بخار ایستاده را در یک دستگاه ارائه می‌دهد. این اتو دارای کفی DURILIUM SOLEPLATE است که گرما را به بهترین شکل توزیع کرده و حرکت روانی روی پارچه دارد. توان اتوی دستی این دستگاه 3000 وات است که همراه با توانایی تولید بخار انفجاری تا 7.5 بار و بخار پیوسته با فشار 5.5 بار، آن را به دستگاهی قدرتمند و کارآمد تبدیل می‌کند. با حجم بخار انفجاری تا 550 گرم در دقیقه، این اتو قادر است به سرعت چین و چروک‌های سخت را از بین ببرد. ظرفیت مخزن آب این دستگاه 1.9 لیتر است که امکان استفاده طولانی‌مدت بدون نیاز به پر کردن مداوم را فراهم می‌کند. زمان آماده‌به‌کار دستگاه تنها 2 دقیقه است و سیستم خاموشی خودکار، ایمنی کاربر را تضمین می‌کند. این اتو به لطف سیستم تمیزکننده رسوب خودکار و سیستم ضد چکه، نگهداری آسان‌تری دارد و مانع از چکیدن حتی یک قطره آب می‌شود. قابلیت استفاده به عنوان بخارگر ایستاده نیز مزیت رقابتی این دستگاه است. سیستم تنظیم هوشمند دما مصرف انرژی را متناسب با نوع پارچه بهینه می‌سازد و حالت ECO مصرف انرژی را تا 20 درصد کاهش می‌دهد. محفظه جمع‌آوری رسوب و سیستم ضدباکتری و ضدقارچ این دستگاه، پاکیزگی و بهداشت لباس‌ها را تضمین می‌کند. گارانتی 24 ماهه این محصول، اطمینان بیشتری به کاربران می‌بخشد."
+        },
+        "tr": {
+            "name": "Jantech buharlı kazanlı ütü modeli SG9140",
+            "description": "El ütüsü ve dikey buhar makinesini birleştiren Jantech kazanlı ütü, 3000 watt gücü ve 7.5 bar’a kadar patlayıcı buhar basıncıyla profesyonel ve verimli bir seçenek sunar. DURILIUM SOLEPLATE tabanı, damlatmaz sistemi ve 1.9 litrelik su haznesi sayesinde hem kullanımı kolaydır hem de uzun ömürlüdür. Akıllı sıcaklık ayarlama sistemi ve otomatik temizleme özelliği bakımını kolaylaştırır. 24 ay garantiyle birlikte bu ütü, her ev için güvenilir ve ekonomik bir tercihtir.",
+            "category": "tank-iron",
+            "price": "219.450000",
+            "score": "28",
+            "image": "https://jantech.ir/wp-content/uploads/2024/09/jantech-sg9140-600x600.webp",
+            "features": [
+                {
+                    "key": "Patlayıcı buhar gücü",
+                    "value": "7.5 bar"
+                },
+                {
+                    "key": "El ütüsü gücü",
+                    "value": "3000W"
+                },
+                {
+                    "key": "Sürekli buhar gücü",
+                    "value": "5.5 bar"
+                },
+                {
+                    "key": "Garanti",
+                    "value": "18+6 ay"
+                },
+                {
+                    "key": "Akıllı sıcaklık kontrolü",
+                    "value": "Evet"
+                },
+                {
+                    "key": "Taban malzemesi",
+                    "value": "Durilium airglide soleplate"
+                }
+            ],
+            "detailContent": "Benzersiz Jantech kazanlı ütü, el ütüsü ve dikey buhar makinesini tek cihazda sunar. Bu ütü, ısıyı en iyi şekilde dağıtan ve kumaş üzerinde pürüzsüz hareket eden DURILIUM SOLEPLATE tabanına sahiptir. 3000 watt el ütüsü gücü, 7.5 bar’a kadar şok buhar ve 5.5 bar sürekli buhar basıncıyla birleşerek güçlü ve verimli bir cihaz oluşturur. Dakikada 550 grama kadar şok buhar hacmi sayesinde zorlu kırışıklıkları hızlıca açabilir. 1.9 litrelik su haznesi sayesinde sık sık doldurmadan uzun süre kullanılabilir. Cihaz yalnızca 2 dakikada hazır hale gelir ve otomatik kapanma sistemi kullanıcı güvenliğini sağlar. Otomatik kireç temizleme ve damlatmaz sistemleri sayesinde bakımı kolaydır ve tek damla su bile akıtmaz. Dikey buhar makinesi olarak kullanılabilmesi de bu cihazın önemli bir avantajıdır. Akıllı sıcaklık ayar sistemi, kumaş türüne göre enerji tüketimini optimize eder ve ECO modu enerji tüketimini %20’ye kadar azaltır. Kireç toplama haznesi, antibakteriyel ve antifungal sistemiyle kıyafetlerin hijyenini korur. Bu ürünün 24 aylık garantisi, kullanıcılara ekstra güven sağlar."
+        }
+    },
+    {
+        "_id": "68c5837045227aba56c912ee19",
+        "en": {
+            "name": "Jantech standing iron model HJ-3211",
+            "description": "Precision control dual heating technology. With replaceable anti-calc filter inside water tanks. Ideal temperature on iron panel steady at 135±10°C. Detachable main machine body for easy movement. Patented 0-90° stepless adjustment ironing board. Double Anti Calcium system.",
+            "category": "standing-iron",
+            "price": "290.450000",
+            "score": "28",
+            "image": "/images/products/3211White.webp",
+            "features": [
+                {
+                    "key": "Powerspecification",
+                    "value": "230V 50Hz 2900W"
+                },
+                {
+                    "key": "Brushsoleplate size",
+                    "value": "15.9x9.6 cm"
+                },
+                {
+                    "key": "lroning board dimesion",
+                    "value": "80.0x34.2 cm"
+                },
+                {
+                    "key": "Main body dimension",
+                    "value": "24.6x44.0x25.6 cm"
+                },
+                {
+                    "key": "Steam rate",
+                    "value": "Yes95±5g/min(5S/15S)"
+                },
+                {
+                    "key": "Standard fittings",
+                    "value": "brush/glove"
+                }
+            ],
+            "detailContent": "The unique Jantech tank iron offers a new generation of handheld irons and standing steamers in one device. This iron has DURILIUM SOLEPLATE soleplates that distribute heat in the best way and have a smooth movement on the fabric. The handheld iron power of this device is 3000 watts, which, combined with the ability to blast steam up to 7.5 bar and continuous steam with a pressure of 5.5 bar, makes it a powerful and efficient device. With a blast steam volume of up to 550 grams per minute, this iron is able to quickly remove tough wrinkles. The water tank capacity of this device is 1.9 liters, which allows for long-term use without the need to refill the tank frequently. The device's standby time is only 2 minutes, and its automatic shut-off system ensures user safety. This iron is easier to maintain with its automatic sediment cleaning system and anti-drip system, which prevents even a single drop of water from dripping. The ability to be used as a standing steamer is also a competitive advantage of this device. The intelligent temperature adjustment system optimizes energy consumption according to the type of clothing, and the eco system reduces energy consumption by up to 20%. The sediment collection compartment and the antibacterial and antifungal system of this device ensure the cleanliness and hygiene of the clothes. The 24-month warranty of this product gives users more confidence."
+        },
+        "fa": {
+            "name": "اتو ایستاده جانتک مدل HJ-3211",
+            "description": "فناوری گرمایش دوگانه با کنترل دقیق. دارای فیلتر ضد رسوب قابل تعویض در داخل مخزن آب. دمای ایده‌آل صفحه اتو ثابت در 135±10 درجه سانتی‌گراد. بدنه اصلی جداشونده برای جابجایی آسان. میز اتو با تنظیم پیوسته و ثبت‌شده 0-90 درجه. سیستم دوگانه ضد رسوب.",
+            "category": "standing-iron",
+            "price": "290.450000",
+            "score": "28",
+            "image": "/images/products/3211White.webp",
+            "features": [
+                {
+                    "key": "مشخصات توان",
+                    "value": "230V 50Hz 2900W"
+                },
+                {
+                    "key": "اندازه کفی برس",
+                    "value": "15.9x9.6 سانتی‌متر"
+                },
+                {
+                    "key": "ابعاد میز اتو",
+                    "value": "80.0x34.2 سانتی‌متر"
+                },
+                {
+                    "key": "ابعاد بدنه اصلی",
+                    "value": "24.6x44.0x25.6 سانتی‌متر"
+                },
+                {
+                    "key": "نرخ بخار",
+                    "value": "Yes95±5g/min(5S/15S)"
+                },
+                {
+                    "key": "لوازم جانبی استاندارد",
+                    "value": "برس/دستکش"
+                }
+            ],
+            "detailContent": "اتو ایستاده منحصر‌به‌فرد جانتک، نسل جدیدی از اتوهای دستی و بخار ایستاده را در یک دستگاه ارائه می‌دهد. این اتو دارای کفی DURILIUM SOLEPLATE است که گرما را به بهترین شکل توزیع کرده و حرکت روانی روی پارچه دارد. توان اتوی دستی این دستگاه 3000 وات است که همراه با توانایی تولید بخار انفجاری تا 7.5 بار و بخار پیوسته با فشار 5.5 بار، آن را به دستگاهی قدرتمند و کارآمد تبدیل می‌کند. با حجم بخار انفجاری تا 550 گرم در دقیقه، این اتو قادر است به سرعت چین و چروک‌های سخت را از بین ببرد. ظرفیت مخزن آب این دستگاه 1.9 لیتر است که امکان استفاده طولانی‌مدت بدون نیاز به پر کردن مداوم را فراهم می‌کند. زمان آماده‌به‌کار دستگاه تنها 2 دقیقه است و سیستم خاموشی خودکار، ایمنی کاربر را تضمین می‌کند. این اتو به لطف سیستم تمیزکننده رسوب خودکار و سیستم ضد چکه، نگهداری آسان‌تری دارد و مانع از چکیدن حتی یک قطره آب می‌شود. قابلیت استفاده به عنوان بخارگر ایستاده نیز مزیت رقابتی این دستگاه است. سیستم تنظیم هوشمند دما مصرف انرژی را متناسب با نوع پارچه بهینه می‌سازد و حالت ECO مصرف انرژی را تا 20 درصد کاهش می‌دهد. محفظه جمع‌آوری رسوب و سیستم ضدباکتری و ضدقارچ این دستگاه، پاکیزگی و بهداشت لباس‌ها را تضمین می‌کند. گارانتی 24 ماهه این محصول، اطمینان بیشتری به کاربران می‌بخشد."
+        },
+        "tr": {
+            "name": "Jantech dikey ütü modeli HJ-3211",
+            "description": "Hassas kontrol için çift ısıtma teknolojisi. Su haznesi içinde değiştirilebilir kireç önleyici filtre ile. Ütü panelinde ideal sıcaklık 135±10°C’de sabit kalır. Ayrılabilir ana gövde kolay taşınma sağlar. Patentli 0-90° kademesiz ayarlanabilir ütü masası. Çift kireç önleme sistemi.",
+            "category": "standing-iron",
+            "price": "290.450000",
+            "score": "28",
+            "image": "/images/products/3211White.webp",
+            "features": [
+                {
+                    "key": "Güç özellikleri",
+                    "value": "230V 50Hz 2900W"
+                },
+                {
+                    "key": "Fırça taban boyutu",
+                    "value": "15.9x9.6 cm"
+                },
+                {
+                    "key": "Ütü masası ölçüsü",
+                    "value": "80.0x34.2 cm"
+                },
+                {
+                    "key": "Ana gövde ölçüsü",
+                    "value": "24.6x44.0x25.6 cm"
+                },
+                {
+                    "key": "Buhar oranı",
+                    "value": "Yes95±5g/min(5S/15S)"
+                },
+                {
+                    "key": "Standart aksesuarlar",
+                    "value": "fırça/eldiven"
+                }
+            ],
+            "detailContent": "Eşsiz Jantech dikey ütü, el ütüsü ve dikey buhar makinesini tek cihazda sunar. Bu ütü, ısıyı en iyi şekilde dağıtan ve kumaş üzerinde pürüzsüz hareket eden DURILIUM SOLEPLATE tabanına sahiptir. 3000 watt el ütüsü gücü, 7.5 bar’a kadar şok buhar ve 5.5 bar sürekli buhar basıncıyla birleşerek güçlü ve verimli bir cihaz oluşturur. Dakikada 550 grama kadar şok buhar hacmi sayesinde zorlu kırışıklıkları hızlıca açabilir. 1.9 litrelik su haznesi sayesinde sık sık doldurmadan uzun süre kullanılabilir. Cihaz yalnızca 2 dakikada hazır hale gelir ve otomatik kapanma sistemi kullanıcı güvenliğini sağlar. Otomatik kireç temizleme ve damlatmaz sistemleri sayesinde bakımı kolaydır ve tek damla su bile akıtmaz. Dikey buhar makinesi olarak kullanılabilmesi de bu cihazın önemli bir avantajıdır. Akıllı sıcaklık ayar sistemi, kumaş türüne göre enerji tüketimini optimize eder ve ECO modu enerji tüketimini %20’ye kadar azaltır. Kireç toplama haznesi, antibakteriyel ve antifungal sistemiyle kıyafetlerin hijyenini korur. Bu ürünün 24 aylık garantisi, kullanıcılara ekstra güven sağlar."
         }
     }
 ]

@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/i18n.config';
+import ElementSkeleton from './skeletons/ElementSkeleton';
 
 interface SlideItemProps {
     slide: {
@@ -76,7 +77,25 @@ const HomeSlider = memo(({ lang }: { lang: Locale }) => {
     }, []);
 
     if (isLoading || !slides?.items) {
-        return <div>Loading...</div>;
+        return (
+            <>
+                <div className='w-full mt-10 py-14'>
+                    <ElementSkeleton type="text" className="h-10 max-w-[280px] lg:max-w-[400px] my-2 rounded-lg mx-auto" />
+                </div>
+                <div className='h-screen w-full flex flex-col lg:flex-row '>
+                    <div className='w-full h-full p-4 lg:p-12'>
+                        <ElementSkeleton type="picture" className="h-full" />
+                    </div>
+                    <div className='w-full h-full grid grid-cols-1 items-center justify-center p-4 lg:p-6'>
+                        {
+                            Array.from({ length: 3 }).map((_, index) => (
+                                <ElementSkeleton key={`loading-${index}`} type='text' className="h-14 w-full my-2 rounded-lg" />
+                            ))
+                        }
+                    </div>
+                </div>
+            </>
+        )
     }
 
     return (

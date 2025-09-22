@@ -5,6 +5,7 @@ import {SwiperSlide, Swiper } from 'swiper/react';
 import 'swiper/css';
 import { Locale } from '@/lib/i18n.config';
 import { getDictionary } from '@/lib/dictionaries';
+import ElementSkeleton from './skeletons/ElementSkeleton';
 
 const mock = {
     "title": "Explore our products in action",
@@ -75,10 +76,13 @@ export default function VideoSlider({lang}: {lang: Locale}) {
     }, [activeIndex]);
 
     if (isLoading || !slides?.items) {
-        return <div>Loading...</div>;
+        return <div>
+            <ElementSkeleton type="picture" className="relative w-full h-[1060px] my-2 rounded-lg mx-auto" />
+        </div>;
     }
     return (
-        <div className="relative w-full m">
+        <>
+        <div className="relative w-full">
             <Swiper
                 ref={swiperRef}
                 onSlideChange={(swiper) => {
@@ -93,7 +97,7 @@ export default function VideoSlider({lang}: {lang: Locale}) {
             >
                 {slides.items.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative w-full h-[500px]">
+                        <div className="relative w-full h-[900px]">
                             <video
                                 key={slide.title}
                                 ref={index === activeIndex ? videoRef : null}
@@ -158,5 +162,8 @@ export default function VideoSlider({lang}: {lang: Locale}) {
             {/* <IoIosArrowBack className='hidden md:block absolute start-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handlePrev}/>
             <IoIosArrowForward className='hidden md:block absolute end-8 top-1/2 -translate-y-1/2 z-40 bg-red-primary text-white text-3xl rounded-full p-1 cursor-pointer' onClick={handleNext}/> */}
         </div>
+                    <div className="w-full h-40 bg-black"></div>
+
+        </>
     );
 }

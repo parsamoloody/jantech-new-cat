@@ -30,7 +30,6 @@ const BgCover = ({ bgVideo }: { bgVideo: string }): JSX.Element => {
             preload="metadata"
             src={bgVideo}
             playsInline
-            poster={bgVideo.replace(/\.mp4$/, '.jpg')}
             className="lg:h-screen object-cover w-full h-[60vh] lg:w-full lg:object-cover transition-opacity duration-300 ease-in-out opacity-100"
             onError={handleVideoError}
             onCanPlay={handleVideoLoad}

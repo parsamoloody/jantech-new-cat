@@ -7,6 +7,7 @@ import { getLangDir } from "@/utils";
 import { Locale } from "@/lib/i18n.config";
 import { getDictionary } from "@/lib/dictionaries";
 import StoreProvider from "@/lib/states/StoreProvider";
+import Footer from "@/components/Footer";
 
 const dana = LocalFont({
   src: [
@@ -67,6 +68,7 @@ export default async function RootLayout({
     <StoreProvider dictionary={dictionary}>
       <Navbar />
       {children}
+      <Footer />
     </StoreProvider>
   </body>
 </html>

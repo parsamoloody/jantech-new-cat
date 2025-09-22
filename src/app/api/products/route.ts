@@ -40,7 +40,13 @@ export async function GET(req: Request) {
   }
 
   if (id) {
-     filteredProducts.push(...filteredProducts.filter((p) => (p as any).id === id));
+    filteredProducts = filteredProducts.filter((p) => (p as any)._id === id);
+  }
+
+  if (!id && category) {
+    filteredProducts = filteredProducts.filter((p) => (p as any)[lang]?.category === category);
+  } if (id && category) {
+    filteredProducts = filteredProducts.filter((p) => (p as any)[lang]?.category === category).filter((p) => (p as any)._id === id);
   }
 
   const result = filteredProducts.map((p) => ({
