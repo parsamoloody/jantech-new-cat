@@ -163,7 +163,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
     const maxDim = Math.max(size.x, size.y, size.z);
     const fov = camera.fov * (Math.PI / modelSize);
-    let cameraZ = Math.abs(maxDim / Math.tan(fov / 2));
+    let cameraZ = Math.abs(maxDim / Math.tan(fov / 3));
     cameraZ *= offset;
 
     camera.position.set(center.x, center.y, cameraZ);
