@@ -8,7 +8,7 @@ interface HomeEdModelProps {
 
 const HomeEdModel: React.FC<HomeEdModelProps> = memo(({ tD }) => {
   return (
-    <div className="w-full h-full pt-14 bg-black">
+    <div className="w-full h-full pt-14 pb-32 bg-black">
       <ModelViewer prop={tD} />
     </div>
   );

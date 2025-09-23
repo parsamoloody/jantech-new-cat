@@ -15,7 +15,7 @@ async function getProductData(lang: Locale, category: Category, id: string) {
             `https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}&id=${id}`,
             {
                 next: { 
-                    revalidate: 3600,
+                    revalidate: 3600 * 24 * 7,
                     tags: [`product-${category}-${id}`]
                 },
                 headers: {

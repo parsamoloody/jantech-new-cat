@@ -382,6 +382,7 @@
     },
     "videoSlides": {
         "title": "Explore our products in action",
+        "description": "<b>Jantech</b>, a leading Iranian brand in the production of sewing machines, irons, and home appliances, leverages modern technology and high-quality materials to deliver products with durability, precise performance, and modern design, providing users with a reliable, comfortable, and professional experience.",
         "items": [
             {
                 "title": "Sewing Machine",
@@ -521,8 +522,7 @@
                 "bodiesHex": [
                     "#F8F8F4",
                     "#ffffff",
-                    "#D9D9D9",
-                    "#A6A6A6"
+                    "#D9D9D9"
                 ]
             },
             "metaTitle": {
@@ -538,8 +538,7 @@
                     "colorsName": [
                         "Ivory White",
                         "White",
-                        "Light Gray",
-                        "Gray"
+                        "Light Gray"
                     ]
                 }
             }

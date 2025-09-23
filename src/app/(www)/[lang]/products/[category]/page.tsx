@@ -70,7 +70,7 @@ export default function ProductsPage() {
     try {
       const response = await fetch(`https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}`, {
         next: {
-          revalidate: 3600,
+          revalidate: 3600 * 24 * 7,
           tags: [`product-${category}`]
         },
         headers: {

@@ -25,7 +25,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
   const [activeColor, setActiveColor] = useState<string>("");
   const [activeColorName, setActiveColorName] = useState<string>("");
   const [activeTab, setActiveTab] = useState<"body" | "controls">("body");
-  const [modelSize, setModelSize] = useState<number>(115);
 
   useEffect(() => {
     if (!mountRef.current) return;
@@ -60,7 +59,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     scene.add(hemiLight);
 
     const dirLight = new THREE.DirectionalLight(0xffffff, 5);
-    dirLight.position.set(5, 10, 7.5);
+    dirLight.position.set(-8, 10, 7.5);
     scene.add(dirLight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -86,6 +85,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
         model.position.sub(center);
+        model.rotation.y -= (Math.PI / 6);
 
         model.traverse((child) => {
           if ((child as THREE.Mesh).isMesh) {
@@ -126,8 +126,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
       renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     };
     window.addEventListener("resize", handleResize);
-
-    // animation loop
     const animate = () => {
       requestAnimationFrame(animate);
       controls.update();
@@ -135,7 +133,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     };
     animate();
 
-    // cleanup
     return () => {
       window.removeEventListener("resize", handleResize);
       renderer.dispose();
@@ -143,14 +140,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     };
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setModelSize(window.innerWidth < 768 ? 200 : 115);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   function fitCameraToObject(
     camera: THREE.PerspectiveCamera,
     controls: OrbitControls,
@@ -162,7 +151,9 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     const center = box.getCenter(new THREE.Vector3());
 
     const maxDim = Math.max(size.x, size.y, size.z);
-    const fov = camera.fov * (Math.PI / modelSize);
+    // console.log(modelSize)
+    console.log((window.innerWidth <= 450 ? 100 : window.innerWidth < 1800 ? 65 : window.innerWidth >= 1800 ? 58 : 110))
+    const fov = camera.fov * (Math.PI / (window.innerWidth <= 600 ? 100 : window.innerWidth < 1800 ? 65 : window.innerWidth >= 1800 ? 58 : 110));
     let cameraZ = Math.abs(maxDim / Math.tan(fov / 3));
     cameraZ *= offset;
 
@@ -211,13 +202,13 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
   return (
     <div className="bg-black h-screen overflow-hidden relative flex flex-col items-center justify-center *:m-0">
-      <h2 className="absolute top-32 font-bold text-white text-lg text-center sm:text-2xl xl:text-3xl">
+      <h2 className="absolute top-38 lg:top-10 xl:top-16 font-bold text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-5xl">
         {prop.title}
       </h2>
 
       {/* Canvas */}
       <div className="w-full px-10 flex justify-center items-center">
-        <div ref={mountRef} style={{ height: "100vh" }} className="w-full h-screen" />
+        <div ref={mountRef} className="w-full h-[600px] overflow-hidden  border-white" />
       </div>
 
       {loading && (
@@ -234,24 +225,22 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
 
         <div className="flex flex-col lg:flex-row items-center gap-5">
           {/* Tab Switcher */}
-          <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
+          <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 lg:h-16 rounded-full flex items-center justify-center gap-2.5">
             <button
-              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "body"
-                  ? "bg-gray-500 border-[1px] border-gray-500 text-white"
-                  : "bg-gray-700 text-gray-300"
-              }`}
+              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${activeTab === "body"
+                ? "bg-gray-500 border-[1px] border-gray-500 text-white"
+                : "bg-gray-700 text-gray-300"
+                }`}
               onClick={() => setActiveTab("body")}
             >
               {prop.options.metaTitle.body.name}
             </button>
             <button
-              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${
-                activeTab === "controls"
-                  ? "bg-gray-500  border-[1px] border-gray-500 text-white"
-                  : "bg-gray-700 text-gray-300"
-              }`}
-              onClick={() => setActiveTab("controls")}
+              className={`px-2 py-1 lg:px-3 lg:py-2 cursor-pointer rounded-full ${activeTab === "controls"
+                ? "bg-gray-500  border-[1px] border-gray-500 text-white"
+                : "bg-gray-700 text-gray-300"
+                }`}
+              onClick={() => setActiveTab("controls")}  
             >
               {prop.options.metaTitle.controls.name}
             </button>
@@ -260,7 +249,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
           {/* Tab Content */}
           <div className="transition-all duration-500">
             {activeTab === "body" && (
-              <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 rounded-full flex items-center justify-center gap-2.5">
+              <div className="border border-slate-600 bg-[#1c1c1c] p-3 h-14 lg:h-16 rounded-full flex items-center justify-center gap-2.5">
                 {prop.options.color.bodiesHex.map((color, i) => (
                   <button
                     key={color}

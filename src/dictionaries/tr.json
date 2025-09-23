@@ -382,6 +382,7 @@
     },
     "videoSlides": {
         "title": "Ürünlerimizi eylem halinde keşfedin",
+        "description": "<b>Jantech</b>, dikiş makineleri, ütüler ve ev aletleri üretiminde önde gelen bir İran markası olarak, modern teknolojiyi ve yüksek kaliteli malzemeleri kullanarak dayanıklı, hassas performanslı ve modern tasarıma sahip ürünler sunar; kullanıcılara güvenilir, rahat ve profesyonel bir deneyim sağlar.",
         "items": [
             {
                 "title": "Dikiş Makinesi",
@@ -521,8 +522,7 @@
                 "bodiesHex": [
                     "#F8F8F4",
                     "#ffffff",
-                    "#D9D9D9",
-                    "#A6A6A6"
+                    "#D9D9D9"
                 ]
             },
             "metaTitle": {
@@ -538,8 +538,7 @@
                     "colorsName": [
                         "Fildişi Beyazı",
                         "Beyaz",
-                        "Açık Gri",
-                        "Gri"
+                        "Açık Gri"
                     ]
                 }
             }

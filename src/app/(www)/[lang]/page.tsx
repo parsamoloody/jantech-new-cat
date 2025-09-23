@@ -11,6 +11,7 @@ import HomeSlider from "@/components/HomeSlider";
 import VideoSlider from "@/components/VideoSlider";
 import GrowRoad from "@/components/GrowRoad";
 import HomeEdModel from "@/components/homeEdModel";
+// import SewingMachineFrames from "@/components/imageFrame/SewingMachine";
 
 interface Props {
     params: Promise<{ lang: Locale }>;
@@ -56,9 +57,9 @@ export default async function HomePage({ params }: Props) {
                 ))}
             </div>
             <HomeSlider lang={lang} />
-
             <VideoSlider lang={lang} />
             <HomeEdModel tD={tD} />
+            {/* <SewingMachineFrames /> */}
 
             <section className="px-4 py-14 *:text-gray-800 max-w-[1600px] mx-auto">
                 <div className="max-w-7xl mx-auto text-center">
