@@ -81,12 +81,12 @@ export default function VideoSlider({ lang }: { lang: Locale }) {
     return (
         <>
             <div className="relative w-full bg-black">
-                <div className="relative w-full h-[900px] max-w-[1440px] mx-auto">
+                <div className="relative w-full  mx-auto">
                     <video
                         ref={videoRef}
                         src={slides.items[0].video}
                         controls={false}
-                        className="w-full h-full object-cover"
+                        className="w-full bg-black h-full object-cover"
                         muted
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t md:bg-gradient-to-t from-[#0000007a] from-5% md:from-2% to-transparent z-20 pointer-events-none"></div>
