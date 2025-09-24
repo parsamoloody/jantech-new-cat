@@ -47,8 +47,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 0.2;
     rendererRef.current = renderer;
-    console.log(mountRef.current)
-    console.log(mountRef.current.childNodes.length)
     if (mountRef.current.childNodes.length === 1) return
      mountRef.current.appendChild(renderer.domElement);
     new RGBELoader().load("/images/hdri/outdoor_chapel_1k.hdr", (texture) => {
@@ -112,8 +110,7 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
         setLoading(false);
       },
       undefined,
-      (error) => {
-        console.error("Error loading model:", error);
+      () => {
         setLoading(false);
       }
     );
@@ -153,8 +150,6 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     const center = box.getCenter(new THREE.Vector3());
 
     const maxDim = Math.max(size.x, size.y, size.z);
-    // console.log(modelSize)
-    console.log((window.innerWidth <= 450 ? 100 : window.innerWidth < 1800 ? 65 : window.innerWidth >= 1800 ? 58 : 110))
     const fov = camera.fov * (Math.PI / (window.innerWidth <= 600 ? 100 : window.innerWidth < 1800 ? 65 : window.innerWidth >= 1800 ? 58 : 110));
     let cameraZ = Math.abs(maxDim / Math.tan(fov / 3));
     cameraZ *= offset;
