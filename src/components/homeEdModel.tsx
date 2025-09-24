@@ -17,4 +17,3 @@ const HomeEdModel: React.FC<HomeEdModelProps> = memo(({ tD }) => {
 HomeEdModel.displayName = "HomeEdModel";
 
 export default HomeEdModel;
- 

@@ -47,8 +47,10 @@ export default function ModelViewer({ prop }: { prop: ModelViewerProps }) {
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 0.2;
     rendererRef.current = renderer;
-    mountRef.current.appendChild(renderer.domElement);
-
+    console.log(mountRef.current)
+    console.log(mountRef.current.childNodes.length)
+    if (mountRef.current.childNodes.length === 1) return
+     mountRef.current.appendChild(renderer.domElement);
     new RGBELoader().load("/images/hdri/outdoor_chapel_1k.hdr", (texture) => {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       scene.environment = texture;
