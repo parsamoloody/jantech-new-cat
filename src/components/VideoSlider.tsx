@@ -88,7 +88,9 @@ export default function VideoSlider({ lang }: { lang: Locale }) {
                         controls={false}
                         className="w-full bg-black h-full object-cover"
                         muted
-                    />
+                        >
+                        <source src={slides.items[0].video} type="video/mp4" />
+                    </video>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t md:bg-gradient-to-t from-[#0000007a] from-5% md:from-2% to-transparent z-20 pointer-events-none"></div>
                 </div>
             </div>
