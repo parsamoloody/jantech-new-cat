@@ -12,7 +12,7 @@ interface Props {
 async function getProductData(lang: Locale, category: Category, id: string) {
     try {
         const response = await fetch(
-            `https://smartcdv2.vercel.app/api/products?lang=${lang}&category=${category}&id=${id}`,
+            `/api/products?lang=${lang}&category=${category}&id=${id}`,
             {
                 next: { 
                     revalidate: 3600 * 24 * 7,
